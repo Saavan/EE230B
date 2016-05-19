@@ -1,0 +1,166 @@
+# cell: Cell
+# Cell transform info - 1.0 0.0 0 0.0 0.0
+default winding 1
+layout new Cell -dbu 1e-11
+layer add 1:0
+layer configure 1:0 -name Active -fill #00ff00 -pattern fill12-a -outline #00ff00 -lineStyle solid -lineWidth 1 
+layer add 2:0
+layer configure 2:0 -name pWELL -fill #0000ff -pattern fill12-b -outline #0000ff -lineStyle solid -lineWidth 1 
+layer add 3:0
+layer configure 3:0 -name POLY -fill #ffff00 -pattern fill12-c -outline #ffff00 -lineStyle solid -lineWidth 1 
+layer add 5:0
+layer configure 30:1 -name Gate_ACC1 -fill #990000 -pattern fill12-f -outline #990000 -lineStyle solid -lineWidth 1 
+layer add 31:0
+layer configure 31:0 -name Drain_ACC1 -fill #990000 -pattern empty -outline #990000 -lineStyle solid -lineWidth 1 
+layer add 32:0
+layer configure 32:0 -name Drain_N1 -fill #0000ff -pattern fill12 -outline #0000ff -lineStyle solid -lineWidth 1 
+layer add 33:0
+layer configure 33:0 -name Source_N1 -fill #ff0000 -pattern fill12-a -outline #ff0000 -lineStyle solid -lineWidth 1 
+layer add 34:0
+layer configure 34:0 -name Drain_P1 -fill #0000ff -pattern fill12-b -outline #0000ff -lineStyle solid -lineWidth 1 
+layer add 35:0
+layer configure 35:0 -name Source_P1 -fill #ff0000 -pattern fill12-c -outline #ff0000 -lineStyle solid -lineWidth 1 
+layer add 36:1
+layer configure 36:1 -name Gate_ACC2 -fill #ff0000 -pattern fill12-d -outline #ff0000 -lineStyle solid -lineWidth 1 
+layer add 37:1
+layer configure 37:1 -name Drain_ACC2 -fill #ff0000 -pattern fill12-e -outline #ff0000 -lineStyle solid -lineWidth 1 
+layer add 38:1
+layer configure 38:1 -name Drain_N2 -fill #000099 -pattern fill12-f -outline #ff0000 -lineStyle solid -lineWidth 1 
+layer add 39:1
+layer configure 39:1 -name Source_N2 -fill #000099 -pattern empty -outline #ff0000 -lineStyle solid -lineWidth 1 
+layer add 40:1
+layer configure 40:1 -name Drain_P2 -fill #00ff99 -pattern fill12 -outline #ff0000 -lineStyle solid -lineWidth 1 
+layer add 41:1
+layer configure 41:1 -name Source_P2 -fill #00ff99 -pattern fill12-a -outline #ff0000 -lineStyle solid -lineWidth 1 
+layer add 51:0
+layer configure 51:0 -name Gate_N1 -fill #999900 -pattern fill12-c -outline #00ff00 -lineStyle solid -lineWidth 1 
+layer add 52:0
+layer configure 52:0 -name Gate_N2 -fill #999900 -pattern fill12-d -outline #00ff00 -lineStyle solid -lineWidth 1 
+layer add 53:0
+layer configure 53:0 -name Gate_P2 -fill #009900 -pattern fill12-e -outline #00ff00 -lineStyle solid -lineWidth 1 
+layer add 54:0
+layer configure 54:0 -name Gate_P1 -fill #009900 -pattern fill12-f -outline #00ff00 -lineStyle solid -lineWidth 1 
+layer add 60:1
+layer configure 60:1 -name Mesh_EXT -fill #ff0000 -pattern fill12-d -outline #ff0000 -lineStyle solid -lineWidth 1 
+gauge add {-240.0 112.5 -240.0 0.0} SIM2N
+stretch add {-325.0 55.00 -170.0 55.00} SIM2N_L
+stretch add {-140.0 55.00 -30.0 55.00} SIM2P_L
+rectangle -layer 1:0 { -242.0 -2.0 -238.0 114.5 }
+rectangle -layer 3:0 { -242.0 41.25 -238.0 71.25 }
+rectangle -layer 5:0 { -242.0 82.0 -238.0 114.5 }
+rectangle -layer 5:0 { -242.0 -2.0 -238.0 30.5 }
+rectangle -layer 6:0 { -242.0 -2.0 -238.0 18.7 }
+rectangle -layer 8:0 { -242.0 -2.0 -238.0 114.5 }
+rectangle -layer 32:0 { -242.0 -2.0 -238.0 19.3 }
+rectangle -layer 33:0 { -242.0 97.15 -238.0 114.5 }
+rectangle -layer 51:0 { -242.0 40.25 -238.0 72.65 }
+rectangle -layer 60:1 { -242.0 31.25 -238.0 51.25 }
+rectangle -layer 60:1 { -242.0 61.25 -238.0 81.25 }
+gauge add {-80.0 112.5 -80.0 0.0} SIM2P
+stretch add {-325.0 71.25 -170.0 71.25} SIM2N_L
+stretch add {-140.0 71.25 -30.0 71.25} SIM2P_L
+rectangle -layer 1:0 { -82.0 -2.0 -78.0 114.5 }
+rectangle -layer 2:0 { -82.0 -2.0 -78.0 114.5 }
+rectangle -layer 3:0 { -82.0 41.25 -78.0 71.25 }
+rectangle -layer 5:0 { -82.0 93.0 -78.0 114.5 }
+rectangle -layer 5:0 { -82.0 -2.0 -78.0 17.0 }
+rectangle -layer 6:0 { -82.0 -2.0 -78.0 114.5 }
+rectangle -layer 8:0 { -82.0 -2.0 -78.0 114.5 }
+rectangle -layer 34:0 { -82.0 -2.0 -78.0 15.0 }
+rectangle -layer 35:0 { -82.0 97.55 -78.0 114.5 }
+rectangle -layer 54:0 { -82.0 40.1 -78.0 72.75 }
+rectangle -layer 60:1 { -82.0 31.25 -78.0 51.25 }
+rectangle -layer 60:1 { -82.0 61.25 -78.0 81.25 }
+gauge add {-232.5 110.0 -70.0 110.0} TRENCH2D
+rectangle -layer 1:0 { -234.5 112.0 -170.0 108.0 }
+rectangle -layer 1:0 { -110.0 112.0 -68.0 108.0 }
+rectangle -layer 2:0 { -140.0 112.0 -68.0 108.0 }
+rectangle -layer 5:0 { -234.5 112.0 -170.0 108.0 }
+rectangle -layer 5:0 { -103.0 112.0 -68.0 108.0 }
+rectangle -layer 6:0 { -94.15 112.0 -68.0 108.0 }
+rectangle -layer 8:0 { -234.5 112.0 -214.2 108.0 }
+rectangle -layer 8:0 { -106.65 112.0 -68.0 108.0 }
+rectangle -layer 33:0 { -234.5 112.0 -200.05 108.0 }
+rectangle -layer 35:0 { -94.7 112.0 -68.0 108.0 }
+highlight add {-325.0 -112.5 350.0 112.5} SRAM6T
+stretch add {-325.0 71.25 -170.0 71.25} SIM2N_L
+stretch add {-140.0 71.25 -30.0 71.25} SIM2P_L
+polygon -layer 1:0 { -110.0 114.5 -110.0 -71.25 -30.0 -71.25 -30.0 114.5 } 
+polygon -layer 1:0 { -170.0 114.5 -170.0 0.0 -215.0 0.0 -215.0 -114.5 -295.0 -114.5 -295.0 114.5 } 
+polygon -layer 1:0 { 215.0 114.5 215.0 0.0 170.0 0.0 170.0 -114.5 295.0 -114.5 295.0 114.5 } 
+polygon -layer 1:0 { 30.0 -114.5 30.0 71.25 110.0 71.25 110.0 -114.5 } 
+polygon -layer 2:0 { -140.0 114.5 -140.0 -114.5 140.0 -114.5 140.0 114.5 } 
+polygon -layer 3:0 { -327.0 -41.25 -165.0 -41.25 -165.0 -71.25 -327.0 -71.25 } 
+polygon -layer 3:0 { -327.0 41.25 110.0 41.25 110.0 71.25 -327.0 71.25 } 
+polygon -layer 3:0 { 352.0 -71.25 -110.0 -71.25 -110.0 -41.25 352.0 -41.25 } 
+polygon -layer 3:0 { 352.0 41.25 165.0 41.25 165.0 71.25 352.0 71.25 } 
+polygon -layer 5:0 { -100.0 17.0 -40.0 17.0 -40.0 -17.0 -100.0 -17.0 } 
+polygon -layer 5:0 { -295.0 -114.5 -295.0 -82.0 -215.0 -82.0 -215.0 -114.5 } 
+polygon -layer 5:0 { -295.0 114.5 -295.0 82.0 -170.0 82.0 -170.0 114.5 } 
+polygon -layer 5:0 { -295.0 30.5 -215.0 30.5 -215.0 -30.5 -295.0 -30.5 } 
+polygon -layer 5:0 { -37.0 114.5 -37.0 93.0 -103.0 93.0 -103.0 114.5 } 
+polygon -layer 5:0 { 100.0 17.0 40.0 17.0 40.0 -17.0 100.0 -17.0 } 
+polygon -layer 5:0 { 170.0 -114.5 170.0 -82.0 295.0 -82.0 295.0 -114.5 } 
+polygon -layer 5:0 { 215.0 30.5 295.0 30.5 295.0 -30.5 215.0 -30.5 } 
+polygon -layer 5:0 { 295.0 114.5 295.0 82.0 215.0 82.0 215.0 114.5 } 
+polygon -layer 5:0 { 40.0 -114.5 40.0 -95.5 100.0 -95.5 100.0 -114.5 } 
+polygon -layer 6:0 { -3.1 -114.5 -3.1 -91.85 315.45 -91.85 315.45 -114.5 } 
+polygon -layer 6:0 { -327.0 -114.5 -43.75 -114.5 -43.75 101.6 352.0 101.6 352.0 114.5 -94.15 114.5 -94.15 -70.0 -94.15 -104.0 -327.0 -104.67 } 
+polygon -layer 6:0 { -327.0 -17.05 -50.0 -17.05 -50.0 18.7 -327.0 18.7 } 
+polygon -layer 6:0 { 352.0 20.3 50.0 20.3 50.0 -18.7 352.0 -18.7 } 
+polygon -layer 8:0 { -214.2 114.5 -214.2 -114.5 -294.2 -114.5 -294.2 114.5 } 
+polygon -layer 8:0 { -26.65 114.5 -26.65 -114.5 -106.65 -114.5 -106.65 114.5 } 
+polygon -layer 8:0 { 28.95 114.5 28.95 -114.5 108.95 -114.5 108.95 114.5 } 
+polygon -layer 8:0 { 294.4 114.5 294.4 -114.5 214.4 -114.5 214.4 114.5 } 
+polygon -layer 30:1 { -298.25 -72.4 -298.25 -39.8 -210.05 -39.8 -210.05 -72.4 } 
+polygon -layer 31:0 { -287.9 -114.5 -287.9 -93.15 -221.6 -93.15 -221.6 -114.5 } 
+polygon -layer 32:0 { -285.5 -20.8 -285.5 19.3 -221.85 19.3 -221.85 -20.8 } 
+polygon -layer 33:0 { -200.05 114.5 -200.05 97.15 -266.75 97.15 -266.75 114.5 } 
+polygon -layer 34:0 { -94.0 -15.0 -94.0 15.0 -43.5 15.0 -43.5 -15.0 } 
+polygon -layer 35:0 { -44.15 114.5 -44.15 97.55 -94.7 97.55 -94.7 114.5 } 
+polygon -layer 36:1 { 213.2 39.75 213.2 73.8 297.05 73.8 297.05 39.75 } 
+polygon -layer 37:1 { 282.6 114.5 282.6 91.65 230.4 91.65 230.4 114.5 } 
+polygon -layer 38:1 { 229.45 -18.15 229.45 18.3 281.45 18.3 281.45 -18.15 } 
+polygon -layer 39:1 { 187.3 -114.5 187.3 -89.25 279.35 -89.25 279.35 -114.5 } 
+polygon -layer 40:1 { 48.2 -11.15 48.2 10.85 93.2 10.85 93.2 -11.15 } 
+polygon -layer 41:1 { 46.4 -114.5 46.4 -99.75 94.1 -99.75 94.1 -114.5 } 
+polygon -layer 51:0 { -303.75 40.25 -303.75 72.65 -159.75 72.65 -159.75 40.25 } 
+polygon -layer 52:0 { 167.3 -73.85 167.3 -39.45 298.1 -39.45 298.1 -73.85 } 
+polygon -layer 53:0 { 26.8 -72.8 26.8 -38.35 112.5 -38.35 112.5 -72.8 } 
+polygon -layer 54:0 { -111.85 40.1 -111.85 72.75 -28.35 72.75 -28.35 40.1 } 
+polygon -layer 60:1 { -110.0 31.25 -110.0 51.25 -30.0 51.25 -30.0 31.25 } 
+polygon -layer 60:1 { -110.0 81.25 -110.0 61.25 -30.0 61.25 -30.0 81.25 } 
+polygon -layer 60:1 { -295.0 -51.25 -295.0 -31.25 -215.0 -31.25 -215.0 -51.25 } 
+polygon -layer 60:1 { -295.0 -81.25 -295.0 -61.25 -215.0 -61.25 -215.0 -81.25 } 
+polygon -layer 60:1 { -295.0 31.25 -295.0 51.25 -170.0 51.25 -170.0 31.25 } 
+polygon -layer 60:1 { -295.0 81.25 -295.0 61.25 -170.0 61.25 -170.0 81.25 } 
+polygon -layer 60:1 { 110.0 -31.25 110.0 -51.25 30.0 -51.25 30.0 -31.25 } 
+polygon -layer 60:1 { 110.0 -81.25 110.0 -61.25 30.0 -61.25 30.0 -81.25 } 
+polygon -layer 60:1 { 295.0 -31.25 295.0 -51.25 170.0 -51.25 170.0 -31.25 } 
+polygon -layer 60:1 { 295.0 -81.25 295.0 -61.25 170.0 -61.25 170.0 -81.25 } 
+polygon -layer 60:1 { 295.0 51.25 295.0 31.25 215.0 31.25 215.0 51.25 } 
+polygon -layer 60:1 { 295.0 81.25 295.0 61.25 215.0 61.25 215.0 81.25 } 
+highlight add {-325.0 56.25 -232.5 112.5} NMOS3D
+stretch add {-325.0 71.25 -170.0 71.25} SIM2N_L
+stretch add {-140.0 71.25 -30.0 71.25} SIM2P_L
+polygon -layer 1:0 { -230.5 114.5 -230.5 54.25 -295.0 54.25 -295.0 114.5 } 
+polygon -layer 3:0 { -327.0 54.25 -230.5 54.25 -230.5 71.25 -327.0 71.25 } 
+polygon -layer 5:0 { -295.0 114.5 -295.0 82.0 -230.5 82.0 -230.5 114.5 } 
+polygon -layer 8:0 { -230.5 114.5 -230.5 54.25 -294.2 54.25 -294.2 114.5 } 
+polygon -layer 33:0 { -230.5 114.5 -230.5 97.15 -266.75 97.15 -266.75 114.5 } 
+polygon -layer 51:0 { -230.5 54.25 -303.75 54.25 -303.75 72.65 -230.5 72.65 } 
+polygon -layer 60:1 { -230.5 81.25 -295.0 81.25 -295.0 61.25 -230.5 61.25 } 
+highlight add {-140.0 56.25 -70.0 112.5} PMOS3D
+stretch add {-325.0 71.25 -170.0 71.25} SIM2N_L
+stretch add {-140.0 71.25 -30.0 71.25} SIM2P_L
+polygon -layer 1:0 { -110.0 114.5 -110.0 54.25 -68.0 54.25 -68.0 114.5 } 
+polygon -layer 2:0 { -140.0 114.5 -140.0 54.25 -68.0 54.25 -68.0 114.5 } 
+polygon -layer 3:0 { -142.0 54.25 -68.0 54.25 -68.0 71.25 -142.0 71.25 } 
+polygon -layer 5:0 { -68.0 114.5 -68.0 93.0 -103.0 93.0 -103.0 114.5 } 
+polygon -layer 6:0 { -94.15 114.5 -94.15 54.25 -68.0 54.25 -68.0 114.5 } 
+polygon -layer 8:0 { -68.0 114.5 -68.0 54.25 -106.65 54.25 -106.65 114.5 } 
+polygon -layer 35:0 { -68.0 114.5 -68.0 97.55 -94.7 97.55 -94.7 114.5 } 
+polygon -layer 54:0 { -68.0 54.25 -111.85 54.25 -111.85 72.75 -68.0 72.75 } 
+polygon -layer 60:1 { -68.0 81.25 -110.0 81.25 -110.0 61.25 -68.0 61.25 } 
+select clear
+catch {view default }

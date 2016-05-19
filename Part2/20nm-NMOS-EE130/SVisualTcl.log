@@ -1,0 +1,26 @@
+###########################################
+# Sentaurus Visual K-2015.06-SP1.
+# Tcl log file.
+#------------------------------------------
+# Date: May 08, 2016. 23:08:49.
+# Version: 24.0.10 (1.10)
+# Mode: Interactive (GUI).
+# Hostname: sanquentin.banatao.berkeley.edu.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 2.6.32-504.8.1.el6.x86_64.
+###########################################
+
+load_file /home/spatel/swb_project/Part2/20nm-NMOS-EE130/IdVg_n596_des.plt
+create_plot -1d
+select_plots Plot_1
+#-> Plot_1
+#-> Plot_1
+#-> IdVg_n596_des
+create_curve -plot Plot_1 -dataset IdVg_n596_des -axisX {gate OuterVoltage} -axisY {drain TotalCurrent}
+#-> Curve_1
+set_axis_prop -plot Plot_1 -axis y -type log
+#-> 0
+zoom_plot -plot Plot_1 -factor 0.9
+calculate -plot Plot_1 Curve_1 -op ioff
+# ioff: 2.47909192004e-10
+#-> 2.47909192004e-10

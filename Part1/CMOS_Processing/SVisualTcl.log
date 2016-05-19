@@ -1,0 +1,49 @@
+###########################################
+# Sentaurus Visual K-2015.06-SP1.
+# Tcl log file.
+#------------------------------------------
+# Date: May 18, 2016. 21:18:15.
+# Version: 24.0.10 (1.10)
+# Mode: Interactive (GUI).
+# Hostname: sanquentin.banatao.berkeley.edu.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 2.6.32-504.8.1.el6.x86_64.
+###########################################
+
+load_file /home/spatel/swb_project/Part1/CMOS_Processing/n107_fps.tdr
+create_plot -dataset n107_fps
+select_plots Plot_n107_fps
+#-> Plot_n107_fps
+#-> Plot_n107_fps
+#-> n107_fps
+load_file /home/spatel/swb_project/Part1/CMOS_Processing/n279_fps.tdr
+create_plot -dataset n279_fps
+select_plots Plot_n279_fps
+#-> Plot_n279_fps
+#-> Plot_n279_fps
+#-> n279_fps
+load_file /home/spatel/swb_project/Part1/CMOS_Processing/n443_fps.tdr
+create_plot -dataset n443_fps
+select_plots Plot_n443_fps
+#-> Plot_n443_fps
+#-> Plot_n443_fps
+#-> n443_fps
+load_file /home/spatel/swb_project/Part1/CMOS_Processing/n607_fps.tdr
+create_plot -dataset n607_fps
+select_plots Plot_n607_fps
+#-> Plot_n607_fps
+#-> Plot_n607_fps
+#-> n607_fps
+select_plots Plot_n279_fps
+#-> Plot_n279_fps
+zoom_plot -plot Plot_n279_fps -window {0.0571709 -0.0472498 -0.0296495 0.165667}
+select_plots Plot_n107_fps
+#-> Plot_n107_fps
+zoom_plot -plot Plot_n107_fps -window {0.0571709 -0.036914 -0.0337838 0.142928}
+select_plots Plot_n443_fps
+#-> Plot_n443_fps
+zoom_plot -plot Plot_n443_fps -window {0.0509694 -0.0389812 -0.0379181 0.13466}
+select_plots Plot_n607_fps
+#-> Plot_n607_fps
+zoom_plot -plot Plot_n607_fps -window {0.0427008 -0.0265783 -0.0399853 0.138794}
+exit 0

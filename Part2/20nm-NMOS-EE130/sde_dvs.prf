@@ -1,0 +1,3 @@
+set WB_tool(sde,exec_mode) batch
+set WB_tool(sde,input,grid,user) 
+set WB_tool(sde,input,boundary,user) 

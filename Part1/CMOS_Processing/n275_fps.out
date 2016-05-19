@@ -1,0 +1,774 @@
+****************************************************************************
+***                          Sentaurus Process                           ***
+***                        Version K-2015.06-SP1                         ***
+***                            (1.13, RHEL64)                            ***
+***                                                                      ***
+***                       Copyright (C) 1993-2002                        ***
+***          The board of regents of the University of Florida           ***
+***                       Copyright (C) 1994-2015                        ***
+***                            Synopsys, Inc.                            ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Fri Jul 17 23:08:37 PDT 2015 on tcadbld1
+
+      Started at: Wed May 18 19:53:10 2016 (PDT)
+       User name: spatel
+       Host name: n0019.banatao.berkeley.edu
+             PID: 8856
+    Architecture: x86_64
+Operating system: Linux rel. 2.6.32-358.el6.x86_64 ver. #1 SMP Fri Feb 22 20:37:17 CST 2013
+
+------------------------------------------------------------------------------
+Checking syntax of n275_fps.cmd:
+
+Syntax check complete.
+------------------------------------------------------------------------------
+
+Starting Tcl interpreter with inputfile: n275_fps.cmd
+            sprocess: Checked Out
+
+Loading models file: /opt/synopsys/K_2015.06-SP1/bin/../tcad/current/lib/sprocess-24.0.13/TclLib/SPROCESS.models... done.
+------------------------------------------------------------------- icwb -----
+icwb filename= "SRAM_lyt.mac" scale= 0.00100
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb domains list
+------------------------------------------------------------------------------
+icwb: LDomains -> SIM2N SIM2P TRENCH2D SRAM6T NMOS3D PMOS3D 
+------------------------------------------------------------------- icwb -----
+icwb layerNames list
+------------------------------------------------------------------------------
+icwb: LNames -> Active pWELL POLY Gate_ACC1 Drain_ACC1 Drain_N1 Source_N1 Drain_P1 Source_P1 Gate_ACC2 Drain_ACC2 Drain_N2 Source_N2 Drain_P2 Source_P2 Gate_N1 Gate_N2 Gate_P2 Gate_P1 Mesh_EXT 
+------------------------------------------------------------------- icwb -----
+icwb layerIDs list
+------------------------------------------------------------------------------
+icwb: LIDs -> 1:0 2:0 3:0 30:1 31:0 32:0 33:0 34:0 35:0 36:1 37:1 38:1 39:1 40:1 41:1 51:0 52:0 53:0 54:0 60:1 
+------------------------------------------------------------------- icwb -----
+icwb domain= {SIM2N}
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb stretch name= "SIM2N_L" value= -0.0100
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb dimension
+------------------------------------------------------------------------------
+icwb: dimension -> 2 
+------------------------------------------------------------------- icwb -----
+icwb bbox left
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb bbox right
+------------------------------------------------------------------------------
+icwb: Domain boundaries -> 0  0.1025 
+------------------------------------------------------------------- init -----
+init tdr= "n273"
+------------------------------------------------------------------------------
+          sprocess2d: Checked Out
+
+Recreating refinements to take into account updated simulation dimension.
+Done recreating refinements.
+
+
+Points: 151
+Nodes: 161
+Edges: 382
+Faces: 224
+Volumes: 0
+
+Deposit type not specified, using isotropic
+---------------------------------------------------------------- deposit -----
+deposit HfO2 thickness= 0.00256<um>
+------------------------------------------------------------------------------
+Temperature gap is ignored when StressHistory is not set. 
+Attempting direct shape generation.
+Successful direct shape generation.
+MGoals time: 0.014339
+
+Updating sprocess mesh before Etch/Depo relax.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  151 (tree) + 84 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 90  [near (0 0.05125)] at region=HfO2_1
+nVerts = 84  nTris = 86  nRegs = 4
+bmin: 10 0
+bmax: -0.105 0.05125
+min area: 0.000610352  max area: 2.5  total area  : 20.415 interface area: 0.1025
+total volume: 0.517881
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (160 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+     156 points.
+     232 elements.
+       3 regions.
+Max. connectivity = 7 located at (0.546875;0.025625)
+
+SnMesh time: 0.015998
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    7   3  15   1   1   1   1  15   4  35                                
+---------------------------------------------------------------------------------
+minAngle: 1.1744  maxAngle: 90
+nVerts = 156  nTris = 232  nMats = 3
+max connectivity (tris per node): 7
+bmin: 10 0
+bmax: -0.105 0.05125
+min edgeLength: 0.000610352  [near (0.000915527 0.05125)]
+min volume: 3.91006e-06  max volume: 0.0640625  Total volume: 0.512631
+bbox  volume: 0.517881
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.090986
+Interpolating...elapsed time: 0.01
+sprocess ILS thread count = 1
+  lin norm 3.2967e-12  vel err 0.0000e+00
+sprocess parallel assembly thread count = 1
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to         1s   step    :         1s   temp: 26.9C->26.9C
+------------------------------------------------------------------ mater -----
+mater add name= "TiN" new.like= "Nitride"
+------------------------------------------------------------------------------
+Deposit type not specified, using isotropic
+---------------------------------------------------------------- deposit -----
+deposit TiNitride thickness= 0.00500<um>
+------------------------------------------------------------------------------
+Attempting direct shape generation.
+Successful direct shape generation.
+MGoals time: 9.6869e-03
+
+Updating sprocess mesh before Etch/Depo relax.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  151 (tree) + 89 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 90  [near (0 0.05125)] at region=HfO2_1
+nVerts = 89  nTris = 92  nRegs = 6
+bmin: 10 0
+bmax: -0.107561 0.05125
+min area: 0.000610352  max area: 2.5  total area  : 20.4714 interface area: 0.15375
+total volume: 0.518012
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (165 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+     161 points.
+     240 elements.
+       4 regions.
+Max. connectivity = 7 located at (0.546875;0.025625)
+
+SnMesh time: 0.014998
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    9   4  15   1   1   1   1  14   5  40                                
+---------------------------------------------------------------------------------
+minAngle: 1.1744  maxAngle: 90
+nVerts = 161  nTris = 240  nMats = 4
+max connectivity (tris per node): 7
+bmin: 10 0
+bmax: -0.107561 0.05125
+min edgeLength: 0.000610352  [near (0.000915527 0.05125)]
+min volume: 3.91006e-06  max volume: 0.0640625  Total volume: 0.512887
+bbox  volume: 0.518012
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.136979
+Interpolating...elapsed time: 0.02
+  lin norm 3.8954e-11  vel err 0.0000e+00
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to         1s   step    :         1s   temp: 26.9C->26.9C
+icwb.create.mask layer.name= POLY name= POLY info= 1 polarity= negative
+icwb.create.mask name= POLY layer.name= POLY  polarity= negative shift= default stretchypos= default stretchyneg= default stretchzpos= default stretchzneg= default reflecty= default reflectz= default save.to.tdr= default info= 1 help= 0 
+------------------------------------------------------------------- icwb -----
+icwb dimension
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb layer.name= "POLY" list.segments
+------------------------------------------------------------------------------
+------------------------------------------------------------------- mask -----
+mask name= "POLY" negative segments= {0.0413<um> 0.0612<um>}
+------------------------------------------------------------------------------
+---------------------------------------------------------------- deposit -----
+deposit type= "anisotropic" thickness= 0.0406<um> material= {Poly} mask= "POLY"
+------------------------------------------------------------------------------
+
+Front move mechanism: 2D Fastmarch.
+MGoals time: 8.4379e-03
+
+Updating sprocess mesh before Etch/Depo relax.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  392 (tree) + 151 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 90  [near (0 0.05125)] at region=HfO2_1
+nVerts = 151  nTris = 155  nRegs = 8
+bmin: 10 0
+bmax: -0.148165 0.05125
+min area: 3.68599e-05  max area: 2.5  total area  : 20.6032 interface area: 0.20435
+total volume: 0.520093
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (462 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+     458 points.
+     800 elements.
+       5 regions.
+Max. connectivity = 8 located at (-0.0486166;0.0400391)
+
+SnMesh time: 0.039993
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    5   6   8   2   3   2   2   8   6  27  .   .   .                     
+---------------------------------------------------------------------------------
+minAngle: 0.293638  maxAngle: 122.396
+nVerts = 458  nTris = 800  nMats = 5
+max connectivity (tris per node): 8
+bmin: 10 0
+bmax: -0.148165 0.05125
+min edgeLength: 3.68599e-05  [near (-0.00754243 0.0416406)]
+min volume: 7.1992e-09  max volume: 0.0320313  Total volume: 0.513293
+bbox  volume: 0.520093
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.205968
+Interpolating...elapsed time: 0.05
+  lin norm 6.4062e-12  vel err 0.0000e+00
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to         1s   step    :         1s   temp: 26.9C->26.9C
+
+------------------------------------------------------------------- etch -----
+etch type= "cmp" coord= -0.0356<um> material= {Poly}
+------------------------------------------------------------------------------
+MGoals time: 0.010762
+
+Updating sprocess mesh before Etch/Depo relax.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  379 (tree) + 148 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 90  [near (10 0.05125)] at region=Silicon_1
+nVerts = 148  nTris = 152  nRegs = 10
+bmin: 10 0
+bmax: -0.148165 0.05125
+min area: 3.68599e-05  max area: 2.5  total area  : 20.5906 interface area: 0.191789
+total volume: 0.520093
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (451 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+     447 points.
+     781 elements.
+       5 regions.
+Max. connectivity = 8 located at (-0.0358837;0.0408398)
+
+SnMesh time: 0.034994
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    4   6   8   3   3   2   2   8   6  27  .   .   .                     
+---------------------------------------------------------------------------------
+minAngle: 0.293638  maxAngle: 122.396
+nVerts = 447  nTris = 781  nMats = 5
+max connectivity (tris per node): 8
+bmin: 10 0
+bmax: -0.148165 0.05125
+min edgeLength: 3.68599e-05  [near (-0.00754243 0.0416406)]
+min volume: 7.1992e-09  max volume: 0.0320313  Total volume: 0.513168
+bbox  volume: 0.520093
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.206968
+Interpolating...elapsed time: 0.05
+  lin norm 4.6668e-12  vel err 0.0000e+00
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to         1s   step    :         1s   temp: 26.9C->26.9C
+
+------------------------------------------------------------------- etch -----
+etch TiNitride type= "anisotropic" thickness= 0.0500<um>
+------------------------------------------------------------------------------
+Front move mechanism: 2D Fastmarch.
+MGoals time: 0.0316582
+
+Updating sprocess mesh before Etch/Depo relax.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  379 (tree) + 145 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 90  [near (0 0)] at region=Silicon_1
+nVerts = 145  nTris = 149  nRegs = 10
+bmin: 10 0
+bmax: -0.148165 0.05125
+min area: 3.68599e-05  max area: 2.5  total area  : 20.5544 interface area: 0.15554
+total volume: 0.520093
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (446 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+     442 points.
+     772 elements.
+       5 regions.
+Max. connectivity = 8 located at (-0.0358837;0.0408398)
+
+SnMesh time: 0.035995
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    4   5   8   2   3   2   2   8   6  27  .   .                         
+---------------------------------------------------------------------------------
+minAngle: 0.293638  maxAngle: 108.285
+nVerts = 442  nTris = 772  nMats = 5
+max connectivity (tris per node): 8
+bmin: 10 0
+bmax: -0.148165 0.05125
+min edgeLength: 3.68599e-05  [near (-0.00754243 0.05125)]
+min volume: 7.1992e-09  max volume: 0.0320313  Total volume: 0.512962
+bbox  volume: 0.520093
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.242963
+Interpolating...elapsed time: 0.06
+  lin norm 1.2268e-11  vel err 0.0000e+00
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to         1s   step    :         1s   temp: 26.9C->26.9C
+
+------------------------------------------------------------------- etch -----
+etch HfO2 type= "anisotropic" thickness= 0.0200<um>
+------------------------------------------------------------------------------
+Front move mechanism: 2D Fastmarch.
+MGoals time: 0.0315101
+
+Updating sprocess mesh before Etch/Depo relax.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  379 (tree) + 144 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 90  [near (-0 0.04125)] at region=Gas_1
+nVerts = 144  nTris = 148  nRegs = 11
+bmin: 10 0
+bmax: -0.148165 0.05125
+min area: 3.68599e-05  max area: 2.5  total area  : 20.5157 interface area: 0.11685
+total volume: 0.520093
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (440 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+     436 points.
+     761 elements.
+       5 regions.
+Max. connectivity = 8 located at (-0.0358837;0.0408398)
+
+SnMesh time: 0.035995
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    4   5   8   2   3   2   2   8   5  24  .   .                         
+---------------------------------------------------------------------------------
+minAngle: 0.293638  maxAngle: 108.285
+nVerts = 436  nTris = 761  nMats = 5
+max connectivity (tris per node): 8
+bmin: 10 0
+bmax: -0.148165 0.05125
+min edgeLength: 3.68599e-05  [near (-0.00754243 0.0480469)]
+min volume: 7.1992e-09  max volume: 0.0320313  Total volume: 0.512856
+bbox  volume: 0.520093
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.274958
+Interpolating...elapsed time: 0.08
+  lin norm 5.3401e-12  vel err 6.1403e-18
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to         1s   step    :         1s   temp: 26.9C->26.9C
+
+------------------------------------------------------------------- etch -----
+etch time= 2.00<min> rate= {6.00e-04<um/min>} type= "anisotropic" material= {Oxide}
+------------------------------------------------------------------------------
+No exposed material to etch, skipping etch
+------------------------------------------------------------------ strip -----
+strip Photoresist
+------------------------------------------------------------------------------
+MGoals time: 2.2922e-03
+
+Remeshing to match geometry after strip command ...
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  379 (tree) + 144 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 90  [near (0 0)] at region=Silicon_1
+nVerts = 144  nTris = 148  nRegs = 12
+bmin: 10 0
+bmax: -0.148165 0.05125
+min area: 3.68599e-05  max area: 2.5  total area  : 20.5157 interface area: 0.11685
+total volume: 0.520093
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (440 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+     436 points.
+     761 elements.
+       5 regions.
+Max. connectivity = 8 located at (-0.0358837;0.0408398)
+
+SnMesh time: 0.036995
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    4   5   8   2   3   2   2   8   5  24  .   .                         
+---------------------------------------------------------------------------------
+minAngle: 0.293638  maxAngle: 108.285
+nVerts = 436  nTris = 761  nMats = 5
+max connectivity (tris per node): 8
+bmin: 10 0
+bmax: -0.148165 0.05125
+min edgeLength: 3.68599e-05  [near (-0.00754243 0.0480469)]
+min volume: 7.1992e-09  max volume: 0.0320313  Total volume: 0.512856
+bbox  volume: 0.520093
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.274959
+Interpolating...elapsed time: 0.08
+---------------------------------------------------------------- deposit -----
+deposit time= 0.00250<min> type= "isotropic" rate= {1.00<um/min>} material= {Oxide}
+------------------------------------------------------------------------------
+Attempting direct shape generation.
+Successful direct shape generation.
+MGoals time: 0.0369151
+
+Updating sprocess mesh before Etch/Depo relax.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  562 (tree) + 211 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 89.9996  [near (-0.0356 0.0412498)] at region=PolySilicon_1
+nVerts = 211  nTris = 216  nRegs = 13
+bmin: 10 0
+bmax: -0.148165 0.05125
+min area: 3.68599e-05  max area: 2.5  total area  : 20.6015 interface area: 0.202626
+total volume: 0.520093
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (681 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+     677 points.
+    1228 elements.
+       6 regions.
+Max. connectivity = 11 located at (-0.0370412;0.0384375)
+
+SnMesh time: 0.058991
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    3   6   8   4   3   3   4   8   6  25  .   .   .   .   .   .         
+---------------------------------------------------------------------------------
+minAngle: 0.14682  maxAngle: 154.422
+nVerts = 677  nTris = 1228  nMats = 6
+max connectivity (tris per node): 11
+bmin: 10 0
+bmax: -0.148165 0.05125
+min edgeLength: 1.60724e-05  [near (-0.0370479 0.0392144)]
+min volume: 1.88563e-10  max volume: 0.0320313  Total volume: 0.513072
+bbox  volume: 0.520093
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.310952
+Interpolating...elapsed time: 0.25
+  lin norm 1.3335e-13  vel err 0.0000e+00
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to         1s   step    :         1s   temp: 26.9C->26.9C
+------------------------------------------------------------------- etch -----
+etch time= 1.00<min> rate= {0.00375<um/min>} type= "anisotropic" material= {Oxide}
+------------------------------------------------------------------------------
+Front move mechanism: 2D Fastmarch.
+MGoals time: 0.0611351
+
+Updating sprocess mesh before Etch/Depo relax.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  494 (tree) + 185 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 87.3512  [near (-0.0343503 0.0412498)] at region=Oxide_1
+nVerts = 185  nTris = 190  nRegs = 14
+bmin: 10 0
+bmax: -0.148165 0.05125
+min area: 3.68599e-05  max area: 2.5  total area  : 20.5515 interface area: 0.152626
+total volume: 0.520093
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (587 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+     583 points.
+    1054 elements.
+       6 regions.
+Max. connectivity = 10 located at (-0.0335686;0.0400391)
+
+SnMesh time: 0.049993
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    3   6   7   4   3   3   4   7   6  25  .   .   .   .                 
+---------------------------------------------------------------------------------
+minAngle: 0.14682  maxAngle: 132.769
+nVerts = 583  nTris = 1054  nMats = 6
+max connectivity (tris per node): 10
+bmin: 10 0
+bmax: -0.148165 0.05125
+min edgeLength: 3.68599e-05  [near (-0.00754243 0.0432422)]
+min volume: 7.2027e-09  max volume: 0.0320313  Total volume: 0.51294
+bbox  volume: 0.520093
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.377943
+Interpolating...elapsed time: 0.18
+  lin norm 2.8837e-12  vel err 0.0000e+00
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to         1s   step    :         1s   temp: 26.9C->26.9C
+
+------------------------------------------------------------- SetPlxList -----
+SetPlxList { Boron_Implant Arsenic_Implant }
+------------------------------------------------------------------------------
+--------------------------------------------------------------- WritePlx -----
+WritePlx n275_haloimp.plx y= 0.05125
+------------------------------------------------------------------------------
+----------------------------------------------------------------- struct -----
+struct tdr= "n275"
+------------------------------------------------------------------------------
+Points: 583
+Nodes: 776
+Edges: 1814
+Faces: 1054
+Volumes: 0
+
+Writing file n275_fps.tdr...done
+
+------------------------------------------------------------------------------
+Summary:
+Edge/Face swapping:
+ calls=3 flips=0
+------------------------------------------------------------------------------
+
+Elapsed Time:	00:00:26
+User Time:	00:00:24
+CPU Time:	00:00:23
+
+Detailed CPU time report:
+
+3.30 sec (23.9%) mater command (95 calls).
+2.28 sec (16.5%) reaction command (57 calls).
+2.07 sec (15.0%) MakeInterfaces (19 calls).
+1.72 sec (12.5%) Other Program Parts (1 calls).
+0.82 sec (5.9%) implant command (230 calls).
+0.67 sec (4.9%) Interface interpolation (10 calls).
+0.66 sec (4.8%) struct command (1 calls).
+0.37 sec (2.7%) etch command (5 calls).
+0.36 sec (2.6%) deposit command (4 calls).
+0.33 sec (2.4%) init command (1 calls).
+0.30 sec (2.2%) SnMesh meshing (9 calls).
+0.21 sec (1.5%) mgoals (9 calls).
+0.13 sec (1.0%) Mechanics preassembly (8 calls).
+0.12 sec (0.9%) Bulk Interpolation (9 calls).
+
+
+Detailed elapsed time report:
+
+3.36 sec (22.5%) mater command (95 calls).
+2.29 sec (15.3%) reaction command (57 calls).
+2.14 sec (14.3%) Other Program Parts (1 calls).
+2.07 sec (13.9%) MakeInterfaces (19 calls).
+1.14 sec (7.6%) struct command (1 calls).
+0.94 sec (6.3%) implant command (230 calls).
+0.68 sec (4.5%) Interface interpolation (10 calls).
+0.39 sec (2.6%) deposit command (4 calls).
+0.37 sec (2.5%) etch command (5 calls).
+0.36 sec (2.4%) init command (1 calls).
+0.30 sec (2.0%) SnMesh meshing (9 calls).
+0.21 sec (1.4%) mgoals (9 calls).
+0.13 sec (0.9%) Mechanics preassembly (8 calls).
+0.12 sec (0.8%) Bulk Interpolation (9 calls).
+

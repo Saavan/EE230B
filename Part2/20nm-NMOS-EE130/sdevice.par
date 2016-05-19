@@ -1,0 +1,19 @@
+Material = "Silicon" {
+#include "Si.par"
+}
+
+Material = "PolySi" {
+#include "Po.par"
+}
+
+Material = "NickelSilicide"
+	{
+
+	Insert = "NiSiModel.par"
+
+	}
+Material = "HfO2"{
+
+	Insert = "HfO2.par"
+
+	}

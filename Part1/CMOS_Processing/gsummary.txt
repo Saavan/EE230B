@@ -1,0 +1,87 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Project Summary for /home/spatel/swb_project/Part1/CMOS_Processing
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Project Details :
+		current status		: running
+		was last modified	: 05/18/2016 20:47:50
+		was modified by		: spatel
+		was run on host		: sanquentin
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Total Number of Nodes			: 678
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+ 
+		Active Nodes		: 288
+		Virtual Nodes		: 390
+ 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+Nodes by status				: 
+		none			: 240
+		done			: 48
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Hosts and Execution Information 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+ 
+Host "n0014.banatao.berkeley.edu" 
+		Number of nodes		: 2
+		Host Time		: 142 sec
+Host "n0015.banatao.berkeley.edu" 
+		Number of nodes		: 2
+		Host Time		: 146 sec
+Host "n0016.banatao.berkeley.edu" 
+		Number of nodes		: 2
+		Host Time		: 318 sec
+Host "n0017.banatao.berkeley.edu" 
+		Number of nodes		: 2
+		Host Time		: 146 sec
+Host "n0018.banatao.berkeley.edu" 
+		Number of nodes		: 2
+		Host Time		: 144 sec
+Host "n0020.banatao.berkeley.edu" 
+		Number of nodes		: 2
+		Host Time		: 392 sec
+Host "n0019.banatao.berkeley.edu" 
+		Number of nodes		: 2
+		Host Time		: 403 sec
+Host "n0021.banatao.berkeley.edu" 
+		Number of nodes		: 4
+		Host Time		: 508 sec
+Host "n0022.banatao.berkeley.edu" 
+		Number of nodes		: 4
+		Host Time		: 476 sec
+Host "n0023.banatao.berkeley.edu" 
+		Number of nodes		: 2
+		Host Time		: 425 sec
+Host "n0024.banatao.berkeley.edu" 
+		Number of nodes		: 2
+		Host Time		: 411 sec
+Host "n0025.banatao.berkeley.edu" 
+		Number of nodes		: 8
+		Host Time		: 684 sec
+Host "n0026.banatao.berkeley.edu" 
+		Number of nodes		: 8
+		Host Time		: 634 sec
+Host "n0011.banatao.berkeley.edu" 
+		Number of nodes		: 2
+		Host Time		: 145 sec
+Host "n0012.banatao.berkeley.edu" 
+		Number of nodes		: 2
+		Host Time		: 220 sec
+Host "n0013.banatao.berkeley.edu" 
+		Number of nodes		: 2
+		Host Time		: 147 sec
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		Total RunTime		: 5341 sec
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Project Summary generated on		: 05/18/2016 20:53:44
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1,0 +1,1701 @@
+
+****************************************************************************
+***                       Sentaurus Workbench gsub                       ***
+***                        Version K-2015.06-SP1                         ***
+***                        (1.16, x86_64, Linux)                         ***
+***                                                                      ***
+***                Copyright (c) 1994-2015 Synopsys, Inc.                ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+gsub is running on host 'sanquentin' by user 'spatel'
+Binary 'gsub'
+Command line options '-verbose -swb_pid 27372 -q tm:sentaurus_4_core_per_task -e {684 + 685 + 686 + 687 + 688 + 689 + 690 + 718 + 719 + 720 + 721 + 722 + 723 + 724 + 759 + 760 + 761 + 762 + 763 + 764 + 765 + 800 + 801 + 802 + 803 + 804 + 805 + 806 + 842 + 843 + 844 + 845 + 846 + 847 + 848 + 876 + 877 + 878 + 879 + 880 + 881 + 882 + 917 + 918 + 919 + 920 + 921 + 922 + 923 + 958 + 959 + 960 + 961 + 962 + 963 + 964 + 1000 + 1001 + 1002 + 1003 + 1004 + 1005 + 1006 + 1034 + 1035 + 1036 + 1037 + 1038 + 1039 + 1040 + 1075 + 1076 + 1077 + 1078 + 1079 + 1080 + 1081 + 1116 + 1117 + 1118 + 1119 + 1120 + 1121 + 1122 + 1158 + 1159 + 1160 + 1161 + 1162 + 1163 + 1164 + 1192 + 1193 + 1194 + 1195 + 1196 + 1197 + 1198 + 1233 + 1234 + 1235 + 1236 + 1237 + 1238 + 1239 + 1274 + 1275 + 1276 + 1277 + 1278 + 1279 + 1280 + 1316 + 1317 + 1318 + 1319 + 1320 + 1321 + 1322 + 1350 + 1351 + 1352 + 1353 + 1354 + 1355 + 1356 + 1391 + 1392 + 1393 + 1394 + 1395 + 1396 + 1397 + 1432 + 1433 + 1434 + 1435 + 1436 + 1437 + 1438 + 1474 + 1475 + 1476 + 1477 + 1478 + 1479 + 1480 + 1508 + 1509 + 1510 + 1511 + 1512 + 1513 + 1514 + 1549 + 1550 + 1551 + 1552 + 1553 + 1554 + 1555 + 1590 + 1591 + 1592 + 1593 + 1594 + 1595 + 1596 + 1632 + 1633 + 1634 + 1635 + 1636 + 1637 + 1638 + 1666 + 1667 + 1668 + 1669 + 1670 + 1671 + 1672 + 1707 + 1708 + 1709 + 1710 + 1711 + 1712 + 1713 + 1748 + 1749 + 1750 + 1751 + 1752 + 1753 + 1754} /home/spatel/swb_project/Part1/CMOS_Processing'
+Current directory '/home/spatel'
+Some relevant environment variables:
+	STROOT=/opt/synopsys/K_2015.06-SP1/bin/..
+	STRELEASE=current
+	STROOT_LIB=/opt/synopsys/K_2015.06-SP1/bin/../tcad/current/lib
+	STDB=/home/spatel
+	DATEX=/opt/synopsys/K_2015.06-SP1/bin/../tcad/current/lib/datexcodes.txt
+	DISPLAY=localhost:11.0
+
+Starting swblm daemon...OK
+Project '/home/spatel/swb_project/Part1/CMOS_Processing'
+Loading global tool database '/opt/synopsys/K_2015.06-SP1/bin/../tcad/current/lib/glib2/tooldb.tcl'
+Loading project tool database '/home/spatel/swb_project/Part1/CMOS_Processing/gtooldb.tcl'
+21:40:21 May 18 2016 <CMOS_Processing> submitted to the batch system
+Loading global queue configuration file '/opt/synopsys/K_2015.06-SP1/bin/../queues/gqueues.dat'...ok
+Loading project tree '/home/spatel/swb_project/Part1/CMOS_Processing/gtree.dat'
+>>>>> Preprocessing the project to run in normal mode
+Loading jobs and dependence graph '"/home/spatel/swb_project/Part1/CMOS_Processing/gexec.cmd"'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/spatel/swb_project/Part1/CMOS_Processing/gtree.dat'
+Loading project variables '/home/spatel/swb_project/Part1/CMOS_Processing/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/PlotIdVg_lin_vis.tcl
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/PlotIdVg_sat_vis.tcl
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/IdVd_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/PlotIdVd_vis.tcl
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/CV_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/PlotCV_vis.tcl
+PREPROCESSING STEP 2:
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 684
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 686
+'@previous@' creates dependences with the node(s) '684'
++++Node successfully preprocessed+++
+The node '686' has dependencies to the node(s) '684'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 687
+'@previous@' creates dependences with the node(s) '686'
++++Node successfully preprocessed+++
+The node '687' has dependencies to the node(s) '686'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 688
+'@previous@' creates dependences with the node(s) '687'
++++Node successfully preprocessed+++
+The node '688' has dependencies to the node(s) '687'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 689
+'@previous@' creates dependences with the node(s) '688'
++++Node successfully preprocessed+++
+The node '689' has dependencies to the node(s) '688'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 690
+'@previous@' creates dependences with the node(s) '689'
++++Node successfully preprocessed+++
+The node '690' has dependencies to the node(s) '689'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 718
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 720
+'@previous@' creates dependences with the node(s) '718'
++++Node successfully preprocessed+++
+The node '720' has dependencies to the node(s) '718'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 721
+'@previous@' creates dependences with the node(s) '720'
++++Node successfully preprocessed+++
+The node '721' has dependencies to the node(s) '720'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 722
+'@previous@' creates dependences with the node(s) '721'
++++Node successfully preprocessed+++
+The node '722' has dependencies to the node(s) '721'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 723
+'@previous@' creates dependences with the node(s) '722'
++++Node successfully preprocessed+++
+The node '723' has dependencies to the node(s) '722'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 724
+'@previous@' creates dependences with the node(s) '723'
++++Node successfully preprocessed+++
+The node '724' has dependencies to the node(s) '723'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 759
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 761
+'@previous@' creates dependences with the node(s) '759'
++++Node successfully preprocessed+++
+The node '761' has dependencies to the node(s) '759'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 762
+'@previous@' creates dependences with the node(s) '761'
++++Node successfully preprocessed+++
+The node '762' has dependencies to the node(s) '761'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 763
+'@previous@' creates dependences with the node(s) '762'
++++Node successfully preprocessed+++
+The node '763' has dependencies to the node(s) '762'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 764
+'@previous@' creates dependences with the node(s) '763'
++++Node successfully preprocessed+++
+The node '764' has dependencies to the node(s) '763'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 765
+'@previous@' creates dependences with the node(s) '764'
++++Node successfully preprocessed+++
+The node '765' has dependencies to the node(s) '764'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 800
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 802
+'@previous@' creates dependences with the node(s) '800'
++++Node successfully preprocessed+++
+The node '802' has dependencies to the node(s) '800'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 803
+'@previous@' creates dependences with the node(s) '802'
++++Node successfully preprocessed+++
+The node '803' has dependencies to the node(s) '802'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 804
+'@previous@' creates dependences with the node(s) '803'
++++Node successfully preprocessed+++
+The node '804' has dependencies to the node(s) '803'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 805
+'@previous@' creates dependences with the node(s) '804'
++++Node successfully preprocessed+++
+The node '805' has dependencies to the node(s) '804'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 806
+'@previous@' creates dependences with the node(s) '805'
++++Node successfully preprocessed+++
+The node '806' has dependencies to the node(s) '805'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 842
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 844
+'@previous@' creates dependences with the node(s) '842'
++++Node successfully preprocessed+++
+The node '844' has dependencies to the node(s) '842'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 845
+'@previous@' creates dependences with the node(s) '844'
++++Node successfully preprocessed+++
+The node '845' has dependencies to the node(s) '844'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 846
+'@previous@' creates dependences with the node(s) '845'
++++Node successfully preprocessed+++
+The node '846' has dependencies to the node(s) '845'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 847
+'@previous@' creates dependences with the node(s) '846'
++++Node successfully preprocessed+++
+The node '847' has dependencies to the node(s) '846'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 848
+'@previous@' creates dependences with the node(s) '847'
++++Node successfully preprocessed+++
+The node '848' has dependencies to the node(s) '847'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 876
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 878
+'@previous@' creates dependences with the node(s) '876'
++++Node successfully preprocessed+++
+The node '878' has dependencies to the node(s) '876'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 879
+'@previous@' creates dependences with the node(s) '878'
++++Node successfully preprocessed+++
+The node '879' has dependencies to the node(s) '878'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 880
+'@previous@' creates dependences with the node(s) '879'
++++Node successfully preprocessed+++
+The node '880' has dependencies to the node(s) '879'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 881
+'@previous@' creates dependences with the node(s) '880'
++++Node successfully preprocessed+++
+The node '881' has dependencies to the node(s) '880'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 882
+'@previous@' creates dependences with the node(s) '881'
++++Node successfully preprocessed+++
+The node '882' has dependencies to the node(s) '881'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 917
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 919
+'@previous@' creates dependences with the node(s) '917'
++++Node successfully preprocessed+++
+The node '919' has dependencies to the node(s) '917'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 920
+'@previous@' creates dependences with the node(s) '919'
++++Node successfully preprocessed+++
+The node '920' has dependencies to the node(s) '919'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 921
+'@previous@' creates dependences with the node(s) '920'
++++Node successfully preprocessed+++
+The node '921' has dependencies to the node(s) '920'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 922
+'@previous@' creates dependences with the node(s) '921'
++++Node successfully preprocessed+++
+The node '922' has dependencies to the node(s) '921'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 923
+'@previous@' creates dependences with the node(s) '922'
++++Node successfully preprocessed+++
+The node '923' has dependencies to the node(s) '922'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 958
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 960
+'@previous@' creates dependences with the node(s) '958'
++++Node successfully preprocessed+++
+The node '960' has dependencies to the node(s) '958'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 961
+'@previous@' creates dependences with the node(s) '960'
++++Node successfully preprocessed+++
+The node '961' has dependencies to the node(s) '960'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 962
+'@previous@' creates dependences with the node(s) '961'
++++Node successfully preprocessed+++
+The node '962' has dependencies to the node(s) '961'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 963
+'@previous@' creates dependences with the node(s) '962'
++++Node successfully preprocessed+++
+The node '963' has dependencies to the node(s) '962'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 964
+'@previous@' creates dependences with the node(s) '963'
++++Node successfully preprocessed+++
+The node '964' has dependencies to the node(s) '963'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1000
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1002
+'@previous@' creates dependences with the node(s) '1000'
++++Node successfully preprocessed+++
+The node '1002' has dependencies to the node(s) '1000'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1003
+'@previous@' creates dependences with the node(s) '1002'
++++Node successfully preprocessed+++
+The node '1003' has dependencies to the node(s) '1002'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1004
+'@previous@' creates dependences with the node(s) '1003'
++++Node successfully preprocessed+++
+The node '1004' has dependencies to the node(s) '1003'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1005
+'@previous@' creates dependences with the node(s) '1004'
++++Node successfully preprocessed+++
+The node '1005' has dependencies to the node(s) '1004'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1006
+'@previous@' creates dependences with the node(s) '1005'
++++Node successfully preprocessed+++
+The node '1006' has dependencies to the node(s) '1005'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1034
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1036
+'@previous@' creates dependences with the node(s) '1034'
++++Node successfully preprocessed+++
+The node '1036' has dependencies to the node(s) '1034'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1037
+'@previous@' creates dependences with the node(s) '1036'
++++Node successfully preprocessed+++
+The node '1037' has dependencies to the node(s) '1036'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1038
+'@previous@' creates dependences with the node(s) '1037'
++++Node successfully preprocessed+++
+The node '1038' has dependencies to the node(s) '1037'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1039
+'@previous@' creates dependences with the node(s) '1038'
++++Node successfully preprocessed+++
+The node '1039' has dependencies to the node(s) '1038'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1040
+'@previous@' creates dependences with the node(s) '1039'
++++Node successfully preprocessed+++
+The node '1040' has dependencies to the node(s) '1039'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1075
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1077
+'@previous@' creates dependences with the node(s) '1075'
++++Node successfully preprocessed+++
+The node '1077' has dependencies to the node(s) '1075'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1078
+'@previous@' creates dependences with the node(s) '1077'
++++Node successfully preprocessed+++
+The node '1078' has dependencies to the node(s) '1077'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1079
+'@previous@' creates dependences with the node(s) '1078'
++++Node successfully preprocessed+++
+The node '1079' has dependencies to the node(s) '1078'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1080
+'@previous@' creates dependences with the node(s) '1079'
++++Node successfully preprocessed+++
+The node '1080' has dependencies to the node(s) '1079'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1081
+'@previous@' creates dependences with the node(s) '1080'
++++Node successfully preprocessed+++
+The node '1081' has dependencies to the node(s) '1080'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1116
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1118
+'@previous@' creates dependences with the node(s) '1116'
++++Node successfully preprocessed+++
+The node '1118' has dependencies to the node(s) '1116'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1119
+'@previous@' creates dependences with the node(s) '1118'
++++Node successfully preprocessed+++
+The node '1119' has dependencies to the node(s) '1118'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1120
+'@previous@' creates dependences with the node(s) '1119'
++++Node successfully preprocessed+++
+The node '1120' has dependencies to the node(s) '1119'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1121
+'@previous@' creates dependences with the node(s) '1120'
++++Node successfully preprocessed+++
+The node '1121' has dependencies to the node(s) '1120'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1122
+'@previous@' creates dependences with the node(s) '1121'
++++Node successfully preprocessed+++
+The node '1122' has dependencies to the node(s) '1121'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1158
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1160
+'@previous@' creates dependences with the node(s) '1158'
++++Node successfully preprocessed+++
+The node '1160' has dependencies to the node(s) '1158'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1161
+'@previous@' creates dependences with the node(s) '1160'
++++Node successfully preprocessed+++
+The node '1161' has dependencies to the node(s) '1160'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1162
+'@previous@' creates dependences with the node(s) '1161'
++++Node successfully preprocessed+++
+The node '1162' has dependencies to the node(s) '1161'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1163
+'@previous@' creates dependences with the node(s) '1162'
++++Node successfully preprocessed+++
+The node '1163' has dependencies to the node(s) '1162'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1164
+'@previous@' creates dependences with the node(s) '1163'
++++Node successfully preprocessed+++
+The node '1164' has dependencies to the node(s) '1163'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1192
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1194
+'@previous@' creates dependences with the node(s) '1192'
++++Node successfully preprocessed+++
+The node '1194' has dependencies to the node(s) '1192'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1195
+'@previous@' creates dependences with the node(s) '1194'
++++Node successfully preprocessed+++
+The node '1195' has dependencies to the node(s) '1194'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1196
+'@previous@' creates dependences with the node(s) '1195'
++++Node successfully preprocessed+++
+The node '1196' has dependencies to the node(s) '1195'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1197
+'@previous@' creates dependences with the node(s) '1196'
++++Node successfully preprocessed+++
+The node '1197' has dependencies to the node(s) '1196'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1198
+'@previous@' creates dependences with the node(s) '1197'
++++Node successfully preprocessed+++
+The node '1198' has dependencies to the node(s) '1197'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1233
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1235
+'@previous@' creates dependences with the node(s) '1233'
++++Node successfully preprocessed+++
+The node '1235' has dependencies to the node(s) '1233'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1236
+'@previous@' creates dependences with the node(s) '1235'
++++Node successfully preprocessed+++
+The node '1236' has dependencies to the node(s) '1235'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1237
+'@previous@' creates dependences with the node(s) '1236'
++++Node successfully preprocessed+++
+The node '1237' has dependencies to the node(s) '1236'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1238
+'@previous@' creates dependences with the node(s) '1237'
++++Node successfully preprocessed+++
+The node '1238' has dependencies to the node(s) '1237'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1239
+'@previous@' creates dependences with the node(s) '1238'
++++Node successfully preprocessed+++
+The node '1239' has dependencies to the node(s) '1238'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1274
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1276
+'@previous@' creates dependences with the node(s) '1274'
++++Node successfully preprocessed+++
+The node '1276' has dependencies to the node(s) '1274'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1277
+'@previous@' creates dependences with the node(s) '1276'
++++Node successfully preprocessed+++
+The node '1277' has dependencies to the node(s) '1276'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1278
+'@previous@' creates dependences with the node(s) '1277'
++++Node successfully preprocessed+++
+The node '1278' has dependencies to the node(s) '1277'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1279
+'@previous@' creates dependences with the node(s) '1278'
++++Node successfully preprocessed+++
+The node '1279' has dependencies to the node(s) '1278'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1280
+'@previous@' creates dependences with the node(s) '1279'
++++Node successfully preprocessed+++
+The node '1280' has dependencies to the node(s) '1279'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1316
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1318
+'@previous@' creates dependences with the node(s) '1316'
++++Node successfully preprocessed+++
+The node '1318' has dependencies to the node(s) '1316'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1319
+'@previous@' creates dependences with the node(s) '1318'
++++Node successfully preprocessed+++
+The node '1319' has dependencies to the node(s) '1318'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1320
+'@previous@' creates dependences with the node(s) '1319'
++++Node successfully preprocessed+++
+The node '1320' has dependencies to the node(s) '1319'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1321
+'@previous@' creates dependences with the node(s) '1320'
++++Node successfully preprocessed+++
+The node '1321' has dependencies to the node(s) '1320'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1322
+'@previous@' creates dependences with the node(s) '1321'
++++Node successfully preprocessed+++
+The node '1322' has dependencies to the node(s) '1321'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1350
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1352
+'@previous@' creates dependences with the node(s) '1350'
++++Node successfully preprocessed+++
+The node '1352' has dependencies to the node(s) '1350'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1353
+'@previous@' creates dependences with the node(s) '1352'
++++Node successfully preprocessed+++
+The node '1353' has dependencies to the node(s) '1352'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1354
+'@previous@' creates dependences with the node(s) '1353'
++++Node successfully preprocessed+++
+The node '1354' has dependencies to the node(s) '1353'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1355
+'@previous@' creates dependences with the node(s) '1354'
++++Node successfully preprocessed+++
+The node '1355' has dependencies to the node(s) '1354'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1356
+'@previous@' creates dependences with the node(s) '1355'
++++Node successfully preprocessed+++
+The node '1356' has dependencies to the node(s) '1355'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1391
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1393
+'@previous@' creates dependences with the node(s) '1391'
++++Node successfully preprocessed+++
+The node '1393' has dependencies to the node(s) '1391'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1394
+'@previous@' creates dependences with the node(s) '1393'
++++Node successfully preprocessed+++
+The node '1394' has dependencies to the node(s) '1393'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1395
+'@previous@' creates dependences with the node(s) '1394'
++++Node successfully preprocessed+++
+The node '1395' has dependencies to the node(s) '1394'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1396
+'@previous@' creates dependences with the node(s) '1395'
++++Node successfully preprocessed+++
+The node '1396' has dependencies to the node(s) '1395'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1397
+'@previous@' creates dependences with the node(s) '1396'
++++Node successfully preprocessed+++
+The node '1397' has dependencies to the node(s) '1396'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1432
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1434
+'@previous@' creates dependences with the node(s) '1432'
++++Node successfully preprocessed+++
+The node '1434' has dependencies to the node(s) '1432'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1435
+'@previous@' creates dependences with the node(s) '1434'
++++Node successfully preprocessed+++
+The node '1435' has dependencies to the node(s) '1434'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1436
+'@previous@' creates dependences with the node(s) '1435'
++++Node successfully preprocessed+++
+The node '1436' has dependencies to the node(s) '1435'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1437
+'@previous@' creates dependences with the node(s) '1436'
++++Node successfully preprocessed+++
+The node '1437' has dependencies to the node(s) '1436'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1438
+'@previous@' creates dependences with the node(s) '1437'
++++Node successfully preprocessed+++
+The node '1438' has dependencies to the node(s) '1437'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1474
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1476
+'@previous@' creates dependences with the node(s) '1474'
++++Node successfully preprocessed+++
+The node '1476' has dependencies to the node(s) '1474'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1477
+'@previous@' creates dependences with the node(s) '1476'
++++Node successfully preprocessed+++
+The node '1477' has dependencies to the node(s) '1476'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1478
+'@previous@' creates dependences with the node(s) '1477'
++++Node successfully preprocessed+++
+The node '1478' has dependencies to the node(s) '1477'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1479
+'@previous@' creates dependences with the node(s) '1478'
++++Node successfully preprocessed+++
+The node '1479' has dependencies to the node(s) '1478'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1480
+'@previous@' creates dependences with the node(s) '1479'
++++Node successfully preprocessed+++
+The node '1480' has dependencies to the node(s) '1479'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1508
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1510
+'@previous@' creates dependences with the node(s) '1508'
++++Node successfully preprocessed+++
+The node '1510' has dependencies to the node(s) '1508'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1511
+'@previous@' creates dependences with the node(s) '1510'
++++Node successfully preprocessed+++
+The node '1511' has dependencies to the node(s) '1510'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1512
+'@previous@' creates dependences with the node(s) '1511'
++++Node successfully preprocessed+++
+The node '1512' has dependencies to the node(s) '1511'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1513
+'@previous@' creates dependences with the node(s) '1512'
++++Node successfully preprocessed+++
+The node '1513' has dependencies to the node(s) '1512'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1514
+'@previous@' creates dependences with the node(s) '1513'
++++Node successfully preprocessed+++
+The node '1514' has dependencies to the node(s) '1513'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1549
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1551
+'@previous@' creates dependences with the node(s) '1549'
++++Node successfully preprocessed+++
+The node '1551' has dependencies to the node(s) '1549'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1552
+'@previous@' creates dependences with the node(s) '1551'
++++Node successfully preprocessed+++
+The node '1552' has dependencies to the node(s) '1551'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1553
+'@previous@' creates dependences with the node(s) '1552'
++++Node successfully preprocessed+++
+The node '1553' has dependencies to the node(s) '1552'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1554
+'@previous@' creates dependences with the node(s) '1553'
++++Node successfully preprocessed+++
+The node '1554' has dependencies to the node(s) '1553'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1555
+'@previous@' creates dependences with the node(s) '1554'
++++Node successfully preprocessed+++
+The node '1555' has dependencies to the node(s) '1554'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1590
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1592
+'@previous@' creates dependences with the node(s) '1590'
++++Node successfully preprocessed+++
+The node '1592' has dependencies to the node(s) '1590'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1593
+'@previous@' creates dependences with the node(s) '1592'
++++Node successfully preprocessed+++
+The node '1593' has dependencies to the node(s) '1592'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1594
+'@previous@' creates dependences with the node(s) '1593'
++++Node successfully preprocessed+++
+The node '1594' has dependencies to the node(s) '1593'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1595
+'@previous@' creates dependences with the node(s) '1594'
++++Node successfully preprocessed+++
+The node '1595' has dependencies to the node(s) '1594'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1596
+'@previous@' creates dependences with the node(s) '1595'
++++Node successfully preprocessed+++
+The node '1596' has dependencies to the node(s) '1595'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1632
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1634
+'@previous@' creates dependences with the node(s) '1632'
++++Node successfully preprocessed+++
+The node '1634' has dependencies to the node(s) '1632'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1635
+'@previous@' creates dependences with the node(s) '1634'
++++Node successfully preprocessed+++
+The node '1635' has dependencies to the node(s) '1634'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1636
+'@previous@' creates dependences with the node(s) '1635'
++++Node successfully preprocessed+++
+The node '1636' has dependencies to the node(s) '1635'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1637
+'@previous@' creates dependences with the node(s) '1636'
++++Node successfully preprocessed+++
+The node '1637' has dependencies to the node(s) '1636'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1638
+'@previous@' creates dependences with the node(s) '1637'
++++Node successfully preprocessed+++
+The node '1638' has dependencies to the node(s) '1637'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1666
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1668
+'@previous@' creates dependences with the node(s) '1666'
++++Node successfully preprocessed+++
+The node '1668' has dependencies to the node(s) '1666'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1669
+'@previous@' creates dependences with the node(s) '1668'
++++Node successfully preprocessed+++
+The node '1669' has dependencies to the node(s) '1668'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1670
+'@previous@' creates dependences with the node(s) '1669'
++++Node successfully preprocessed+++
+The node '1670' has dependencies to the node(s) '1669'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1671
+'@previous@' creates dependences with the node(s) '1670'
++++Node successfully preprocessed+++
+The node '1671' has dependencies to the node(s) '1670'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1672
+'@previous@' creates dependences with the node(s) '1671'
++++Node successfully preprocessed+++
+The node '1672' has dependencies to the node(s) '1671'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1707
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1709
+'@previous@' creates dependences with the node(s) '1707'
++++Node successfully preprocessed+++
+The node '1709' has dependencies to the node(s) '1707'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1710
+'@previous@' creates dependences with the node(s) '1709'
++++Node successfully preprocessed+++
+The node '1710' has dependencies to the node(s) '1709'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1711
+'@previous@' creates dependences with the node(s) '1710'
++++Node successfully preprocessed+++
+The node '1711' has dependencies to the node(s) '1710'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1712
+'@previous@' creates dependences with the node(s) '1711'
++++Node successfully preprocessed+++
+The node '1712' has dependencies to the node(s) '1711'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1713
+'@previous@' creates dependences with the node(s) '1712'
++++Node successfully preprocessed+++
+The node '1713' has dependencies to the node(s) '1712'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1748
++++Node successfully preprocessed+++
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1750
+'@previous@' creates dependences with the node(s) '1748'
++++Node successfully preprocessed+++
+The node '1750' has dependencies to the node(s) '1748'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1751
+'@previous@' creates dependences with the node(s) '1750'
++++Node successfully preprocessed+++
+The node '1751' has dependencies to the node(s) '1750'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1752
+'@previous@' creates dependences with the node(s) '1751'
++++Node successfully preprocessed+++
+The node '1752' has dependencies to the node(s) '1751'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1753
+'@previous@' creates dependences with the node(s) '1752'
++++Node successfully preprocessed+++
+The node '1753' has dependencies to the node(s) '1752'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 1754
+'@previous@' creates dependences with the node(s) '1753'
++++Node successfully preprocessed+++
+The node '1754' has dependencies to the node(s) '1753'
+Writing 'gexec.cmd'
+saving variables
+Loading jobs and dependence graph '"/home/spatel/swb_project/Part1/CMOS_Processing/gexec.cmd"'
+>>>>>>>>>> job '684' status changed from 'none' to 'queued'
+>>>>>>>>>> job '718' status changed from 'none' to 'queued'
+>>>>>>>>>> job '759' status changed from 'none' to 'queued'
+>>>>>>>>>> job '800' status changed from 'none' to 'queued'
+>>>>>>>>>> job '842' status changed from 'none' to 'queued'
+>>>>>>>>>> job '876' status changed from 'none' to 'queued'
+>>>>>>>>>> job '917' status changed from 'none' to 'queued'
+>>>>>>>>>> job '958' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1000' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1034' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1075' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1116' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1158' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1192' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1233' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1274' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1316' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1350' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1391' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1432' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1474' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1508' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1549' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1590' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1632' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1666' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1707' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1748' status changed from 'none' to 'queued'
+Warning: node '685' not queued: node is virtual
+Warning: node '719' not queued: node is virtual
+Warning: node '760' not queued: node is virtual
+Warning: node '801' not queued: node is virtual
+Warning: node '843' not queued: node is virtual
+Warning: node '877' not queued: node is virtual
+Warning: node '918' not queued: node is virtual
+Warning: node '959' not queued: node is virtual
+Warning: node '1001' not queued: node is virtual
+Warning: node '1035' not queued: node is virtual
+Warning: node '1076' not queued: node is virtual
+Warning: node '1117' not queued: node is virtual
+Warning: node '1159' not queued: node is virtual
+Warning: node '1193' not queued: node is virtual
+Warning: node '1234' not queued: node is virtual
+Warning: node '1275' not queued: node is virtual
+Warning: node '1317' not queued: node is virtual
+Warning: node '1351' not queued: node is virtual
+Warning: node '1392' not queued: node is virtual
+Warning: node '1433' not queued: node is virtual
+Warning: node '1475' not queued: node is virtual
+Warning: node '1509' not queued: node is virtual
+Warning: node '1550' not queued: node is virtual
+Warning: node '1591' not queued: node is virtual
+Warning: node '1633' not queued: node is virtual
+Warning: node '1667' not queued: node is virtual
+Warning: node '1708' not queued: node is virtual
+Warning: node '1749' not queued: node is virtual
+>>>>>>>>>> job '686' status changed from 'none' to 'queued'
+>>>>>>>>>> job '720' status changed from 'none' to 'queued'
+>>>>>>>>>> job '761' status changed from 'none' to 'queued'
+>>>>>>>>>> job '802' status changed from 'none' to 'queued'
+>>>>>>>>>> job '844' status changed from 'none' to 'queued'
+>>>>>>>>>> job '878' status changed from 'none' to 'queued'
+>>>>>>>>>> job '919' status changed from 'none' to 'queued'
+>>>>>>>>>> job '960' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1002' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1036' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1077' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1118' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1160' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1194' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1235' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1276' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1318' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1352' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1393' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1434' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1476' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1510' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1551' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1592' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1634' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1668' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1709' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1750' status changed from 'none' to 'queued'
+>>>>>>>>>> job '687' status changed from 'none' to 'queued'
+>>>>>>>>>> job '721' status changed from 'none' to 'queued'
+>>>>>>>>>> job '762' status changed from 'none' to 'queued'
+>>>>>>>>>> job '803' status changed from 'none' to 'queued'
+>>>>>>>>>> job '845' status changed from 'none' to 'queued'
+>>>>>>>>>> job '879' status changed from 'none' to 'queued'
+>>>>>>>>>> job '920' status changed from 'none' to 'queued'
+>>>>>>>>>> job '961' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1003' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1037' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1078' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1119' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1161' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1195' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1236' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1277' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1319' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1353' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1394' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1435' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1477' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1511' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1552' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1593' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1635' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1669' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1710' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1751' status changed from 'none' to 'queued'
+>>>>>>>>>> job '688' status changed from 'none' to 'queued'
+>>>>>>>>>> job '722' status changed from 'none' to 'queued'
+>>>>>>>>>> job '763' status changed from 'none' to 'queued'
+>>>>>>>>>> job '804' status changed from 'none' to 'queued'
+>>>>>>>>>> job '846' status changed from 'none' to 'queued'
+>>>>>>>>>> job '880' status changed from 'none' to 'queued'
+>>>>>>>>>> job '921' status changed from 'none' to 'queued'
+>>>>>>>>>> job '962' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1004' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1038' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1079' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1120' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1162' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1196' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1237' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1278' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1320' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1354' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1395' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1436' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1478' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1512' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1553' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1594' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1636' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1670' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1711' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1752' status changed from 'none' to 'queued'
+>>>>>>>>>> job '689' status changed from 'none' to 'queued'
+>>>>>>>>>> job '723' status changed from 'none' to 'queued'
+>>>>>>>>>> job '764' status changed from 'none' to 'queued'
+>>>>>>>>>> job '805' status changed from 'none' to 'queued'
+>>>>>>>>>> job '847' status changed from 'none' to 'queued'
+>>>>>>>>>> job '881' status changed from 'none' to 'queued'
+>>>>>>>>>> job '922' status changed from 'none' to 'queued'
+>>>>>>>>>> job '963' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1005' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1039' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1080' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1121' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1163' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1197' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1238' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1279' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1321' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1355' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1396' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1437' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1479' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1513' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1554' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1595' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1637' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1671' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1712' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1753' status changed from 'none' to 'queued'
+>>>>>>>>>> job '690' status changed from 'none' to 'queued'
+>>>>>>>>>> job '724' status changed from 'none' to 'queued'
+>>>>>>>>>> job '765' status changed from 'none' to 'queued'
+>>>>>>>>>> job '806' status changed from 'none' to 'queued'
+>>>>>>>>>> job '848' status changed from 'none' to 'queued'
+>>>>>>>>>> job '882' status changed from 'none' to 'queued'
+>>>>>>>>>> job '923' status changed from 'none' to 'queued'
+>>>>>>>>>> job '964' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1006' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1040' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1081' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1122' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1164' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1198' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1239' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1280' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1322' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1356' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1397' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1438' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1480' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1514' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1555' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1596' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1638' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1672' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1713' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1754' status changed from 'none' to 'queued'
+-----------------------------------------------------------------
+queue "tm:sentaurus_4_core_per_task" - 684 718 759 800 842 876 917 958 1000 1034 1075 1116 1158 1192 1233 1274 1316 1350 1391 1432 1474 1508 1549 1590 1632 1666 1707 1748 686 720 761 802 844 878 919 960 1002 1036 1077 1118 1160 1194 1235 1276 1318 1352 1393 1434 1476 1510 1551 1592 1634 1668 1709 1750 687 721 762 803 845 879 920 961 1003 1037 1078 1119 1161 1195 1236 1277 1319 1353 1394 1435 1477 1511 1552 1593 1635 1669 1710 1751 688 722 763 804 846 880 921 962 1004 1038 1079 1120 1162 1196 1237 1278 1320 1354 1395 1436 1478 1512 1553 1594 1636 1670 1711 1752 689 723 764 805 847 881 922 963 1005 1039 1080 1121 1163 1197 1238 1279 1321 1355 1396 1437 1479 1513 1554 1595 1637 1671 1712 1753 690 724 765 806 848 882 923 964 1006 1040 1081 1122 1164 1198 1239 1280 1322 1356 1397 1438 1480 1514 1555 1596 1638 1672 1713 1754
+-----------------------------------------------------------------
+>>>>> cleaning the index file from previous simulations 
+                       /home/spatel/swb_project/Part1/CMOS_Processing/.gindex
+>>>>>>>>>> Initializing back-end schedulers...
+>>>>>>>> Loaded Schedulers are ... tm
+TM% qstat -u non_existing_user
+>>>>> List of Active Schedulers : tm
+<<<<<<<<<<
+>>>>>>>>>> job '684' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n684_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n684_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n684_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n684.sh
+TM JobID > 19332.sanquentin
+>>>>>>>>>> job '684' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '718' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n718_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n718_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n718_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n718.sh
+TM JobID > 19333.sanquentin
+>>>>>>>>>> job '718' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '759' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n759_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n759_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n759_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n759.sh
+TM JobID > 19334.sanquentin
+>>>>>>>>>> job '759' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '800' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n800_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n800_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n800_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n800.sh
+TM JobID > 19335.sanquentin
+>>>>>>>>>> job '800' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '842' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n842_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n842_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n842_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n842.sh
+TM JobID > 19336.sanquentin
+>>>>>>>>>> job '842' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '876' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n876_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n876_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n876_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n876.sh
+TM JobID > 19337.sanquentin
+>>>>>>>>>> job '876' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '917' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n917_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n917_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n917_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n917.sh
+TM JobID > 19338.sanquentin
+>>>>>>>>>> job '917' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '958' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n958_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n958_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n958_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n958.sh
+TM JobID > 19339.sanquentin
+>>>>>>>>>> job '958' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1000' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1000_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1000_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1000_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1000.sh
+TM JobID > 19340.sanquentin
+>>>>>>>>>> job '1000' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1034' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1034_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1034_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1034_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1034.sh
+TM JobID > 19341.sanquentin
+>>>>>>>>>> job '1034' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1075' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1075_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1075_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1075_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1075.sh
+TM JobID > 19342.sanquentin
+>>>>>>>>>> job '1075' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1116' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1116_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1116_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1116_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1116.sh
+TM JobID > 19343.sanquentin
+>>>>>>>>>> job '1116' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1158' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1158_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1158_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1158_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1158.sh
+TM JobID > 19344.sanquentin
+>>>>>>>>>> job '1158' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1192' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1192_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1192_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1192_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1192.sh
+TM JobID > 19345.sanquentin
+>>>>>>>>>> job '1192' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1233' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1233_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1233_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1233_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1233.sh
+TM JobID > 19346.sanquentin
+>>>>>>>>>> job '1233' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1274' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1274_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1274_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1274_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1274.sh
+TM JobID > 19347.sanquentin
+>>>>>>>>>> job '1274' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1316' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1316_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1316_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1316_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1316.sh
+TM JobID > 19348.sanquentin
+>>>>>>>>>> job '1316' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1350' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1350_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1350_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1350_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1350.sh
+TM JobID > 19349.sanquentin
+>>>>>>>>>> job '1350' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1391' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1391_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1391_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1391_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1391.sh
+TM JobID > 19350.sanquentin
+>>>>>>>>>> job '1391' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1432' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1432_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1432_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1432_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1432.sh
+TM JobID > 19351.sanquentin
+>>>>>>>>>> job '1432' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1474' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1474_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1474_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1474_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1474.sh
+TM JobID > 19352.sanquentin
+>>>>>>>>>> job '1474' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1508' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1508_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1508_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1508_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1508.sh
+TM JobID > 19353.sanquentin
+>>>>>>>>>> job '1508' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1549' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1549_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1549_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1549_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1549.sh
+TM JobID > 19354.sanquentin
+>>>>>>>>>> job '1549' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1590' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1590_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1590_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1590_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1590.sh
+TM JobID > 19355.sanquentin
+>>>>>>>>>> job '1590' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1632' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1632_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1632_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1632_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1632.sh
+TM JobID > 19356.sanquentin
+>>>>>>>>>> job '1632' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1666' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1666_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1666_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1666_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1666.sh
+TM JobID > 19357.sanquentin
+>>>>>>>>>> job '1666' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1707' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1707_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1707_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1707_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1707.sh
+TM JobID > 19358.sanquentin
+>>>>>>>>>> job '1707' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '1748' status changed from 'queued' to 'ready'
+>>>>>>>>>> os_rm /home/spatel/swb_project/Part1/CMOS_Processing/n1748_fps.job
+TM% qsub -q sentaurus -l walltime=48:00:00,nodes=1:ppn=4 -v LC_ALL=C -o /home/spatel/swb_project/Part1/CMOS_Processing/n1748_fps.job  -e /home/spatel/swb_project/Part1/CMOS_Processing/n1748_tm.err  -N x1371132822528  /home/spatel/swb_project/Part1/CMOS_Processing/n1748.sh
+TM JobID > 19359.sanquentin
+>>>>>>>>>> job '1748' status changed from 'ready' to 'pending'
+>>>>>>>>>> job '684' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 684 <sprocess> started on host 'sanquentin': "sprocess -u -b n684_fps.cmd"
+>>>>>>>>>> job '718' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 718 <sprocess> started on host 'sanquentin': "sprocess -u -b n718_fps.cmd"
+>>>>>>>>>> job '759' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 759 <sprocess> started on host 'sanquentin': "sprocess -u -b n759_fps.cmd"
+>>>>>>>>>> job '800' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 800 <sprocess> started on host 'sanquentin': "sprocess -u -b n800_fps.cmd"
+>>>>>>>>>> job '842' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 842 <sprocess> started on host 'sanquentin': "sprocess -u -b n842_fps.cmd"
+>>>>>>>>>> job '876' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 876 <sprocess> started on host 'sanquentin': "sprocess -u -b n876_fps.cmd"
+>>>>>>>>>> job '917' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 917 <sprocess> started on host 'sanquentin': "sprocess -u -b n917_fps.cmd"
+>>>>>>>>>> job '958' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 958 <sprocess> started on host 'sanquentin': "sprocess -u -b n958_fps.cmd"
+>>>>>>>>>> job '1000' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1000 <sprocess> started on host 'sanquentin': "sprocess -u -b n1000_fps.cmd"
+>>>>>>>>>> job '1034' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1034 <sprocess> started on host 'sanquentin': "sprocess -u -b n1034_fps.cmd"
+>>>>>>>>>> job '1075' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1075 <sprocess> started on host 'sanquentin': "sprocess -u -b n1075_fps.cmd"
+>>>>>>>>>> job '1116' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1116 <sprocess> started on host 'sanquentin': "sprocess -u -b n1116_fps.cmd"
+>>>>>>>>>> job '1158' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1158 <sprocess> started on host 'sanquentin': "sprocess -u -b n1158_fps.cmd"
+>>>>>>>>>> job '1192' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1192 <sprocess> started on host 'sanquentin': "sprocess -u -b n1192_fps.cmd"
+>>>>>>>>>> job '1233' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1233 <sprocess> started on host 'sanquentin': "sprocess -u -b n1233_fps.cmd"
+>>>>>>>>>> job '1274' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1274 <sprocess> started on host 'sanquentin': "sprocess -u -b n1274_fps.cmd"
+>>>>>>>>>> job '1316' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1316 <sprocess> started on host 'sanquentin': "sprocess -u -b n1316_fps.cmd"
+>>>>>>>>>> job '1350' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1350 <sprocess> started on host 'sanquentin': "sprocess -u -b n1350_fps.cmd"
+>>>>>>>>>> job '1391' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1391 <sprocess> started on host 'sanquentin': "sprocess -u -b n1391_fps.cmd"
+>>>>>>>>>> job '1432' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1432 <sprocess> started on host 'sanquentin': "sprocess -u -b n1432_fps.cmd"
+>>>>>>>>>> job '1474' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1474 <sprocess> started on host 'sanquentin': "sprocess -u -b n1474_fps.cmd"
+>>>>>>>>>> job '1508' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1508 <sprocess> started on host 'sanquentin': "sprocess -u -b n1508_fps.cmd"
+>>>>>>>>>> job '1549' status changed from 'pending' to 'running'
+21:40:38 May 18 2016     job 1549 <sprocess> started on host 'sanquentin': "sprocess -u -b n1549_fps.cmd"
+>>>>>>>>>> job '1590' status changed from 'pending' to 'running'
+21:40:39 May 18 2016     job 1590 <sprocess> started on host 'sanquentin': "sprocess -u -b n1590_fps.cmd"
+>>>>>>>>>> job '1632' status changed from 'pending' to 'running'
+21:40:39 May 18 2016     job 1632 <sprocess> started on host 'sanquentin': "sprocess -u -b n1632_fps.cmd"
+>>>>>>>>>> job '1666' status changed from 'pending' to 'running'
+21:40:39 May 18 2016     job 1666 <sprocess> started on host 'sanquentin': "sprocess -u -b n1666_fps.cmd"
+>>>>>>>>>> job '1707' status changed from 'pending' to 'running'
+21:40:39 May 18 2016     job 1707 <sprocess> started on host 'sanquentin': "sprocess -u -b n1707_fps.cmd"
+>>>>>>>>>> job '1748' status changed from 'pending' to 'running'
+21:40:39 May 18 2016     job 1748 <sprocess> started on host 'sanquentin': "sprocess -u -b n1748_fps.cmd"
+Loading project tree '/home/spatel/swb_project/Part1/CMOS_Processing/gtree.dat'
+Loading jobs and dependence graph '"/home/spatel/swb_project/Part1/CMOS_Processing/gexec.cmd"'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/spatel/swb_project/Part1/CMOS_Processing/gtree.dat'
+Loading project variables '/home/spatel/swb_project/Part1/CMOS_Processing/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/PlotIdVg_lin_vis.tcl
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/PlotIdVg_sat_vis.tcl
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/IdVd_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/PlotIdVd_vis.tcl
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/CV_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/PlotCV_vis.tcl
+PREPROCESSING STEP 2:
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 694
+'@tdr@' creates dependences with the node(s) '690'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 694
++++Node successfully preprocessed+++
+The node '694' has dependencies to the node(s) '690'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 728
+'@tdr@' creates dependences with the node(s) '724'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 728
++++Node successfully preprocessed+++
+The node '728' has dependencies to the node(s) '724'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 769
+'@tdr@' creates dependences with the node(s) '765'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 769
++++Node successfully preprocessed+++
+The node '769' has dependencies to the node(s) '765'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 810
+'@tdr@' creates dependences with the node(s) '806'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 810
++++Node successfully preprocessed+++
+The node '810' has dependencies to the node(s) '806'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 852
+'@tdr@' creates dependences with the node(s) '848'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 852
++++Node successfully preprocessed+++
+The node '852' has dependencies to the node(s) '848'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 886
+'@tdr@' creates dependences with the node(s) '882'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 886
++++Node successfully preprocessed+++
+The node '886' has dependencies to the node(s) '882'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 927
+'@tdr@' creates dependences with the node(s) '923'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 927
++++Node successfully preprocessed+++
+The node '927' has dependencies to the node(s) '923'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 968
+'@tdr@' creates dependences with the node(s) '964'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 968
++++Node successfully preprocessed+++
+The node '968' has dependencies to the node(s) '964'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1010
+'@tdr@' creates dependences with the node(s) '1006'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1010
++++Node successfully preprocessed+++
+The node '1010' has dependencies to the node(s) '1006'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1044
+'@tdr@' creates dependences with the node(s) '1040'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1044
++++Node successfully preprocessed+++
+The node '1044' has dependencies to the node(s) '1040'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1085
+'@tdr@' creates dependences with the node(s) '1081'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1085
++++Node successfully preprocessed+++
+The node '1085' has dependencies to the node(s) '1081'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1126
+'@tdr@' creates dependences with the node(s) '1122'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1126
++++Node successfully preprocessed+++
+The node '1126' has dependencies to the node(s) '1122'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1168
+'@tdr@' creates dependences with the node(s) '1164'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1168
++++Node successfully preprocessed+++
+The node '1168' has dependencies to the node(s) '1164'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1202
+'@tdr@' creates dependences with the node(s) '1198'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1202
++++Node successfully preprocessed+++
+The node '1202' has dependencies to the node(s) '1198'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1243
+'@tdr@' creates dependences with the node(s) '1239'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1243
++++Node successfully preprocessed+++
+The node '1243' has dependencies to the node(s) '1239'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1284
+'@tdr@' creates dependences with the node(s) '1280'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1284
++++Node successfully preprocessed+++
+The node '1284' has dependencies to the node(s) '1280'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1326
+'@tdr@' creates dependences with the node(s) '1322'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1326
++++Node successfully preprocessed+++
+The node '1326' has dependencies to the node(s) '1322'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1360
+'@tdr@' creates dependences with the node(s) '1356'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1360
++++Node successfully preprocessed+++
+The node '1360' has dependencies to the node(s) '1356'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1401
+'@tdr@' creates dependences with the node(s) '1397'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1401
++++Node successfully preprocessed+++
+The node '1401' has dependencies to the node(s) '1397'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1442
+'@tdr@' creates dependences with the node(s) '1438'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1442
++++Node successfully preprocessed+++
+The node '1442' has dependencies to the node(s) '1438'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1484
+'@tdr@' creates dependences with the node(s) '1480'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1484
++++Node successfully preprocessed+++
+The node '1484' has dependencies to the node(s) '1480'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1518
+'@tdr@' creates dependences with the node(s) '1514'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1518
++++Node successfully preprocessed+++
+The node '1518' has dependencies to the node(s) '1514'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1559
+'@tdr@' creates dependences with the node(s) '1555'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1559
++++Node successfully preprocessed+++
+The node '1559' has dependencies to the node(s) '1555'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1600
+'@tdr@' creates dependences with the node(s) '1596'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1600
++++Node successfully preprocessed+++
+The node '1600' has dependencies to the node(s) '1596'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1642
+'@tdr@' creates dependences with the node(s) '1638'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1642
++++Node successfully preprocessed+++
+The node '1642' has dependencies to the node(s) '1638'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1676
+'@tdr@' creates dependences with the node(s) '1672'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1676
++++Node successfully preprocessed+++
+The node '1676' has dependencies to the node(s) '1672'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1717
+'@tdr@' creates dependences with the node(s) '1713'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1717
++++Node successfully preprocessed+++
+The node '1717' has dependencies to the node(s) '1713'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd fornode 1758
+'@tdr@' creates dependences with the node(s) '1754'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1758
++++Node successfully preprocessed+++
+The node '1758' has dependencies to the node(s) '1754'
+Writing 'gexec.cmd'
+saving variables
+Loading jobs and dependence graph '"/home/spatel/swb_project/Part1/CMOS_Processing/gexec.cmd"'
+>>>>>>>>>> job '694' status changed from 'none' to 'queued'
+>>>>>>>>>> job '728' status changed from 'none' to 'queued'
+>>>>>>>>>> job '769' status changed from 'none' to 'queued'
+>>>>>>>>>> job '810' status changed from 'none' to 'queued'
+>>>>>>>>>> job '852' status changed from 'none' to 'queued'
+>>>>>>>>>> job '886' status changed from 'none' to 'queued'
+>>>>>>>>>> job '927' status changed from 'none' to 'queued'
+>>>>>>>>>> job '968' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1010' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1044' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1085' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1126' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1168' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1202' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1243' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1284' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1326' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1360' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1401' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1442' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1484' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1518' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1559' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1600' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1642' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1676' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1717' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1758' status changed from 'none' to 'queued'
+Loading project tree '/home/spatel/swb_project/Part1/CMOS_Processing/gtree.dat'
+Loading jobs and dependence graph '"/home/spatel/swb_project/Part1/CMOS_Processing/gexec.cmd"'
+INITIALIZING PREPROCESSOR:
+Loading project tree '/home/spatel/swb_project/Part1/CMOS_Processing/gtree.dat'
+Loading project variables '/home/spatel/swb_project/Part1/CMOS_Processing/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_lin_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/PlotIdVg_lin_vis.tcl
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/PlotIdVg_sat_vis.tcl
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/IdVd_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/PlotIdVd_vis.tcl
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/CV_des.cmd
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/PlotCV_vis.tcl
+PREPROCESSING STEP 2:
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 697
+'@tdr@' creates dependences with the node(s) '690'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 697
++++Node successfully preprocessed+++
+The node '697' has dependencies to the node(s) '690'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 731
+'@tdr@' creates dependences with the node(s) '724'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 731
++++Node successfully preprocessed+++
+The node '731' has dependencies to the node(s) '724'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 772
+'@tdr@' creates dependences with the node(s) '765'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 772
++++Node successfully preprocessed+++
+The node '772' has dependencies to the node(s) '765'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 813
+'@tdr@' creates dependences with the node(s) '806'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 813
++++Node successfully preprocessed+++
+The node '813' has dependencies to the node(s) '806'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 855
+'@tdr@' creates dependences with the node(s) '848'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 855
++++Node successfully preprocessed+++
+The node '855' has dependencies to the node(s) '848'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 889
+'@tdr@' creates dependences with the node(s) '882'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 889
++++Node successfully preprocessed+++
+The node '889' has dependencies to the node(s) '882'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 930
+'@tdr@' creates dependences with the node(s) '923'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 930
++++Node successfully preprocessed+++
+The node '930' has dependencies to the node(s) '923'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 971
+'@tdr@' creates dependences with the node(s) '964'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 971
++++Node successfully preprocessed+++
+The node '971' has dependencies to the node(s) '964'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1013
+'@tdr@' creates dependences with the node(s) '1006'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1013
++++Node successfully preprocessed+++
+The node '1013' has dependencies to the node(s) '1006'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1047
+'@tdr@' creates dependences with the node(s) '1040'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1047
++++Node successfully preprocessed+++
+The node '1047' has dependencies to the node(s) '1040'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1088
+'@tdr@' creates dependences with the node(s) '1081'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1088
++++Node successfully preprocessed+++
+The node '1088' has dependencies to the node(s) '1081'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1129
+'@tdr@' creates dependences with the node(s) '1122'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1129
++++Node successfully preprocessed+++
+The node '1129' has dependencies to the node(s) '1122'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1171
+'@tdr@' creates dependences with the node(s) '1164'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1171
++++Node successfully preprocessed+++
+The node '1171' has dependencies to the node(s) '1164'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1205
+'@tdr@' creates dependences with the node(s) '1198'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1205
++++Node successfully preprocessed+++
+The node '1205' has dependencies to the node(s) '1198'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1246
+'@tdr@' creates dependences with the node(s) '1239'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1246
++++Node successfully preprocessed+++
+The node '1246' has dependencies to the node(s) '1239'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1287
+'@tdr@' creates dependences with the node(s) '1280'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1287
++++Node successfully preprocessed+++
+The node '1287' has dependencies to the node(s) '1280'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1329
+'@tdr@' creates dependences with the node(s) '1322'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1329
++++Node successfully preprocessed+++
+The node '1329' has dependencies to the node(s) '1322'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1363
+'@tdr@' creates dependences with the node(s) '1356'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1363
++++Node successfully preprocessed+++
+The node '1363' has dependencies to the node(s) '1356'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1404
+'@tdr@' creates dependences with the node(s) '1397'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1404
++++Node successfully preprocessed+++
+The node '1404' has dependencies to the node(s) '1397'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1445
+'@tdr@' creates dependences with the node(s) '1438'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1445
++++Node successfully preprocessed+++
+The node '1445' has dependencies to the node(s) '1438'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1487
+'@tdr@' creates dependences with the node(s) '1480'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1487
++++Node successfully preprocessed+++
+The node '1487' has dependencies to the node(s) '1480'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1521
+'@tdr@' creates dependences with the node(s) '1514'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1521
++++Node successfully preprocessed+++
+The node '1521' has dependencies to the node(s) '1514'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1562
+'@tdr@' creates dependences with the node(s) '1555'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1562
++++Node successfully preprocessed+++
+The node '1562' has dependencies to the node(s) '1555'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1603
+'@tdr@' creates dependences with the node(s) '1596'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1603
++++Node successfully preprocessed+++
+The node '1603' has dependencies to the node(s) '1596'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1645
+'@tdr@' creates dependences with the node(s) '1638'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1645
++++Node successfully preprocessed+++
+The node '1645' has dependencies to the node(s) '1638'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1679
+'@tdr@' creates dependences with the node(s) '1672'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1679
++++Node successfully preprocessed+++
+The node '1679' has dependencies to the node(s) '1672'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1720
+'@tdr@' creates dependences with the node(s) '1713'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1720
++++Node successfully preprocessed+++
+The node '1720' has dependencies to the node(s) '1713'
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/IdVg_sat_des.cmd fornode 1761
+'@tdr@' creates dependences with the node(s) '1754'
+4.2
+eQuantumPotential
+Poisson Electron 
+Poisson Electron 
+0.05
+Poisson Electron 
+0.85
+Poisson Electron 
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sdevice.par fornode 1761
++++Node successfully preprocessed+++
+The node '1761' has dependencies to the node(s) '1754'
+Writing 'gexec.cmd'
+saving variables
+Loading jobs and dependence graph '"/home/spatel/swb_project/Part1/CMOS_Processing/gexec.cmd"'
+>>>>>>>>>> job '697' status changed from 'none' to 'queued'
+>>>>>>>>>> job '731' status changed from 'none' to 'queued'
+>>>>>>>>>> job '772' status changed from 'none' to 'queued'
+>>>>>>>>>> job '813' status changed from 'none' to 'queued'
+>>>>>>>>>> job '855' status changed from 'none' to 'queued'
+>>>>>>>>>> job '889' status changed from 'none' to 'queued'
+>>>>>>>>>> job '930' status changed from 'none' to 'queued'
+>>>>>>>>>> job '971' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1013' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1047' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1088' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1129' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1171' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1205' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1246' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1287' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1329' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1363' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1404' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1445' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1487' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1521' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1562' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1603' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1645' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1679' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1720' status changed from 'none' to 'queued'
+>>>>>>>>>> job '1761' status changed from 'none' to 'queued'

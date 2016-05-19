@@ -1,0 +1,30 @@
+<toolname>
+IdVg_lin
+</toolname>
+
+
+<comment>
+Linear Id-Vg
+</comment>
+
+
+<toolname>
+IdVg_sat
+</toolname>
+
+
+<comment>
+Satuation Id-Vg
+</comment>
+
+
+<toolname>
+IdVd
+</toolname>
+
+
+<comment>
+Id-Vd for 3 Vgs values
+</comment>
+
+

@@ -1,0 +1,282 @@
+****************************************************************************
+***                          Sentaurus Process                           ***
+***                        Version K-2015.06-SP1                         ***
+***                            (1.13, RHEL64)                            ***
+***                                                                      ***
+***                       Copyright (C) 1993-2002                        ***
+***          The board of regents of the University of Florida           ***
+***                       Copyright (C) 1994-2015                        ***
+***                            Synopsys, Inc.                            ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Fri Jul 17 23:08:37 PDT 2015 on tcadbld1
+
+      Started at: Wed May 18 19:55:04 2016 (PDT)
+       User name: spatel
+       Host name: n0020.banatao.berkeley.edu
+             PID: 22893
+    Architecture: x86_64
+Operating system: Linux rel. 2.6.32-358.el6.x86_64 ver. #1 SMP Fri Feb 22 20:37:17 CST 2013
+
+------------------------------------------------------------------------------
+Checking syntax of n276_fps.cmd:
+
+Syntax check complete.
+------------------------------------------------------------------------------
+
+Starting Tcl interpreter with inputfile: n276_fps.cmd
+            sprocess: Checked Out
+
+Loading models file: /opt/synopsys/K_2015.06-SP1/bin/../tcad/current/lib/sprocess-24.0.13/TclLib/SPROCESS.models... done.
+------------------------------------------------------------------- icwb -----
+icwb filename= "SRAM_lyt.mac" scale= 0.00100
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb domains list
+------------------------------------------------------------------------------
+icwb: LDomains -> SIM2N SIM2P TRENCH2D SRAM6T NMOS3D PMOS3D 
+------------------------------------------------------------------- icwb -----
+icwb layerNames list
+------------------------------------------------------------------------------
+icwb: LNames -> Active pWELL POLY Gate_ACC1 Drain_ACC1 Drain_N1 Source_N1 Drain_P1 Source_P1 Gate_ACC2 Drain_ACC2 Drain_N2 Source_N2 Drain_P2 Source_P2 Gate_N1 Gate_N2 Gate_P2 Gate_P1 Mesh_EXT 
+------------------------------------------------------------------- icwb -----
+icwb layerIDs list
+------------------------------------------------------------------------------
+icwb: LIDs -> 1:0 2:0 3:0 30:1 31:0 32:0 33:0 34:0 35:0 36:1 37:1 38:1 39:1 40:1 41:1 51:0 52:0 53:0 54:0 60:1 
+------------------------------------------------------------------- icwb -----
+icwb domain= {SIM2N}
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb stretch name= "SIM2N_L" value= -0.0100
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb dimension
+------------------------------------------------------------------------------
+icwb: dimension -> 2 
+------------------------------------------------------------------- icwb -----
+icwb bbox left
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb bbox right
+------------------------------------------------------------------------------
+icwb: Domain boundaries -> 0  0.1025 
+------------------------------------------------------------------- init -----
+init tdr= "n275"
+------------------------------------------------------------------------------
+          sprocess2d: Checked Out
+
+Recreating refinements to take into account updated simulation dimension.
+Done recreating refinements.
+
+
+Points: 583
+Nodes: 776
+Edges: 1814
+Faces: 1054
+Volumes: 0
+
+icwb.create.mask name= EXT layer.name= Mesh_EXT polarity= positive
+------------------------------------------------------------------- icwb -----
+icwb dimension
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb layer.name= "Mesh_EXT" list.segments
+------------------------------------------------------------------------------
+------------------------------------------------------------------- mask -----
+mask name= "EXT" segments= {0.0312<um> 0.0512<um> 0.0512<um> 0.0712<um>}
+------------------------------------------------------------------------------
+Found touching/overlapping segments, merging.
+-------------------------------------------------------------- refinebox -----
+refinebox extrusion.min= -0.00100<um> extrusion.max= 0.0500<um> mask= "EXT" extend= 0.00500<um> add xrefine= {0.00100<um> 0.00600<um>} yrefine= {0.00600<um>} All name= "ExtImp"
+------------------------------------------------------------------------------
+-------------------------------------------------------------- refinebox -----
+refinebox extrusion.min= -0.00100<um> extrusion.max= 0.0100<um> mask= "EXT" extend= 0.00700<um> add xrefine= {0.00100<um>} yrefine= {0.00100<um>} All name= "ExtXY"
+------------------------------------------------------------------------------
+-------------------------------------------------------------- refinebox -----
+refinebox extrusion.min= -6.00e-04<um> extrusion.max= 0.0100<um> mask= "Active" extend= 0.00e+00<um> min.normal.size= 4.00e-04<um> normal.growth.ratio= 2.00 add All interface.materials= {Silicon Oxide} name= "ExtIF"
+------------------------------------------------------------------------------
+------------------------------------------------------------------- grid -----
+grid remesh
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+* Name: ExtImp, Type: Standard
+* Name: ExtXY, Type: Standard
+* Name: ExtIF, Type: Interface
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  1564 (tree) + 258 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 87.3512  [near (-0.0343503 0.0412498)] at region=Oxide_1
+nVerts = 258  nTris = 263  nRegs = 16
+bmin: 10 0
+bmax: -0.148165 0.05125
+min area: 3.68599e-05  max area: 2.5  total area  : 20.5515 interface area: 0.152625
+total volume: 0.520093
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (1656 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+    1652 points.
+    3149 elements.
+       6 regions.
+Max. connectivity = 9 located at (-0.0347262;0.0384375)
+
+SnMesh time: 0.165975
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    2   2   5   3  17  16   3   5   2  30  .   .   .   .   .   .         
+---------------------------------------------------------------------------------
+minAngle: 0.0367051  maxAngle: 148.509
+nVerts = 1652  nTris = 3149  nMats = 6
+max connectivity (tris per node): 9
+bmin: 10 0
+bmax: -0.148165 0.05125
+min edgeLength: 9.57542e-06  [near (-0.00231508 0.041245)]
+min volume: 1.17431e-09  max volume: 0.0320313  Total volume: 0.51294
+bbox  volume: 0.520093
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.39194
+Interpolating...elapsed time: 0.19
+---------------------------------------------------------------- implant -----
+implant energy= 0.200<keV> dose= 5.00e+13<cm-2> tilt= 3.00<degree> Arsenic
+------------------------------------------------------------------------------
+Species           =  Arsenic
+Dataset           =  Arsenic
+Energy            = 0.2keV
+Dose (WaferDose)  =  5e+13/cm2
+BeamDose          =  5.0069e+13/cm2
+BeamDose2D        =  5.0069e+13/cm2
+Tilt              =   3deg
+Tilt2D            =   3deg
+Rotation          = 270deg
+Slice angle       = -90deg
+Temperature       = 300.00K
+LeftBoundary      =  Extend
+RightBoundary     =  Extend
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Preprocessing implant data
+
+
+sprocess Imp3d Implant thread count = 1
+Total implant time:    1.41sec
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Postprocessing damage
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Postprocessing implant data
+
+  Point defects:
+  (tcl proc: impPointDefectModels() in tcl script: Damage.tcl)
+
+    defect.model = user.defined
+
+  (tcl proc: UserPointDefectModel() in AdvCal)
+
+  Impurity density:
+    Arsenic += 1.0 *Arsenic_LastImp
+    Add impurity profile to species: Arsenic
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Computing finite volumes...
+Finite volumes done
+
+ Dose in:   Silicon_1     Oxide_1      HfO2_1 TiNitride_1 PolySilicon HfO2_1+Sili
+          Oxide_1+Sil       Total
+              Silicon       Oxide        HfO2   TiNitride PolySilicon HfO2_Silico
+          Oxide_Silic
+    Boron  4.9974e+12  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00
+           0.0000e+00  4.9974e+12
+  Arsenic  3.9703e+13  3.7284e+12  4.3895e+09  5.3024e+09  1.0622e+13  0.0000e+00
+           0.0000e+00  5.4063e+13
+      Int  3.1062e+02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00
+           0.0000e+00  3.1062e+02
+      Vac  1.4024e+12  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00
+           0.0000e+00  1.4024e+12
+ ICluster  6.1389e+05  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00
+           0.0000e+00  6.1389e+05
+       B4  6.0896e-08  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00
+           0.0000e+00  6.0896e-08
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+------------------------------------------------------------- SetPlxList -----
+SetPlxList { Boron_Implant Arsenic_Implant }
+------------------------------------------------------------------------------
+--------------------------------------------------------------- WritePlx -----
+WritePlx n276_extimp.plx y= 0.05125
+------------------------------------------------------------------------------
+----------------------------------------------------------------- struct -----
+struct tdr= "n276"
+------------------------------------------------------------------------------
+Points: 1652
+Nodes: 1905
+Edges: 5038
+Faces: 3149
+Volumes: 0
+
+Writing file n276_fps.tdr...done
+
+------------------------------------------------------------------------------
+Summary:
+Edge/Face swapping:
+ calls=9 flips=0
+------------------------------------------------------------------------------
+
+Elapsed Time:	00:00:52
+User Time:	00:00:25
+CPU Time:	00:00:24
+
+Detailed CPU time report:
+
+3.25 sec (21.4%) mater command (143 calls).
+2.30 sec (15.1%) reaction command (57 calls).
+2.14 sec (14.1%) solution command (13949 calls).
+1.84 sec (12.1%) implant command (231 calls).
+1.78 sec (11.7%) Other Program Parts (1 calls).
+1.36 sec (8.9%) implant::integrate (1 calls).
+0.74 sec (4.8%) struct command (1 calls).
+0.59 sec (3.9%) init command (1 calls).
+0.41 sec (2.7%) MakeInterfaces (3 calls).
+0.31 sec (2.0%) Interface interpolation (2 calls).
+0.16 sec (1.1%) SnMesh meshing (1 calls).
+
+
+Detailed elapsed time report:
+
+15.62 sec (38.8%) Other Program Parts (1 calls).
+13.78 sec (34.2%) mater command (143 calls).
+2.30 sec (5.7%) reaction command (57 calls).
+2.15 sec (5.3%) solution command (13949 calls).
+2.11 sec (5.2%) implant command (231 calls).
+1.36 sec (3.4%) implant::integrate (1 calls).
+1.12 sec (2.8%) struct command (1 calls).
+0.62 sec (1.5%) init command (1 calls).
+0.41 sec (1.0%) MakeInterfaces (3 calls).
+0.31 sec (0.8%) Interface interpolation (2 calls).
+

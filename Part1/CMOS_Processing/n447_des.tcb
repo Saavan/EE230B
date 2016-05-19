@@ -1,0 +1,37 @@
+ 
+  set SIGN   1.0  
+  set DG      "eQuantumPotential"
+  set cTemp   "eTemperature"
+  set WF     4.2
+  set EQN0   "Poisson Electron "
+  set EQNS   "Poisson Electron "
+
+puts $WF
+puts $DG
+puts $EQN0
+puts $EQNS
+puts [expr $SIGN*0.05]
+puts $EQNS
+puts [expr $SIGN*0.85]
+puts $EQNS
+
+
+ 
+  set SIGN   1.0  
+  set DG      "eQuantumPotential"
+  set cTemp   "eTemperature"
+  set WF     4.2
+  set EQN0   "Poisson Electron "
+  set EQNS   "Poisson Electron "
+
+puts $WF
+puts $DG
+puts $EQN0
+puts $EQNS
+puts [expr $SIGN*0.05]
+puts $EQNS
+puts [expr $SIGN*0.85]
+puts $EQNS
+
+
+

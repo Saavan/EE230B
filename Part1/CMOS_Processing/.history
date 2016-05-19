@@ -1,0 +1,289 @@
+19:42:34 May 18 2016 <CMOS_Processing> submitted to the batch system
+19:42:50 May 18 2016     job 57 <sprocess> started on host 'sanquentin': "sprocess -u -b n57_fps.cmd"
+19:42:50 May 18 2016     job 232 <sprocess> started on host 'sanquentin': "sprocess -u -b n232_fps.cmd"
+19:42:50 May 18 2016     job 396 <sprocess> started on host 'sanquentin': "sprocess -u -b n396_fps.cmd"
+19:42:50 May 18 2016     job 560 <sprocess> started on host 'sanquentin': "sprocess -u -b n560_fps.cmd"
+19:43:57 May 18 2016 +++ job 57 <sprocess> done: exit(0)
+19:43:57 May 18 2016 +++ job 232 <sprocess> done: exit(0)
+19:44:00 May 18 2016 +++ job 396 <sprocess> done: exit(0)
+19:44:00 May 18 2016 +++ job 560 <sprocess> done: exit(0)
+19:44:23 May 18 2016     job 59 <sprocess> started on host 'sanquentin': "sprocess -u -b n59_fps.cmd"
+19:44:23 May 18 2016     job 234 <sprocess> started on host 'sanquentin': "sprocess -u -b n234_fps.cmd"
+19:44:23 May 18 2016     job 398 <sprocess> started on host 'sanquentin': "sprocess -u -b n398_fps.cmd"
+19:44:23 May 18 2016     job 562 <sprocess> started on host 'sanquentin': "sprocess -u -b n562_fps.cmd"
+19:44:23 May 18 2016     job 145 <sprocess> started on host 'sanquentin': "sprocess -u -b n145_fps.cmd"
+19:44:23 May 18 2016     job 314 <sprocess> started on host 'sanquentin': "sprocess -u -b n314_fps.cmd"
+19:44:23 May 18 2016     job 478 <sprocess> started on host 'sanquentin': "sprocess -u -b n478_fps.cmd"
+19:44:23 May 18 2016     job 642 <sprocess> started on host 'sanquentin': "sprocess -u -b n642_fps.cmd"
+19:45:46 May 18 2016 +++ job 59 <sprocess> done: exit(0)
+19:45:46 May 18 2016 +++ job 234 <sprocess> done: exit(0)
+19:45:46 May 18 2016 +++ job 398 <sprocess> done: exit(0)
+19:45:46 May 18 2016 +++ job 562 <sprocess> done: exit(0)
+19:45:56 May 18 2016     job 60 <sprocess> started on host 'sanquentin': "sprocess -u -b n60_fps.cmd"
+19:45:56 May 18 2016     job 235 <sprocess> started on host 'sanquentin': "sprocess -u -b n235_fps.cmd"
+19:45:56 May 18 2016     job 399 <sprocess> started on host 'sanquentin': "sprocess -u -b n399_fps.cmd"
+19:45:56 May 18 2016     job 563 <sprocess> started on host 'sanquentin': "sprocess -u -b n563_fps.cmd"
+19:45:59 May 18 2016 +++ job 145 <sprocess> done: exit(0)
+19:45:59 May 18 2016 +++ job 642 <sprocess> done: exit(0)
+19:46:00 May 18 2016 +++ job 314 <sprocess> done: exit(0)
+19:46:00 May 18 2016 +++ job 478 <sprocess> done: exit(0)
+19:46:27 May 18 2016     job 147 <sprocess> started on host 'sanquentin': "sprocess -u -b n147_fps.cmd"
+19:46:27 May 18 2016     job 316 <sprocess> started on host 'sanquentin': "sprocess -u -b n316_fps.cmd"
+19:46:27 May 18 2016     job 480 <sprocess> started on host 'sanquentin': "sprocess -u -b n480_fps.cmd"
+19:46:27 May 18 2016     job 644 <sprocess> started on host 'sanquentin': "sprocess -u -b n644_fps.cmd"
+19:47:19 May 18 2016 +++ job 235 <sprocess> done: exit(0)
+19:47:19 May 18 2016 +++ job 563 <sprocess> done: exit(0)
+19:47:20 May 18 2016 +++ job 60 <sprocess> done: exit(0)
+19:47:20 May 18 2016 +++ job 399 <sprocess> done: exit(0)
+19:47:23 May 18 2016 +++ job 147 <sprocess> done: exit(0)
+19:47:23 May 18 2016 +++ job 316 <sprocess> done: exit(0)
+19:47:23 May 18 2016 +++ job 480 <sprocess> done: exit(0)
+19:47:23 May 18 2016 +++ job 644 <sprocess> done: exit(0)
+19:47:29 May 18 2016     job 61 <sprocess> started on host 'sanquentin': "sprocess -u -b n61_fps.cmd"
+19:47:29 May 18 2016     job 236 <sprocess> started on host 'sanquentin': "sprocess -u -b n236_fps.cmd"
+19:47:29 May 18 2016     job 400 <sprocess> started on host 'sanquentin': "sprocess -u -b n400_fps.cmd"
+19:47:29 May 18 2016     job 564 <sprocess> started on host 'sanquentin': "sprocess -u -b n564_fps.cmd"
+19:47:29 May 18 2016     job 148 <sprocess> started on host 'sanquentin': "sprocess -u -b n148_fps.cmd"
+19:47:29 May 18 2016     job 317 <sprocess> started on host 'sanquentin': "sprocess -u -b n317_fps.cmd"
+19:47:29 May 18 2016     job 481 <sprocess> started on host 'sanquentin': "sprocess -u -b n481_fps.cmd"
+19:47:29 May 18 2016     job 645 <sprocess> started on host 'sanquentin': "sprocess -u -b n645_fps.cmd"
+19:48:52 May 18 2016 +++ job 317 <sprocess> done: exit(0)
+19:48:53 May 18 2016 +++ job 148 <sprocess> done: exit(0)
+19:48:53 May 18 2016 +++ job 481 <sprocess> done: exit(0)
+19:48:53 May 18 2016 +++ job 645 <sprocess> done: exit(0)
+19:49:02 May 18 2016     job 149 <sprocess> started on host 'sanquentin': "sprocess -u -b n149_fps.cmd"
+19:49:02 May 18 2016     job 318 <sprocess> started on host 'sanquentin': "sprocess -u -b n318_fps.cmd"
+19:49:02 May 18 2016     job 482 <sprocess> started on host 'sanquentin': "sprocess -u -b n482_fps.cmd"
+19:49:02 May 18 2016     job 646 <sprocess> started on host 'sanquentin': "sprocess -u -b n646_fps.cmd"
+19:49:02 May 18 2016     job 11 <sprocess> started on host 'sanquentin': "sprocess -u -b n11_fps.cmd"
+19:49:02 May 18 2016     job 191 <sprocess> started on host 'sanquentin': "sprocess -u -b n191_fps.cmd"
+19:49:02 May 18 2016     job 355 <sprocess> started on host 'sanquentin': "sprocess -u -b n355_fps.cmd"
+19:49:02 May 18 2016     job 519 <sprocess> started on host 'sanquentin': "sprocess -u -b n519_fps.cmd"
+19:50:35 May 18 2016     job 101 <sprocess> started on host 'sanquentin': "sprocess -u -b n101_fps.cmd"
+19:50:35 May 18 2016     job 273 <sprocess> started on host 'sanquentin': "sprocess -u -b n273_fps.cmd"
+19:50:35 May 18 2016     job 437 <sprocess> started on host 'sanquentin': "sprocess -u -b n437_fps.cmd"
+19:50:35 May 18 2016     job 601 <sprocess> started on host 'sanquentin': "sprocess -u -b n601_fps.cmd"
+19:50:38 May 18 2016 +++ job 355 <sprocess> done: exit(0)
+19:50:38 May 18 2016 +++ job 519 <sprocess> done: exit(0)
+19:50:39 May 18 2016 +++ job 11 <sprocess> done: exit(0)
+19:50:40 May 18 2016 +++ job 191 <sprocess> done: exit(0)
+19:51:06 May 18 2016     job 13 <sprocess> started on host 'sanquentin': "sprocess -u -b n13_fps.cmd"
+19:51:06 May 18 2016     job 193 <sprocess> started on host 'sanquentin': "sprocess -u -b n193_fps.cmd"
+19:51:06 May 18 2016     job 357 <sprocess> started on host 'sanquentin': "sprocess -u -b n357_fps.cmd"
+19:51:06 May 18 2016     job 521 <sprocess> started on host 'sanquentin': "sprocess -u -b n521_fps.cmd"
+19:52:01 May 18 2016 +++ job 13 <sprocess> done: exit(0)
+19:52:01 May 18 2016 +++ job 193 <sprocess> done: exit(0)
+19:52:01 May 18 2016 +++ job 357 <sprocess> done: exit(0)
+19:52:01 May 18 2016 +++ job 521 <sprocess> done: exit(0)
+19:52:08 May 18 2016     job 14 <sprocess> started on host 'sanquentin': "sprocess -u -b n14_fps.cmd"
+19:52:08 May 18 2016     job 194 <sprocess> started on host 'sanquentin': "sprocess -u -b n194_fps.cmd"
+19:52:08 May 18 2016     job 358 <sprocess> started on host 'sanquentin': "sprocess -u -b n358_fps.cmd"
+19:52:08 May 18 2016     job 522 <sprocess> started on host 'sanquentin': "sprocess -u -b n522_fps.cmd"
+19:52:08 May 18 2016 +++ job 437 <sprocess> done: exit(0)
+19:52:11 May 18 2016 +++ job 101 <sprocess> done: exit(0)
+19:52:11 May 18 2016 +++ job 273 <sprocess> done: exit(0)
+19:52:11 May 18 2016 +++ job 601 <sprocess> done: exit(0)
+19:52:39 May 18 2016     job 103 <sprocess> started on host 'sanquentin': "sprocess -u -b n103_fps.cmd"
+19:52:39 May 18 2016     job 275 <sprocess> started on host 'sanquentin': "sprocess -u -b n275_fps.cmd"
+19:52:39 May 18 2016     job 439 <sprocess> started on host 'sanquentin': "sprocess -u -b n439_fps.cmd"
+19:52:39 May 18 2016     job 603 <sprocess> started on host 'sanquentin': "sprocess -u -b n603_fps.cmd"
+19:53:12 May 18 2016 +++ job 61 <sprocess> done: exit(0)
+19:53:12 May 18 2016 +++ job 236 <sprocess> done: exit(0)
+19:53:12 May 18 2016 +++ job 400 <sprocess> done: exit(0)
+19:53:12 May 18 2016 +++ job 564 <sprocess> done: exit(0)
+19:53:34 May 18 2016 +++ job 194 <sprocess> done: exit(0)
+19:53:34 May 18 2016 +++ job 358 <sprocess> done: exit(0)
+19:53:34 May 18 2016 +++ job 522 <sprocess> done: exit(0)
+19:53:36 May 18 2016 +++ job 14 <sprocess> done: exit(0)
+19:53:38 May 18 2016 +++ job 103 <sprocess> done: exit(0)
+19:53:38 May 18 2016 +++ job 275 <sprocess> done: exit(0)
+19:53:38 May 18 2016 +++ job 439 <sprocess> done: exit(0)
+19:53:38 May 18 2016 +++ job 603 <sprocess> done: exit(0)
+19:53:41 May 18 2016     job 62 <sprocess> started on host 'sanquentin': "sprocess -u -b n62_fps.cmd"
+19:53:41 May 18 2016     job 237 <sprocess> started on host 'sanquentin': "sprocess -u -b n237_fps.cmd"
+19:53:41 May 18 2016     job 401 <sprocess> started on host 'sanquentin': "sprocess -u -b n401_fps.cmd"
+19:53:41 May 18 2016     job 565 <sprocess> started on host 'sanquentin': "sprocess -u -b n565_fps.cmd"
+19:53:41 May 18 2016     job 15 <sprocess> started on host 'sanquentin': "sprocess -u -b n15_fps.cmd"
+19:53:41 May 18 2016     job 195 <sprocess> started on host 'sanquentin': "sprocess -u -b n195_fps.cmd"
+19:53:41 May 18 2016     job 359 <sprocess> started on host 'sanquentin': "sprocess -u -b n359_fps.cmd"
+19:53:41 May 18 2016     job 523 <sprocess> started on host 'sanquentin': "sprocess -u -b n523_fps.cmd"
+19:53:41 May 18 2016     job 104 <sprocess> started on host 'sanquentin': "sprocess -u -b n104_fps.cmd"
+19:53:41 May 18 2016     job 276 <sprocess> started on host 'sanquentin': "sprocess -u -b n276_fps.cmd"
+19:53:41 May 18 2016     job 440 <sprocess> started on host 'sanquentin': "sprocess -u -b n440_fps.cmd"
+19:53:41 May 18 2016     job 604 <sprocess> started on host 'sanquentin': "sprocess -u -b n604_fps.cmd"
+19:55:06 May 18 2016 +++ job 149 <sprocess> done: exit(0)
+19:55:06 May 18 2016 +++ job 318 <sprocess> done: exit(0)
+19:55:06 May 18 2016 +++ job 482 <sprocess> done: exit(0)
+19:55:06 May 18 2016 +++ job 646 <sprocess> done: exit(0)
+19:55:15 May 18 2016     job 150 <sprocess> started on host 'sanquentin': "sprocess -u -b n150_fps.cmd"
+19:55:15 May 18 2016     job 319 <sprocess> started on host 'sanquentin': "sprocess -u -b n319_fps.cmd"
+19:55:15 May 18 2016     job 483 <sprocess> started on host 'sanquentin': "sprocess -u -b n483_fps.cmd"
+19:55:15 May 18 2016     job 647 <sprocess> started on host 'sanquentin': "sprocess -u -b n647_fps.cmd"
+19:55:57 May 18 2016 +++ job 440 <sprocess> done: exit(0)
+19:55:57 May 18 2016 +++ job 604 <sprocess> done: exit(0)
+19:55:58 May 18 2016 +++ job 104 <sprocess> done: exit(0)
+19:55:58 May 18 2016 +++ job 276 <sprocess> done: exit(0)
+19:56:17 May 18 2016     job 105 <sprocess> started on host 'sanquentin': "sprocess -u -b n105_fps.cmd"
+19:56:17 May 18 2016     job 277 <sprocess> started on host 'sanquentin': "sprocess -u -b n277_fps.cmd"
+19:56:17 May 18 2016     job 441 <sprocess> started on host 'sanquentin': "sprocess -u -b n441_fps.cmd"
+19:56:17 May 18 2016     job 605 <sprocess> started on host 'sanquentin': "sprocess -u -b n605_fps.cmd"
+19:57:26 May 18 2016 +++ job 565 <sprocess> done: exit(0)
+19:57:41 May 18 2016 +++ job 237 <sprocess> done: exit(0)
+19:57:41 May 18 2016 +++ job 401 <sprocess> done: exit(0)
+19:57:42 May 18 2016 +++ job 647 <sprocess> done: exit(0)
+19:57:43 May 18 2016 +++ job 62 <sprocess> done: exit(0)
+19:57:49 May 18 2016     job 63 <sprocess> started on host 'sanquentin': "sprocess -u -b n63_fps.cmd"
+19:57:49 May 18 2016     job 238 <sprocess> started on host 'sanquentin': "sprocess -u -b n238_fps.cmd"
+19:57:49 May 18 2016     job 402 <sprocess> started on host 'sanquentin': "sprocess -u -b n402_fps.cmd"
+19:57:49 May 18 2016     job 566 <sprocess> started on host 'sanquentin': "sprocess -u -b n566_fps.cmd"
+19:57:49 May 18 2016     job 648 <sprocess> started on host 'sanquentin': "sprocess -u -b n648_fps.cmd"
+19:58:09 May 18 2016 +++ job 150 <sprocess> done: exit(0)
+19:58:09 May 18 2016 +++ job 483 <sprocess> done: exit(0)
+19:58:15 May 18 2016 +++ job 319 <sprocess> done: exit(0)
+19:58:20 May 18 2016     job 151 <sprocess> started on host 'sanquentin': "sprocess -u -b n151_fps.cmd"
+19:58:20 May 18 2016     job 320 <sprocess> started on host 'sanquentin': "sprocess -u -b n320_fps.cmd"
+19:58:20 May 18 2016     job 484 <sprocess> started on host 'sanquentin': "sprocess -u -b n484_fps.cmd"
+19:58:56 May 18 2016 +++ job 63 <sprocess> done: exit(0)
+19:59:04 May 18 2016 +++ job 238 <sprocess> done: exit(0)
+19:59:04 May 18 2016 +++ job 402 <sprocess> done: exit(0)
+19:59:04 May 18 2016 +++ job 566 <sprocess> done: exit(0)
+19:59:04 May 18 2016 +++ job 320 <sprocess> done: exit(0)
+19:59:04 May 18 2016 +++ job 648 <sprocess> done: exit(0)
+19:59:09 May 18 2016 +++ job 151 <sprocess> done: exit(0)
+19:59:09 May 18 2016 +++ job 484 <sprocess> done: exit(0)
+19:59:52 May 18 2016 +++ job 359 <sprocess> done: exit(0)
+19:59:53 May 18 2016 +++ job 15 <sprocess> done: exit(0)
+19:59:57 May 18 2016 +++ job 195 <sprocess> done: exit(0)
+19:59:57 May 18 2016 +++ job 523 <sprocess> done: exit(0)
+20:00:24 May 18 2016     job 16 <sprocess> started on host 'sanquentin': "sprocess -u -b n16_fps.cmd"
+20:00:24 May 18 2016     job 196 <sprocess> started on host 'sanquentin': "sprocess -u -b n196_fps.cmd"
+20:00:24 May 18 2016     job 360 <sprocess> started on host 'sanquentin': "sprocess -u -b n360_fps.cmd"
+20:00:24 May 18 2016     job 524 <sprocess> started on host 'sanquentin': "sprocess -u -b n524_fps.cmd"
+20:01:12 May 18 2016 +++ job 605 <sprocess> done: exit(0)
+20:01:14 May 18 2016 +++ job 277 <sprocess> done: exit(0)
+20:01:17 May 18 2016 +++ job 441 <sprocess> done: exit(0)
+20:01:18 May 18 2016 +++ job 105 <sprocess> done: exit(0)
+20:01:26 May 18 2016     job 106 <sprocess> started on host 'sanquentin': "sprocess -u -b n106_fps.cmd"
+20:01:26 May 18 2016     job 278 <sprocess> started on host 'sanquentin': "sprocess -u -b n278_fps.cmd"
+20:01:26 May 18 2016     job 442 <sprocess> started on host 'sanquentin': "sprocess -u -b n442_fps.cmd"
+20:01:26 May 18 2016     job 606 <sprocess> started on host 'sanquentin': "sprocess -u -b n606_fps.cmd"
+20:02:50 May 18 2016 +++ job 524 <sprocess> done: exit(0)
+20:02:59 May 18 2016     job 525 <sprocess> started on host 'sanquentin': "sprocess -u -b n525_fps.cmd"
+20:03:05 May 18 2016 +++ job 196 <sprocess> done: exit(0)
+20:03:05 May 18 2016 +++ job 360 <sprocess> done: exit(0)
+20:03:06 May 18 2016 +++ job 16 <sprocess> done: exit(0)
+20:03:30 May 18 2016     job 17 <sprocess> started on host 'sanquentin': "sprocess -u -b n17_fps.cmd"
+20:03:30 May 18 2016     job 197 <sprocess> started on host 'sanquentin': "sprocess -u -b n197_fps.cmd"
+20:03:30 May 18 2016     job 361 <sprocess> started on host 'sanquentin': "sprocess -u -b n361_fps.cmd"
+20:03:45 May 18 2016 +++ job 525 <sprocess> done: exit(0)
+20:03:51 May 18 2016 +++ job 606 <sprocess> done: exit(0)
+20:04:01 May 18 2016     job 607 <sprocess> started on host 'sanquentin': "sprocess -u -b n607_fps.cmd"
+20:04:06 May 18 2016 +++ job 278 <sprocess> done: exit(0)
+20:04:07 May 18 2016 +++ job 106 <sprocess> done: exit(0)
+20:04:07 May 18 2016 +++ job 442 <sprocess> done: exit(0)
+20:04:12 May 18 2016 +++ job 17 <sprocess> done: exit(0)
+20:04:17 May 18 2016 +++ job 197 <sprocess> done: exit(0)
+20:04:17 May 18 2016 +++ job 361 <sprocess> done: exit(0)
+20:04:32 May 18 2016     job 107 <sprocess> started on host 'sanquentin': "sprocess -u -b n107_fps.cmd"
+20:04:32 May 18 2016     job 279 <sprocess> started on host 'sanquentin': "sprocess -u -b n279_fps.cmd"
+20:04:32 May 18 2016     job 443 <sprocess> started on host 'sanquentin': "sprocess -u -b n443_fps.cmd"
+20:04:47 May 18 2016 +++ job 607 <sprocess> done: exit(0)
+20:05:15 May 18 2016 +++ job 443 <sprocess> done: exit(0)
+20:05:19 May 18 2016 +++ job 107 <sprocess> done: exit(0)
+20:05:19 May 18 2016 +++ job 279 <sprocess> done: exit(0)
+20:05:21 May 18 2016 <CMOS_Processing> done (1367 sec)
+20:47:21 May 18 2016 <CMOS_Processing> submitted to the batch system
+20:47:25 May 18 2016     job 21 <sdevice> started on host 'sanquentin': "sdevice pp21_des.cmd"
+20:47:25 May 18 2016     job 201 <sdevice> started on host 'sanquentin': "sdevice pp201_des.cmd"
+20:47:25 May 18 2016     job 365 <sdevice> started on host 'sanquentin': "sdevice pp365_des.cmd"
+20:47:25 May 18 2016     job 529 <sdevice> started on host 'sanquentin': "sdevice pp529_des.cmd"
+20:47:25 May 18 2016     job 67 <sdevice> started on host 'sanquentin': "sdevice pp67_des.cmd"
+20:47:25 May 18 2016     job 242 <sdevice> started on host 'sanquentin': "sdevice pp242_des.cmd"
+20:47:25 May 18 2016     job 406 <sdevice> started on host 'sanquentin': "sdevice pp406_des.cmd"
+20:47:25 May 18 2016     job 570 <sdevice> started on host 'sanquentin': "sdevice pp570_des.cmd"
+20:47:25 May 18 2016     job 111 <sdevice> started on host 'sanquentin': "sdevice pp111_des.cmd"
+20:47:25 May 18 2016     job 283 <sdevice> started on host 'sanquentin': "sdevice pp283_des.cmd"
+20:47:25 May 18 2016     job 447 <sdevice> started on host 'sanquentin': "sdevice pp447_des.cmd"
+20:47:25 May 18 2016     job 611 <sdevice> started on host 'sanquentin': "sdevice pp611_des.cmd"
+20:47:25 May 18 2016     job 155 <sdevice> started on host 'sanquentin': "sdevice pp155_des.cmd"
+20:47:25 May 18 2016     job 324 <sdevice> started on host 'sanquentin': "sdevice pp324_des.cmd"
+20:47:25 May 18 2016     job 488 <sdevice> started on host 'sanquentin': "sdevice pp488_des.cmd"
+20:47:25 May 18 2016     job 652 <sdevice> started on host 'sanquentin': "sdevice pp652_des.cmd"
+20:47:56 May 18 2016     job 24 <sdevice> started on host 'sanquentin': "sdevice pp24_des.cmd"
+20:47:56 May 18 2016     job 204 <sdevice> started on host 'sanquentin': "sdevice pp204_des.cmd"
+20:47:56 May 18 2016     job 368 <sdevice> started on host 'sanquentin': "sdevice pp368_des.cmd"
+20:47:56 May 18 2016     job 532 <sdevice> started on host 'sanquentin': "sdevice pp532_des.cmd"
+20:47:56 May 18 2016     job 70 <sdevice> started on host 'sanquentin': "sdevice pp70_des.cmd"
+20:47:56 May 18 2016     job 245 <sdevice> started on host 'sanquentin': "sdevice pp245_des.cmd"
+20:47:56 May 18 2016     job 409 <sdevice> started on host 'sanquentin': "sdevice pp409_des.cmd"
+20:47:56 May 18 2016     job 573 <sdevice> started on host 'sanquentin': "sdevice pp573_des.cmd"
+20:47:56 May 18 2016     job 114 <sdevice> started on host 'sanquentin': "sdevice pp114_des.cmd"
+20:47:56 May 18 2016     job 286 <sdevice> started on host 'sanquentin': "sdevice pp286_des.cmd"
+20:47:56 May 18 2016     job 450 <sdevice> started on host 'sanquentin': "sdevice pp450_des.cmd"
+20:47:56 May 18 2016     job 614 <sdevice> started on host 'sanquentin': "sdevice pp614_des.cmd"
+20:47:56 May 18 2016     job 158 <sdevice> started on host 'sanquentin': "sdevice pp158_des.cmd"
+20:47:56 May 18 2016     job 327 <sdevice> started on host 'sanquentin': "sdevice pp327_des.cmd"
+20:47:56 May 18 2016     job 491 <sdevice> started on host 'sanquentin': "sdevice pp491_des.cmd"
+20:47:56 May 18 2016     job 655 <sdevice> started on host 'sanquentin': "sdevice pp655_des.cmd"
+20:52:02 May 18 2016 +++ job 158 <sdevice> done: exit(0)
+20:52:09 May 18 2016 +++ job 286 <sdevice> done: exit(0)
+20:52:11 May 18 2016 +++ job 204 <sdevice> done: exit(0)
+20:52:11 May 18 2016 +++ job 409 <sdevice> done: exit(0)
+20:52:11 May 18 2016 +++ job 114 <sdevice> done: exit(0)
+20:52:11 May 18 2016 +++ job 450 <sdevice> done: exit(0)
+20:52:11 May 18 2016 +++ job 491 <sdevice> done: exit(0)
+20:52:14 May 18 2016 +++ job 24 <sdevice> done: exit(0)
+20:52:14 May 18 2016 +++ job 368 <sdevice> done: exit(0)
+20:52:14 May 18 2016 +++ job 532 <sdevice> done: exit(0)
+20:52:14 May 18 2016 +++ job 573 <sdevice> done: exit(0)
+20:52:14 May 18 2016 +++ job 655 <sdevice> done: exit(0)
+20:52:15 May 18 2016 +++ job 614 <sdevice> done: exit(0)
+20:52:28 May 18 2016 +++ job 21 <sdevice> done: exit(0)
+20:52:28 May 18 2016 +++ job 111 <sdevice> done: exit(0)
+20:52:30 May 18 2016 +++ job 283 <sdevice> done: exit(0)
+20:52:30 May 18 2016 +++ job 155 <sdevice> done: exit(0)
+20:52:31 May 18 2016 +++ job 447 <sdevice> done: exit(0)
+20:52:32 May 18 2016 +++ job 201 <sdevice> done: exit(0)
+20:52:32 May 18 2016 +++ job 67 <sdevice> done: exit(0)
+20:52:32 May 18 2016 +++ job 242 <sdevice> done: exit(0)
+20:52:32 May 18 2016 +++ job 324 <sdevice> done: exit(0)
+20:52:35 May 18 2016 +++ job 365 <sdevice> done: exit(0)
+20:52:35 May 18 2016 +++ job 406 <sdevice> done: exit(0)
+20:52:35 May 18 2016 +++ job 488 <sdevice> done: exit(0)
+20:52:37 May 18 2016 +++ job 529 <sdevice> done: exit(0)
+20:52:38 May 18 2016 +++ job 570 <sdevice> done: exit(0)
+20:52:38 May 18 2016 +++ job 611 <sdevice> done: exit(0)
+20:52:38 May 18 2016 +++ job 652 <sdevice> done: exit(0)
+20:53:37 May 18 2016 +++ job 245 <sdevice> done: exit(0)
+20:53:40 May 18 2016 +++ job 327 <sdevice> done: exit(0)
+20:53:42 May 18 2016 +++ job 70 <sdevice> done: exit(0)
+20:53:44 May 18 2016 <CMOS_Processing> done (383 sec)
+21:40:21 May 18 2016 <CMOS_Processing> submitted to the batch system
+21:40:38 May 18 2016     job 684 <sprocess> started on host 'sanquentin': "sprocess -u -b n684_fps.cmd"
+21:40:38 May 18 2016     job 718 <sprocess> started on host 'sanquentin': "sprocess -u -b n718_fps.cmd"
+21:40:38 May 18 2016     job 759 <sprocess> started on host 'sanquentin': "sprocess -u -b n759_fps.cmd"
+21:40:38 May 18 2016     job 800 <sprocess> started on host 'sanquentin': "sprocess -u -b n800_fps.cmd"
+21:40:38 May 18 2016     job 842 <sprocess> started on host 'sanquentin': "sprocess -u -b n842_fps.cmd"
+21:40:38 May 18 2016     job 876 <sprocess> started on host 'sanquentin': "sprocess -u -b n876_fps.cmd"
+21:40:38 May 18 2016     job 917 <sprocess> started on host 'sanquentin': "sprocess -u -b n917_fps.cmd"
+21:40:38 May 18 2016     job 958 <sprocess> started on host 'sanquentin': "sprocess -u -b n958_fps.cmd"
+21:40:38 May 18 2016     job 1000 <sprocess> started on host 'sanquentin': "sprocess -u -b n1000_fps.cmd"
+21:40:38 May 18 2016     job 1034 <sprocess> started on host 'sanquentin': "sprocess -u -b n1034_fps.cmd"
+21:40:38 May 18 2016     job 1075 <sprocess> started on host 'sanquentin': "sprocess -u -b n1075_fps.cmd"
+21:40:38 May 18 2016     job 1116 <sprocess> started on host 'sanquentin': "sprocess -u -b n1116_fps.cmd"
+21:40:38 May 18 2016     job 1158 <sprocess> started on host 'sanquentin': "sprocess -u -b n1158_fps.cmd"
+21:40:38 May 18 2016     job 1192 <sprocess> started on host 'sanquentin': "sprocess -u -b n1192_fps.cmd"
+21:40:38 May 18 2016     job 1233 <sprocess> started on host 'sanquentin': "sprocess -u -b n1233_fps.cmd"
+21:40:38 May 18 2016     job 1274 <sprocess> started on host 'sanquentin': "sprocess -u -b n1274_fps.cmd"
+21:40:38 May 18 2016     job 1316 <sprocess> started on host 'sanquentin': "sprocess -u -b n1316_fps.cmd"
+21:40:38 May 18 2016     job 1350 <sprocess> started on host 'sanquentin': "sprocess -u -b n1350_fps.cmd"
+21:40:38 May 18 2016     job 1391 <sprocess> started on host 'sanquentin': "sprocess -u -b n1391_fps.cmd"
+21:40:38 May 18 2016     job 1432 <sprocess> started on host 'sanquentin': "sprocess -u -b n1432_fps.cmd"
+21:40:38 May 18 2016     job 1474 <sprocess> started on host 'sanquentin': "sprocess -u -b n1474_fps.cmd"
+21:40:38 May 18 2016     job 1508 <sprocess> started on host 'sanquentin': "sprocess -u -b n1508_fps.cmd"
+21:40:38 May 18 2016     job 1549 <sprocess> started on host 'sanquentin': "sprocess -u -b n1549_fps.cmd"
+21:40:39 May 18 2016     job 1590 <sprocess> started on host 'sanquentin': "sprocess -u -b n1590_fps.cmd"
+21:40:39 May 18 2016     job 1632 <sprocess> started on host 'sanquentin': "sprocess -u -b n1632_fps.cmd"
+21:40:39 May 18 2016     job 1666 <sprocess> started on host 'sanquentin': "sprocess -u -b n1666_fps.cmd"
+21:40:39 May 18 2016     job 1707 <sprocess> started on host 'sanquentin': "sprocess -u -b n1707_fps.cmd"
+21:40:39 May 18 2016     job 1748 <sprocess> started on host 'sanquentin': "sprocess -u -b n1748_fps.cmd"

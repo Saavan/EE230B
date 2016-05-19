@@ -1,0 +1,32 @@
+*----------------------------------------------------------------------
+* Generation & Recombination:
+*----------------------------------------------------------------------
+* Recombination( SRH( DopingDep ) ) 
+         
+Scharfetter * relation and trap level for SRH recombination:
+{ * tau = taumin + ( taumax - taumin ) / ( 1 + ( N/Nref )^gamma)
+  * tau(T) = tau * ( (T/300)^Talpha )          (TempDep)
+  * tau(T) = tau * exp( Tcoeff * ((T/300)-1) ) (ExpTempDep)
+	taumin	= 0.0000e+00 ,	0.0000e+00	# [s]
+*	taumax	= 1.0000e-05 ,	3.0000e-06	# [s]
+	taumax	= 1.0000e-8  ,	1.0000e-8	# [s]
+	Nref	= 1.0000e+16 ,	1.0000e+16	# [cm^(-3)]
+	gamma	= 1	     ,	1		# [1]
+	Talpha	= -1.500e+00 ,	-1.500e+00	# [1]
+	Tcoeff	= 2.55	      ,	2.55		# [1]
+	Etrap	= 0.0000e+00			# [eV]
+}
+
+*----------------------------------------------------------------------
+* Density Gradient Quantum Transport
+
+QuantumPotentialParameters
+{ * gamma:  weighting factor for quantum potential
+  * theta:  weight for quadratic term
+  * xi:     weight for quasi Fermi potential
+  * eta:    weight for electrostatic potential
+	gamma	= 3.6 ,	5.6	# [1]
+	theta	= 0.5 ,	0.5	# [1]
+	xi	= 1 ,	1	# [1]
+	eta	= 1 ,	1	# [1]
+}

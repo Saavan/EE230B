@@ -1,0 +1,469 @@
+****************************************************************************
+***                          Sentaurus Process                           ***
+***                        Version K-2015.06-SP1                         ***
+***                            (1.13, RHEL64)                            ***
+***                                                                      ***
+***                       Copyright (C) 1993-2002                        ***
+***          The board of regents of the University of Florida           ***
+***                       Copyright (C) 1994-2015                        ***
+***                            Synopsys, Inc.                            ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Fri Jul 17 23:08:37 PDT 2015 on tcadbld1
+
+      Started at: Wed May 18 20:04:34 2016 (PDT)
+       User name: spatel
+       Host name: n0025.banatao.berkeley.edu
+             PID: 15535
+    Architecture: x86_64
+Operating system: Linux rel. 2.6.32-358.el6.x86_64 ver. #1 SMP Fri Feb 22 20:37:17 CST 2013
+
+------------------------------------------------------------------------------
+Checking syntax of n443_fps.cmd:
+
+Syntax check complete.
+------------------------------------------------------------------------------
+
+Starting Tcl interpreter with inputfile: n443_fps.cmd
+            sprocess: Checked Out
+
+Loading models file: /opt/synopsys/K_2015.06-SP1/bin/../tcad/current/lib/sprocess-24.0.13/TclLib/SPROCESS.models... done.
+------------------------------------------------------------------- icwb -----
+icwb filename= "SRAM_lyt.mac" scale= 0.00100
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb domains list
+------------------------------------------------------------------------------
+icwb: LDomains -> SIM2N SIM2P TRENCH2D SRAM6T NMOS3D PMOS3D 
+------------------------------------------------------------------- icwb -----
+icwb layerNames list
+------------------------------------------------------------------------------
+icwb: LNames -> Active pWELL POLY Gate_ACC1 Drain_ACC1 Drain_N1 Source_N1 Drain_P1 Source_P1 Gate_ACC2 Drain_ACC2 Drain_N2 Source_N2 Drain_P2 Source_P2 Gate_N1 Gate_N2 Gate_P2 Gate_P1 Mesh_EXT 
+------------------------------------------------------------------- icwb -----
+icwb layerIDs list
+------------------------------------------------------------------------------
+icwb: LIDs -> 1:0 2:0 3:0 30:1 31:0 32:0 33:0 34:0 35:0 36:1 37:1 38:1 39:1 40:1 41:1 51:0 52:0 53:0 54:0 60:1 
+------------------------------------------------------------------- icwb -----
+icwb domain= {SIM2N}
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb stretch name= "SIM2N_L" value= -0.0100
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb dimension
+------------------------------------------------------------------------------
+icwb: dimension -> 2 
+------------------------------------------------------------------- icwb -----
+icwb bbox left
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb bbox right
+------------------------------------------------------------------------------
+icwb: Domain boundaries -> 0  0.1025 
+------------------------------------------------------------------- init -----
+init tdr= "n442"
+------------------------------------------------------------------------------
+Found touching/overlapping segments, merging.
+          sprocess2d: Checked Out
+
+Recreating refinements to take into account updated simulation dimension.
+Done recreating refinements.
+
+
+Points: 2092
+Nodes: 2624
+Edges: 6621
+Faces: 4020
+Volumes: 0
+
+------------------------------------------------------------------ strip -----
+strip Oxynitride
+------------------------------------------------------------------------------
+MGoals time: 0.0107648
+
+Remeshing to match geometry after strip command ...
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+* Name: ExtImp, Type: Standard
+* Name: ExtXY, Type: Standard
+* Name: ExtIF, Type: Interface
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  1784 (tree) + 367 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 59.1834  [near (-0.00180004 0.0226203)] at region=NickelSilicide_1
+nVerts = 367  nTris = 374  nRegs = 22
+bmin: 10 0
+bmax: -0.153594 0.05125
+min area: 3.53272e-05  max area: 2.5  total area  : 20.6315 interface area: 0.221772
+total volume: 0.520372
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (2088 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+    2084 points.
+    4004 elements.
+       8 regions.
+Max. connectivity = 10 located at (-0.00179993;0.0232227)
+
+SnMesh time: 0.227965
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    2   2   6   4  16  15   5   7   3  30  .    1  .   .   .   .   .     
+---------------------------------------------------------------------------------
+minAngle: 0.0367051  maxAngle: 156.71
+nVerts = 2084  nTris = 4004  nMats = 8
+max connectivity (tris per node): 10
+bmin: 10 0
+bmax: -0.153594 0.05125
+min edgeLength: 9.57976e-06  [near (-0.00227837 0.041245)]
+min volume: 5.82147e-10  max volume: 0.0320313  Total volume: 0.513316
+bbox  volume: 0.520372
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.595909
+Interpolating...elapsed time: 0.38
+------------------------------------------------------------------ strip -----
+strip PolySilicon
+------------------------------------------------------------------------------
+MGoals time: 0.0110149
+
+Remeshing to match geometry after strip command ...
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+* Name: ExtImp, Type: Standard
+* Name: ExtXY, Type: Standard
+* Name: ExtIF, Type: Interface
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  1704 (tree) + 336 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 59.1834  [near (-0.00180004 0.0226203)] at region=NickelSilicide_1
+nVerts = 336  nTris = 342  nRegs = 21
+bmin: 10 0
+bmax: -0.153594 0.05125
+min area: 3.53272e-05  max area: 2.5  total area  : 20.6121 interface area: 0.202462
+total volume: 0.520372
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (1989 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+    1985 points.
+    3820 elements.
+       7 regions.
+Max. connectivity = 10 located at (-0.00179993;0.0232227)
+
+SnMesh time: 0.218967
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    2   2   6   4  16  15   4   7   3  29  .    1  .   .   .   .   .     
+---------------------------------------------------------------------------------
+minAngle: 0.0367051  maxAngle: 156.71
+nVerts = 1985  nTris = 3820  nMats = 7
+max connectivity (tris per node): 10
+bmin: 10 0
+bmax: -0.153594 0.05125
+min edgeLength: 9.57976e-06  [near (-0.00227837 0.041245)]
+min volume: 5.82147e-10  max volume: 0.0320313  Total volume: 0.513036
+bbox  volume: 0.520372
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.516922
+Interpolating...elapsed time: 0.43
+-------------------------------------------------------------- transform -----
+transform cut min= {-0.500<um> -10.00<um> -10.00<um>} max= {0.500<um> 1.00<um> 1.00<um>}
+------------------------------------------------------------------------------
+Keeping only mesh aligned elements...MGoals time: 7.7481e-03
+Cutting refinement boxes...Cutting the boundary...Interpolating...elapsed time: 0.29
+done
+-------------------------------------------------------------- refinebox -----
+refinebox clear
+------------------------------------------------------------------------------
+-------------------------------------------------------------- refinebox -----
+refinebox !keep.lines
+------------------------------------------------------------------------------
+Lines in mesh will not be retained.
+------------------------------------------------------------------- line -----
+line clear
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid Adaptive 1
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid AdaptiveField Refine.Abs.Error 1e37
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid AdaptiveField Refine.Rel.Error 1e10
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid AdaptiveField Refine.Target.Length 100.0
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid sMesh 1
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid SnMesh DelaunayType boxmethod
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid SnMesh CoplanarityAngle 179
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid SnMesh MaxPoints 500000
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid SnMesh MaxNeighborRatio 1e6
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid SnMesh min.normal.size 0.01
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid SnMesh normal.growth.ratio.2d 8.0
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid SnMesh max.box.angle.2d 179
+------------------------------------------------------------------------------
+-------------------------------------------------------------- refinebox -----
+refinebox interface.materials= {Silicon}
+------------------------------------------------------------------------------
+-------------------------------------------------------------- refinebox -----
+refinebox Silicon extrusion.min= -0.0500<um> extrusion.max= 0.200<um> mask= "Active" extend= 0.0100<um> add name= "DA" Adaptive refine.min.edge= {0.00100<um> 0.00176<um>} refine.max.edge= {0.00500<um> 0.00703<um>} def.max.asinhdiff= 0.500 refine.fields= {NetActive}
+------------------------------------------------------------------------------
+-------------------------------------------------------------- refinebox -----
+refinebox info= 1 Silicon extrusion.min= -0.00e+00<um> extrusion.max= 0.0250<um> mask= "EXT" extend= 0.00500<um> add xrefine= {0.00100<um>} yrefine= {0.00250<um>} name= "DE"
+------------------------------------------------------------------------------
+icwb.create.mask name= Device_Channel layer.name= POLY polarity= positive
+icwb.create.mask name= Device_Channel layer.name= POLY  polarity= positive shift= default stretchypos= default stretchyneg= default stretchzpos= default stretchzneg= default reflecty= default reflectz= default save.to.tdr= default info= default help= 0 
+------------------------------------------------------------------- icwb -----
+icwb dimension
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb layer.name= "POLY" list.segments
+------------------------------------------------------------------------------
+------------------------------------------------------------------- mask -----
+mask name= "Device_Channel" segments= {0.0413<um> 0.0612<um>}
+------------------------------------------------------------------------------
+-------------------------------------------------------------- refinebox -----
+refinebox Silicon extrusion.min= -0.00100<um> extrusion.max= 0.0200<um> mask= "Device_Channel" extend= 0.0250<um> add name= "DC" Adaptive refine.min.edge= {5.00e-04<um> 4.39e-04<um>} refine.max.edge= {0.00125<um> 8.79e-04<um>} def.max.asinhdiff= 1.00 refine.fields= {NetActive}
+------------------------------------------------------------------------------
+-------------------------------------------------------------- refinebox -----
+refinebox Silicon extrusion.min= -0.00100<um> extrusion.max= 0.00400<um> mask= "Device_Channel" extend= 0.0100<um> min.normal.size= 1.00e-04<um> normal.growth.ratio= 1.10 add interface.materials= {Silicon Oxide} name= "DeviceIF"
+------------------------------------------------------------------------------
+-------------------------------------------------------------- refinebox -----
+refinebox Silicon extrusion.min= -0.0250<um> extrusion.max= 0.00e+00<um> mask= "Device_Channel" extend= 0.0250<um> min.normal.size= 1.00e-04<um> normal.growth.ratio= 1.20 add interface.materials= {Silicon Nitride} name= "PDeviceIF"
+------------------------------------------------------------------------------
+icwb.create.mask name= SDN layer.name= Source_N1 polarity= positive
+icwb.create.mask name= SDN layer.name= Source_N1  polarity= positive shift= default stretchypos= default stretchyneg= default stretchzpos= default stretchzneg= default reflecty= default reflectz= default save.to.tdr= default info= default help= 0 
+------------------------------------------------------------------- icwb -----
+icwb dimension
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb layer.name= "Source_N1" list.segments
+------------------------------------------------------------------------------
+------------------------------------------------------------------- mask -----
+mask name= "SDN" segments= {-0.00200<um> 0.0154<um>}
+------------------------------------------------------------------------------
+-------------------------------------------------------------- refinebox -----
+refinebox Silicon extrusion.min= -0.00e+00<um> extrusion.max= 0.0800<um> mask= "SDN" extend= 0.0100<um> add xrefine= {0.00250<um>} yrefine= {0.00250<um>} name= "nsd"
+------------------------------------------------------------------------------
+icwb.create.mask name= SDP layer.name= Source_P1 polarity= positive
+icwb.create.mask name= SDP layer.name= Source_P1  polarity= positive shift= default stretchypos= default stretchyneg= default stretchzpos= default stretchzneg= default reflecty= default reflectz= default save.to.tdr= default info= default help= 0 
+------------------------------------------------------------------- icwb -----
+icwb dimension
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb layer.name= "Source_P1" list.segments
+------------------------------------------------------------------------------
+------------------------------------------------------------------- mask -----
+mask name= "SDP" segments= {}
+------------------------------------------------------------------------------
+-------------------------------------------------------------- refinebox -----
+refinebox Silicon extrusion.min= -0.0250<um> extrusion.max= 0.0800<um> mask= "SDP" extend= 0.0100<um> add xrefine= {0.00250<um>} yrefine= {0.00250<um>} name= "psd"
+------------------------------------------------------------------------------
+------------------------------------------------------------------- grid -----
+grid info= 1 remesh
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: DA, Type: Adaptive
+* Name: DE, Type: Standard
+* Name: DC, Type: Adaptive
+* Name: DeviceIF, Type: Interface
+* Name: PDeviceIF, Type: Interface
+* Name: nsd, Type: Standard
+* Name: psd, Type: Standard
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  3557 (tree) + 380 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 59.1834  [near (-0.00180004 0.0226203)] at region=NickelSilicide_1
+nVerts = 380  nTris = 386  nRegs = 19
+bmin: 0.46875 0
+bmax: -0.153594 0.05125
+min area: 2.99674e-06  max area: 0.155586  total area  : 1.54965 interface area: 0.202461
+total volume: 0.0318951
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (3897 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+    3893 points.
+    7566 elements.
+       7 regions.
+Max. connectivity = 13 located at (-0.0174561;0.0367641)
+
+SnMesh time: 0.864869
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    1   5   7   5  14  14   6   8   6  32  .   .   .   .   .   .   .     
+---------------------------------------------------------------------------------
+minAngle: 0.377042  maxAngle: 163.257
+nVerts = 3893  nTris = 7566  nMats = 7
+max connectivity (tris per node): 13
+bmin: 0.46875 0
+bmax: -0.153594 0.05125
+min edgeLength: 2.99674e-06  [near (0.00199351 0.0236369)]
+min volume: 6.84385e-11  max volume: 0.00199344  Total volume: 0.0245594
+bbox  volume: 0.0318951
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.535919
+Interpolating...elapsed time: 0.35
+-------------------------------------------------------------- transform -----
+transform right reflect
+------------------------------------------------------------------------------
+Time for adding meshes: 0.04
+Time for copying data: 0.0000e+00
+Time for merging regions: 1.26
+---------------------------------------------------------------- contact -----
+contact Silicon name= "Substrate" bottom
+------------------------------------------------------------------------------
+---------------------------------------------------------------- contact -----
+contact NickelSilicide name= "source" adjacent.material= "Gas" xlo= -0.00500<um> xhi= 0.00500<um> ylo= 0.00e+00<um> yhi= 0.0150<um> box
+------------------------------------------------------------------------------
+---------------------------------------------------------------- contact -----
+contact NickelSilicide name= "drain" adjacent.material= "Gas" xlo= -0.00500<um> xhi= 0.00500<um> ylo= 0.0850<um> yhi= 0.100<um> box
+------------------------------------------------------------------------------
+---------------------------------------------------------------- contact -----
+contact TiNitride name= "gate" adjacent.material= "Gas" xlo= 0.00e+00<um> xhi= -0.0200<um> ylo= 0.0400<um> yhi= 0.0600<um> box
+------------------------------------------------------------------------------
+
+Turning off restart capability for n443_fps.tdr (requires gas and interfaces)
+----------------------------------------------------------------- struct -----
+struct tdr= "n443" !Gas
+------------------------------------------------------------------------------
+Interpolating...elapsed time: 0.4
+Points: 7671
+Nodes: 8469
+Edges: 23574
+Faces: 15142
+Volumes: 0
+
+Writing file n443_fps.tdr...done
+
+------------------------------------------------------------------------------
+Summary:
+Edge/Face swapping:
+ calls=179 flips=0
+------------------------------------------------------------------------------
+
+Elapsed Time:	00:00:39
+User Time:	00:00:29
+CPU Time:	00:00:28
+
+Detailed CPU time report:
+
+3.07 sec (16.6%) mater command (94 calls).
+2.26 sec (12.2%) reaction command (57 calls).
+2.15 sec (11.6%) MakeInterfaces (10 calls).
+1.77 sec (9.6%) Other Program Parts (1 calls).
+1.71 sec (9.2%) Interface interpolation (6 calls).
+1.35 sec (7.3%) struct command (1 calls).
+1.30 sec (7.0%) SnMesh meshing (3 calls).
+1.30 sec (7.0%) FieldServer add (1 calls).
+1.10 sec (5.9%) init command (1 calls).
+0.89 sec (4.8%) implant command (230 calls).
+0.45 sec (2.5%) Bulk Interpolation (5 calls).
+0.38 sec (2.1%) FieldServer copy (8 calls).
+0.15 sec (0.8%) strip command (2 calls).
+0.11 sec (0.6%) grid command (1 calls).
+0.10 sec (0.6%) Transfer from mesher 1D/2D (4 calls).
+
+
+Detailed elapsed time report:
+
+3.13 sec (15.8%) mater command (94 calls).
+2.27 sec (11.5%) reaction command (57 calls).
+2.16 sec (10.9%) MakeInterfaces (10 calls).
+2.11 sec (10.7%) Other Program Parts (1 calls).
+2.00 sec (10.1%) struct command (1 calls).
+1.71 sec (8.7%) Interface interpolation (6 calls).
+1.30 sec (6.6%) SnMesh meshing (3 calls).
+1.30 sec (6.6%) FieldServer add (1 calls).
+1.13 sec (5.7%) init command (1 calls).
+1.03 sec (5.2%) implant command (230 calls).
+0.46 sec (2.3%) Bulk Interpolation (5 calls).
+0.39 sec (2.0%) FieldServer copy (8 calls).
+0.15 sec (0.7%) strip command (2 calls).
+0.11 sec (0.6%) grid command (1 calls).
+0.10 sec (0.5%) Transfer from mesher 1D/2D (4 calls).
+

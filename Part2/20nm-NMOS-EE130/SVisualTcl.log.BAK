@@ -1,0 +1,160 @@
+###########################################
+# Sentaurus Visual K-2015.06-SP1.
+# Tcl log file.
+#------------------------------------------
+# Date: May 08, 2016. 22:51:11.
+# Version: 24.0.10 (1.10)
+# Mode: Interactive (GUI).
+# Hostname: sanquentin.banatao.berkeley.edu.
+# Machine: Linux, x86_64, x86_64.
+# Kernel: 2.6.32-504.8.1.el6.x86_64.
+###########################################
+
+load_file /home/spatel/swb_project/Part2/20nm-NMOS-EE130/n596_des.tdr
+create_plot -dataset n596_des
+select_plots Plot_n596_des
+#-> Plot_n596_des
+#-> Plot_n596_des
+#-> n596_des
+load_file /home/spatel/swb_project/Part2/20nm-NMOS-EE130/n598_des.tdr
+create_plot -dataset n598_des
+select_plots Plot_n598_des
+#-> Plot_n598_des
+#-> Plot_n598_des
+#-> n598_des
+load_file /home/spatel/swb_project/Part2/20nm-NMOS-EE130/n1456_des.tdr
+create_plot -dataset n1456_des
+select_plots Plot_n1456_des
+#-> Plot_n1456_des
+#-> Plot_n1456_des
+#-> n1456_des
+select_plots Plot_n596_des
+#-> Plot_n596_des
+set_field_prop -plot Plot_n596_des -geom n596_des ElectrostaticPotential -show_bands
+#-> 0
+select_plots Plot_n598_des
+#-> Plot_n598_des
+set_field_prop -plot Plot_n598_des -geom n598_des ElectrostaticPotential -show_bands
+#-> 0
+select_plots Plot_n1456_des
+#-> Plot_n1456_des
+set_field_prop -plot Plot_n1456_des -geom n1456_des ElectrostaticPotential -show_bands
+#-> 0
+select_plots Plot_n596_des
+#-> Plot_n596_des
+zoom_plot -plot Plot_n596_des -factor 1.1
+zoom_plot -plot Plot_n596_des -factor 1.21
+move_plot -plot Plot_n596_des -position {0.00268121 -0.0632766}
+#-> 0
+zoom_plot -plot Plot_n596_des -factor 1.1
+zoom_plot -plot Plot_n596_des -factor 1.4641
+move_plot -plot Plot_n596_des -position {0.00432854 -0.0146504}
+#-> 0
+create_cutline -plot Plot_n596_des -type free -points {-0.0124497 0.00268806 3.81619e-06 0.0128556 0.00202213 3.81619e-06}
+#-> C1(n596_des)
+create_plot -dataset C1(n596_des) -1d
+select_plots Plot_C1(n596_des)
+#-> Plot_C1(n596_des)
+#-> Plot_C1(n596_des)
+create_curve -plot Plot_C1(n596_des) -dataset C1(n596_des) -axisX Distance -axisY ElectrostaticPotential
+#-> Curve_1
+select_plots Plot_n598_des
+#-> Plot_n598_des
+zoom_plot -plot Plot_n598_des -factor 1.1
+zoom_plot -plot Plot_n598_des -factor 1.331
+move_plot -plot Plot_n598_des -position {0.0282746 -0.0931112}
+#-> 0
+create_cutline -plot Plot_n598_des -type free -points {-0.0146195 0.000995373 3.81619e-06 0.0209675 2.03866e-05 1.49011e-09}
+#-> C1(n598_des)
+create_curve -plot Plot_C1(n596_des) -dataset C1(n598_des) -axisX Distance -axisY ElectrostaticPotential
+#-> Curve_2
+create_cutline -plot Plot_n598_des -type x -at 0
+#-> C2(n598_des)
+create_plot -dataset C2(n598_des) -1d
+select_plots Plot_C2(n598_des)
+#-> Plot_C2(n598_des)
+#-> Plot_C2(n598_des)
+create_curve -plot Plot_C2(n598_des) -dataset C2(n598_des) -axisX Y -axisY ElectrostaticPotential
+#-> Curve_1
+undo
+select_plots Plot_C2(n598_des)
+#-> Plot_C2(n598_des)
+remove_plots Plot_C2(n598_des)
+select_plots Plot_n596_des
+#-> Plot_n596_des
+#-> Plot_C2(n598_des)
+select_plots Plot_C1(n596_des)
+#-> Plot_C1(n596_des)
+select_plots Plot_n1456_des
+#-> Plot_n1456_des
+create_cutline -plot Plot_n1456_des -type free -points {-0.012952 0.00200164 3.81619e-06 0.0195143 0.00131087 3.81619e-06}
+#-> C1(n1456_des)
+create_curve -plot Plot_C1(n596_des) -dataset C1(n1456_des) -axisX Distance -axisY ElectrostaticPotential
+#-> Curve_3
+zoom_plot -plot Plot_n1456_des -factor 1.1
+zoom_plot -plot Plot_n1456_des -factor 1.331
+move_plot -plot Plot_n1456_des -position {0.00330265 -0.0736019}
+#-> 0
+zoom_plot -plot Plot_n1456_des -factor 1.1
+zoom_plot -plot Plot_n1456_des -factor 1.61051
+select_plots Plot_n596_des
+#-> Plot_n596_des
+select_plots Plot_n598_des
+#-> Plot_n598_des
+remove_cutlines -plot Plot_n598_des C2
+#-> C2
+select_plots Plot_C1(n596_des)
+#-> Plot_C1(n596_des)
+set_curve_prop -plot Plot_C1(n596_des) Curve_1 -label "Vg = Vdd, Vd = 0.05"
+#-> 0
+set_curve_prop -plot Plot_C1(n596_des) Curve_1 -label "Vg = Vdd, Vd = 0.05"
+#-> 0
+set_curve_prop -plot Plot_C1(n596_des) Curve_3 -label "Vg = 0, Vd = Vdd"
+#-> 0
+set_curve_prop -plot Plot_C1(n596_des) Curve_3 -label "Vg = 0, Vd = Vdd"
+#-> 0
+set_curve_prop -plot Plot_C1(n596_des) Curve_2 -label "Vg = Vdd, Vd = Vdd"
+#-> 0
+set_curve_prop -plot Plot_C1(n596_des) Curve_2 -label "Vg = Vdd, Vd = Vdd"
+#-> 0
+set_plot_prop -plot Plot_C1(n596_des) -title "Cutline_Free Plot"
+#-> 0
+set_axis_prop -plot Plot_C1(n596_des) -axis x -title "Distance from Contact Edge"
+#-> 0
+set_axis_prop -plot Plot_C1(n596_des) -axis x -title "Distance from Contact Edge"
+#-> 0
+set_axis_prop -plot Plot_C1(n596_des) -axis y -title Potential
+#-> 0
+set_axis_prop -plot Plot_C1(n596_des) -axis y -title Potential
+#-> 0
+set_plot_prop -plot Plot_C1(n596_des) -title "Electrostatic Potential in Idealized MOSFET"
+#-> 0
+set_plot_prop -plot Plot_C1(n596_des) -title "Electrostatic Potential in Idealized MOSFET"
+#-> 0
+export_view /home/spatel/swb_project/Part2/20nm-NMOS-EE130/Electrostatic_potential.png -plots Plot_C1(n596_des) -format png
+#-> 0
+export_view /home/spatel/swb_project/Part2/Results/Electrostatic_Potential.png -plots Plot_C1(n596_des) -format png
+#-> 0
+zoom_plot -plot Plot_C1(n596_des) -factor 0.8
+load_file /home/spatel/swb_project/Part2/20nm-NMOS-EE130/IdVg_n596_des.plt
+#-> IdVg_n596_des
+load_file /home/spatel/swb_project/Part2/20nm-NMOS-EE130/n596_des.plt
+#-> n596_des_2
+load_file /home/spatel/swb_project/Part2/20nm-NMOS-EE130/n596_des.tdr
+create_plot -dataset n596_des_3
+select_plots Plot_n596_des_3
+#-> Plot_n596_des_3
+#-> Plot_n596_des_3
+#-> n596_des_3
+select_plots Plot_n596_des
+#-> Plot_n596_des
+probe_field -coord {-0.000296508 0.00268806} -field ElectrostaticPotential -plot Plot_n596_des -region R.Substrate -geom n596_des
+#-> 0.334957501456
+select_plots Plot_n596_des_3
+#-> Plot_n596_des_3
+probe_field -coord {-0.15387 -0.00214299} -field DopingConcentration -plot Plot_n596_des_3
+#!-> Error: Couldn't probe data. Check arguments.
+probe_field -coord {-0.152488 -0.0428986} -field DopingConcentration -plot Plot_n596_des_3
+#!-> Error: Couldn't probe data. Check arguments.
+probe_field -coord {-0.0025904 0.00821859} -field DopingConcentration -plot Plot_n596_des_3 -region R.Substrate -geom n596_des_3
+#-> -5.29236520935e+18

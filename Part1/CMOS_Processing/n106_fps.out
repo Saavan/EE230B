@@ -1,0 +1,2028 @@
+****************************************************************************
+***                          Sentaurus Process                           ***
+***                        Version K-2015.06-SP1                         ***
+***                            (1.13, RHEL64)                            ***
+***                                                                      ***
+***                       Copyright (C) 1993-2002                        ***
+***          The board of regents of the University of Florida           ***
+***                       Copyright (C) 1994-2015                        ***
+***                            Synopsys, Inc.                            ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Fri Jul 17 23:08:37 PDT 2015 on tcadbld1
+
+      Started at: Wed May 18 20:01:54 2016 (PDT)
+       User name: spatel
+       Host name: n0023.banatao.berkeley.edu
+             PID: 14702
+    Architecture: x86_64
+Operating system: Linux rel. 2.6.32-358.el6.x86_64 ver. #1 SMP Fri Feb 22 20:37:17 CST 2013
+
+------------------------------------------------------------------------------
+Checking syntax of n106_fps.cmd:
+
+Syntax check complete.
+------------------------------------------------------------------------------
+
+Starting Tcl interpreter with inputfile: n106_fps.cmd
+            sprocess: Checked Out
+
+Loading models file: /opt/synopsys/K_2015.06-SP1/bin/../tcad/current/lib/sprocess-24.0.13/TclLib/SPROCESS.models... done.
+------------------------------------------------------------------- icwb -----
+icwb filename= "SRAM_lyt.mac" scale= 0.00100
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb domains list
+------------------------------------------------------------------------------
+icwb: LDomains -> SIM2N SIM2P TRENCH2D SRAM6T NMOS3D PMOS3D 
+------------------------------------------------------------------- icwb -----
+icwb layerNames list
+------------------------------------------------------------------------------
+icwb: LNames -> Active pWELL POLY Gate_ACC1 Drain_ACC1 Drain_N1 Source_N1 Drain_P1 Source_P1 Gate_ACC2 Drain_ACC2 Drain_N2 Source_N2 Drain_P2 Source_P2 Gate_N1 Gate_N2 Gate_P2 Gate_P1 Mesh_EXT 
+------------------------------------------------------------------- icwb -----
+icwb layerIDs list
+------------------------------------------------------------------------------
+icwb: LIDs -> 1:0 2:0 3:0 30:1 31:0 32:0 33:0 34:0 35:0 36:1 37:1 38:1 39:1 40:1 41:1 51:0 52:0 53:0 54:0 60:1 
+------------------------------------------------------------------- icwb -----
+icwb domain= {SIM2N}
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb stretch name= "SIM2N_L" value= -0.0100
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb dimension
+------------------------------------------------------------------------------
+icwb: dimension -> 2 
+------------------------------------------------------------------- icwb -----
+icwb bbox left
+------------------------------------------------------------------------------
+------------------------------------------------------------------- icwb -----
+icwb bbox right
+------------------------------------------------------------------------------
+icwb: Domain boundaries -> 0  0.1025 
+------------------------------------------------------------------- init -----
+init tdr= "n105"
+------------------------------------------------------------------------------
+Found touching/overlapping segments, merging.
+          sprocess2d: Checked Out
+
+Recreating refinements to take into account updated simulation dimension.
+Done recreating refinements.
+
+
+Points: 2216
+Nodes: 2793
+Edges: 7041
+Faces: 4262
+Volumes: 0
+
+------------------------------------------------------------------- etch -----
+etch time= 1.00<min> rate= {0.00800<um/min>} type= "anisotropic" material= {Oxide}
+------------------------------------------------------------------------------
+Front move mechanism: 2D Fastmarch.
+MGoals time: 0.17387
+
+Updating sprocess mesh before Etch/Depo relax.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+* Name: ExtImp, Type: Standard
+* Name: ExtXY, Type: Standard
+* Name: ExtIF, Type: Interface
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  1699 (tree) + 323 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 20.5967  [near (-0.00578178 0.0210819)] at region=Oxide_1
+nVerts = 323  nTris = 329  nRegs = 16
+bmin: 10 0
+bmax: -0.153594 0.05125
+min area: 4.86019e-05  max area: 2.5  total area  : 20.6112 interface area: 0.201522
+total volume: 0.520372
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (1917 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+    1913 points.
+    3668 elements.
+       7 regions.
+Max. connectivity = 10 located at (-0.00119995;0.0192188)
+
+SnMesh time: 0.208968
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    2   2   6   4  16  16   4   6   2  30  .   .   .   .   .   .         
+---------------------------------------------------------------------------------
+minAngle: 0.0367051  maxAngle: 148.708
+nVerts = 1913  nTris = 3668  nMats = 7
+max connectivity (tris per node): 10
+bmin: 10 0
+bmax: -0.153594 0.05125
+min edgeLength: 9.57542e-06  [near (-0.0023999 0.041245)]
+min volume: 7.70536e-10  max volume: 0.0320313  Total volume: 0.513286
+bbox  volume: 0.520372
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.479927
+Interpolating...elapsed time: 0.28
+sprocess ILS thread count = 1
+  lin norm 3.3988e-11  vel err 4.4148e-05
+sprocess parallel assembly thread count = 1
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to         1s   step    :         1s   temp: 26.9C->26.9C
+
+------------------------------------------------------------------- etch -----
+etch time= 1.40<min> rate= {0.00200<um/min>} type= "isotropic" material= {Oxide}
+------------------------------------------------------------------------------
+Attempting direct shape generation.
+FastMarch.
+MGoals time: 0.161464
+
+Updating sprocess mesh before Etch/Depo relax.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+* Name: ExtImp, Type: Standard
+* Name: ExtXY, Type: Standard
+* Name: ExtIF, Type: Interface
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  1679 (tree) + 318 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 56.4722  [near (-0.0265321 0.0412498)] at region=Oxide_1
+nVerts = 318  nTris = 324  nRegs = 19
+bmin: 10 0
+bmax: -0.153594 0.05125
+min area: 6.70095e-05  max area: 2.5  total area  : 20.606 interface area: 0.196338
+total volume: 0.520372
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (1875 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+    1871 points.
+    3583 elements.
+       7 regions.
+Max. connectivity = 9 located at (0.000610352;0.0208203)
+
+SnMesh time: 0.205968
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    2   2   6   4  16  16   4   7   2  30  .   .   .   .   .   .   .     
+---------------------------------------------------------------------------------
+minAngle: 0.0367051  maxAngle: 156.612
+nVerts = 1871  nTris = 3583  nMats = 7
+max connectivity (tris per node): 9
+bmin: 10 0
+bmax: -0.153594 0.05125
+min edgeLength: 9.57542e-06  [near (-0.0023999 0.041245)]
+min volume: 2.5383e-10  max volume: 0.0320313  Total volume: 0.51326
+bbox  volume: 0.520372
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.505923
+Interpolating...elapsed time: 0.29
+  lin norm 1.6141e-11  vel err 4.4049e-05
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to         1s   step    :         1s   temp: 26.9C->26.9C
+
+----------------------------------------------------------------- pdbSet -----
+pdbSet NickelSilicide Silicon ORS 0
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid MinimumVelocity 1e-12
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Mechanics SilicidationCorrection { 1 }
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Grid NativeLayerThickness 1.5e-7
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet NickelSilicide Grid perp.add.dist 2e-7
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet NickelSilicide Silicon Dstar { {[Arr 0.02  1.6]} }
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet NickelSilicide_Silicon Silicon Expansion.Ratio 1.0
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet NickelSilicide_Silicon Silicon Density.Grow 2.5e22
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Nickel_NickelSilicide Silicon Expansion.Ratio 1.0
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Nickel_NickelSilicide Silicon Density.Grow 3.5e22
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet NickelSilicide_Silicon SilicidationTripleDistance 20e-7
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet Nickel_NickelSilicide SilicidationTripleDistance 20e-7
+------------------------------------------------------------------------------
+----------------------------------------------------------------- pdbSet -----
+pdbSet NickelSilicide_Silicon SilicidationTripleFactor 0
+------------------------------------------------------------------------------
+--------------------------------------------------------------- reaction -----
+reaction delete name= "poly_silicidation_ni"
+------------------------------------------------------------------------------
+------------------------------------------------------------------- etch -----
+etch time= 1.00<min> rate= {5.00e-04<um/min>} type= "isotropic" material= {Silicon}
+------------------------------------------------------------------------------
+Attempting direct shape generation.
+FastMarch.
+MGoals time: 0.203617
+
+Updating sprocess mesh before Etch/Depo relax.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+* Name: ExtImp, Type: Standard
+* Name: ExtXY, Type: Standard
+* Name: ExtIF, Type: Interface
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  1676 (tree) + 321 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 56.4722  [near (-0.0265321 0.0412498)] at region=Oxide_1
+nVerts = 321  nTris = 327  nRegs = 19
+bmin: 10 0
+bmax: -0.153594 0.05125
+min area: 1.67222e-05  max area: 2.5  total area  : 20.6066 interface area: 0.196919
+total volume: 0.520372
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (1878 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+    1874 points.
+    3589 elements.
+       7 regions.
+Max. connectivity = 9 located at (-0.00959961;0.025625)
+
+SnMesh time: 0.213967
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    2   2   6   4  16  16   4   6   2  30  .   .   .   .   .   .   .     
+---------------------------------------------------------------------------------
+minAngle: 0.0367051  maxAngle: 156.612
+nVerts = 1874  nTris = 3589  nMats = 7
+max connectivity (tris per node): 9
+bmin: 10 0
+bmax: -0.153594 0.05125
+min edgeLength: 9.57542e-06  [near (-0.0023999 0.041245)]
+min volume: 2.5383e-10  max volume: 0.0320313  Total volume: 0.513249
+bbox  volume: 0.520372
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.512922
+Interpolating...elapsed time: 0.29
+  lin norm 1.3109e-11  vel err 5.4665e-06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to         1s   step    :         1s   temp: 26.9C->26.9C
+
+---------------------------------------------------------- pdbSetBoolean -----
+pdbSetBoolean Silicon Mechanics UpdateStrain 0
+------------------------------------------------------------------------------
+---------------------------------------------------------------- deposit -----
+deposit Nickel type= "isotropic" thickness= 0.0150<um>
+------------------------------------------------------------------------------
+Attempting direct shape generation.
+FastMarch.
+MGoals time: 0.180087
+
+Updating sprocess mesh before Etch/Depo relax.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+* Name: ExtImp, Type: Standard
+* Name: ExtXY, Type: Standard
+* Name: ExtIF, Type: Interface
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  1676 (tree) + 370 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 56.4722  [near (-0.0265321 0.0412498)] at region=Oxide_1
+nVerts = 370  nTris = 377  nRegs = 20
+bmin: 10 0
+bmax: -0.153594 0.05125
+min area: 1.67222e-05  max area: 2.5  total area  : 20.6748 interface area: 0.265153
+total volume: 0.520372
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (1932 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+    1928 points.
+    3695 elements.
+       8 regions.
+Max. connectivity = 12 located at (-0.0191992;0.0192188)
+
+SnMesh time: 0.208968
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    2   2   6   5  17  17   5   7   3  32  .   .   .   .   .   .   .     
+---------------------------------------------------------------------------------
+minAngle: 0.0367051  maxAngle: 163.758
+nVerts = 1928  nTris = 3695  nMats = 8
+max connectivity (tris per node): 12
+bmin: 10 0
+bmax: -0.153594 0.05125
+min edgeLength: 9.57542e-06  [near (-0.0023999 0.041245)]
+min volume: 2.5383e-10  max volume: 0.0320313  Total volume: 0.51433
+bbox  volume: 0.520372
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.579912
+Interpolating...elapsed time: 0.55
+  lin norm 1.5116e-12  vel err 1.7315e-15
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to         1s   step    :         1s   temp: 26.9C->26.9C
+---------------------------------------------------------------- diffuse -----
+diffuse time= 0.500<s> temperature= 500.00<C> minT= 300.00<C> stress.relax
+------------------------------------------------------------------------------
+Temperature gap is ignored when StressHistory is not set. 
+The following moving boundary operation(s) will be performed: material reactions (e.g. silicidation)
+Attempting direct shape generation.
+FastMarch.
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+* Name: ExtImp, Type: Standard
+* Name: ExtXY, Type: Standard
+* Name: ExtIF, Type: Interface
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  1697 (tree) + 398 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 56.4722  [near (-0.0265321 0.0412498)] at region=Oxide_1
+nVerts = 398  nTris = 406  nRegs = 22
+bmin: 10 0
+bmax: -0.153594 0.05125
+min area: 1.84153e-05  max area: 2.5  total area  : 20.6991 interface area: 0.289414
+total volume: 0.520372
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (1991 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+    1987 points.
+    3811 elements.
+       9 regions.
+Max. connectivity = 12 located at (-0.0191992;0.0192188)
+
+SnMesh time: 0.227965
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    2   3   7   5  16  16   5   7   3  31  .    1  .   .   .   .   .     
+---------------------------------------------------------------------------------
+minAngle: 0.0367051  maxAngle: 163.758
+nVerts = 1987  nTris = 3811  nMats = 9
+max connectivity (tris per node): 12
+bmin: 10 0
+bmax: -0.153594 0.05125
+min edgeLength: 5.68317e-06  [near (0.000442281 0.0240263)]
+min volume: 4.97743e-11  max volume: 0.0320313  Total volume: 0.51433
+bbox  volume: 0.520372
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.700894
+Interpolating...elapsed time: 0.54
+MGoals time: 0.236432
+---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---
+Anneal step:	
+	Time        = 0.5s
+	Initial time= 0.0001s
+	Maximum time= 1.667e+36min (delT/delNT limited)
+	Temperature = 500.0C
+	Ramp rate   = 0C/s
+	delT        = 10.0C
+	delNT       = 50.0C
+	delTox      = 50.0C
+	Diffusion   = On
+	Reaction    = On
+	Assembly    = Serial
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :         0s   to    0.0001s   step    :    0.0001s   temp: 500.0C
+
+Temperature = 500C for tr step 
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     6.175e+11 2.715e+11
+
+Temperature = 500C for bdf step 
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.948e+04 4.534e+03
+
+Total solve time: 0.08s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:         0s   to    0.0001s   step    :    0.0001s   temp: 500.0C
+  lin norm 1.0151e-11  vel err 0.0585365
+------------------------------------------------------------ Pre-process ------
+ Transition to diffusion:
+-------------------------------------------------------------------------------
+
+ Implant profiles are being pre-processed @ 500.00 C
+
++-------------------------------------------------------------------------------------------------+
+|                                                                                                 |
+| Default diffusion models for dopants/defects can be changed using the following command:        |
+|                                                                                                 |
+| pdbSet <mater> <dopant/defect> DiffModel <model>  (or)                                          |
+| pdbSet <mater> Dopant          DiffModel <model>                                                |
+|                                                                                                 |
+| where <mater> is the bulk material and <model> is one of the following:                         |
+| Constant, Fermi, ChargedFermi, Pair, ChargedPair, React, ChargedReact, ChargedEqulibrium,       |
+| Granular, Equilibrium, Numeric.                                                                 |
+|                                                                                                 |
+|                                                                                                 |
+| Default diffusion activation models for dopants can be changed using the following command:     |
+|                                                                                                 |
+| pdbSet <mater> <dopant> ActiveModel <model>                                                     |
+| pdbSet <mater> Dopant   ActiveModel <model>                                                     |
+|                                                                                                 |
+| where <mater> is the bulk material and <model> is one of the following:                         |
+| None, Solid, Precipitation, Transient, Cluster, ComplexCluster, BIC, ChargedCluster,            |
+| Equilibrium, NeutralCluster.                                                                    |
+|                                                                                                 |
+|                                                                                                 |
+| Default diffusion charge models for dopants can be changed using the following command:         |
+|                                                                                                 |
+| pdbSet <mater> <dopant/defect> ChargeModel <model>                                              |
+| pdbSet <mater> Dopant          ChargeModel <model>                                              |
+|                                                                                                 |
+| where <mater> is the bulk material and <model> is one of the following:                         |
+| None, DopantOnly, DopantDefect, Defect.                                                         |
+|                                                                                                 |
+|                                                                                                 |
+| Default diffusion cluster models for defect can be changed using the following command:         |
+|                                                                                                 |
+| pdbSet <mater> <defect> ClusterModel <model>                                                    |
+|                                                                                                 |
+| where <mater> is the bulk material and <model> is one of the following:                         |
+| None, Equilibrium, 311, FRENDTECH, Loop, 1Moment, 2Moment, LoopEvolution, Full, Transient.      |
+|                                                                                                 |
+|                                                                                                 |
+| Default boundary conditions for dopants/defect can be changed using the following command:      |
+|                                                                                                 |
+| pdbSet <mater> <dopant/defect> BoundaryCondition <model>                                        |
+|                                                                                                 |
+| where <mater> is the interface material and <model> is one of the following:                    |
+| HomNeumann, Natural, Dirichlet, Segregation, ThreePhaseSegregation, GrainBoundarySegregation,   |
+| GrainGrainBoundarySegregation, BulkGrainBoundarySegregation.                                    |
+|                                                                                                 |
+|                                                                                                 |
+|*** Please note that not every model parameter is available for every dopant, defect in each  ***|
+|*** material.                                                                                 ***|
++-------------------------------------------------------------------------------------------------+
++--------------------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+|  Solution Variables      | TiNitride      | Silicon        | PolySilicon    | Oxide          | Nitride        | NickelSilicide | Nickel         | HfO2           |
+|  and Models              +----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
++--------------------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+| Arsenic   :              |                |                |                |                |                |                |                |                |
+|        DiffModel     --> | Constant       | ChargedPair    | Fermi          | Constant       | Constant       | Constant       | ---            | Constant       |
+|        ActiveModel   --> | None           | Transient      | Solid          | None           | None           | None           | ---            | None           |
+|        ChargeModel   --> | DopantOnly     | DopantDefect   | DopantOnly     | DopantOnly     | DopantOnly     | None           | ---            | DopantOnly     |
+|        ClusterModel  --> | ---            | ---            | ---            | ---            | ---            | ---            | ---            | ---            |
+| Boron     :              |                |                |                |                |                |                |                |                |
+|        DiffModel     --> | Constant       | ChargedPair    | Fermi          | Constant       | Constant       | Constant       | ---            | Constant       |
+|        ActiveModel   --> | None           | Transient      | Solid          | None           | None           | None           | ---            | None           |
+|        ChargeModel   --> | DopantOnly     | DopantDefect   | DopantOnly     | DopantOnly     | DopantOnly     | None           | ---            | DopantOnly     |
+|        ClusterModel  --> | ---            | ---            | ---            | ---            | ---            | ---            | ---            | ---            |
+| Int       :              |                |                |                |                |                |                |                |                |
+|        DiffModel     --> | ---            | Numeric        | ---            | ---            | ---            | ---            | ---            | ---            |
+|        ActiveModel   --> | ---            | ---            | ---            | ---            | ---            | ---            | ---            | ---            |
+|        ChargeModel   --> | ---            | Defect         | None           | ---            | ---            | ---            | ---            | ---            |
+|        ClusterModel  --> | ---            | 1Moment        | None           | ---            | ---            | ---            | ---            | ---            |
+| Vac       :              |                |                |                |                |                |                |                |                |
+|        DiffModel     --> | ---            | Numeric        | ---            | ---            | ---            | ---            | ---            | ---            |
+|        ActiveModel   --> | ---            | ---            | ---            | ---            | ---            | ---            | ---            | ---            |
+|        ChargeModel   --> | ---            | Defect         | None           | ---            | ---            | ---            | ---            | ---            |
+|        ClusterModel  --> | ---            | None           | None           | ---            | ---            | ---            | ---            | ---            |
++--------------------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+
++--------------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+|  Dopant and Defect | TiNitride      | Silicon        | PolySilicon    | Oxide          | Nitride        | NickelSilicide | Nickel         | HfO2           |
+|  Clusters          +----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
++--------------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+| As3       :        | Not Solved     | Solved         | Not Solved     | Not Solved     | Not Solved     | Not Solved     | Not Solved     | Not Solved     |
+| B4        :        | Not Solved     | Solved         | Not Solved     | Not Solved     | Not Solved     | Not Solved     | Not Solved     | Not Solved     |
+| ICluster  :        | Not Solved     | Solved         | Not Solved     | Not Solved     | Not Solved     | Not Solved     | Not Solved     | Not Solved     |
++--------------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+----------------+
+
+
+
++--------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+
+|  Solution Variables      | PolySilicon_TiNitride  | Oxide_TiNitride        | Oxide_Silicon          | Oxide_PolySilicon      | Nitride_Oxide          | Nickel_PolySilicon     | Nickel_Oxide           | Nickel_Nitride         | Nickel_NickelSilicide  | NickelSilicide_Silicon | NickelSilicide_Oxide   | HfO2_TiNitride         | HfO2_Silicon           | HfO2_Oxide             | Gas_Nickel             |
+|  and Boundary Conditions +------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+
++--------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+
+| Arsenic   :              | HomNeumann             | Segregation            | ThreePhaseSegregation  | Segregation            | Segregation            | HomNeumann             | HomNeumann             | HomNeumann             | Segregation            | Segregation            | HomNeumann             | Segregation            | ThreePhaseSegregation  | Continuous             | HomNeumann             |
+| Boron     :              | HomNeumann             | Segregation            | ThreePhaseSegregation  | Segregation            | Segregation            | HomNeumann             | HomNeumann             | HomNeumann             | Segregation            | Segregation            | HomNeumann             | Segregation            | ThreePhaseSegregation  | Continuous             | HomNeumann             |
+| Int       :              | HomNeumann             | Natural                | Natural                | Natural                | Natural                | HomNeumann             | HomNeumann             | HomNeumann             | Natural                | Natural                | HomNeumann             | Natural                | Natural                | Continuous             | HomNeumann             |
+| Potential :              | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | Continuous             | HomNeumann             |
+| Vac       :              | HomNeumann             | Natural                | Natural                | Natural                | Natural                | HomNeumann             | HomNeumann             | HomNeumann             | Natural                | Natural                | HomNeumann             | Natural                | Natural                | Continuous             | HomNeumann             |
+| B4        :              | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | Continuous             | HomNeumann             |
+| As3       :              | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | Continuous             | HomNeumann             |
+| ICluster  :              | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | HomNeumann             | Continuous             | HomNeumann             |
++--------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+------------------------+
+
+------------------------------------------------- Minimum concentrations ------
+ Setting minimum concentration of solution variables:
+ Arsenic Boron B4 As3 ICluster
+-------------------------------------------------------------------------------
+
+---------------------------------------------------------- Initialialize ------
+ Point defects: Int Vac
+-------------------------------------------------------------------------------
+
+---------------------------------------------------------- Initialialize ------
+ Transient dopant clusters:
+ Material: Silicon, Dopant : Boron, Cluster : B4
+ Material: Silicon, Dopant : Arsenic, Cluster : As3
+
+-------------------------------------------------------------------------------
+
+---------------------------------------------------------- Initialialize ------
+ 1Moment clusters :
+ICluster
+-------------------------------------------------------------------------------
+
+---------------------------------------------------------- Reset history ------
+ <dopant>_Implant, Damage_Implant, Damage, Error, ErrorDose.
+-------------------------------------------------------------------------------
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --
+Initializing:  Potential  Int  Vac  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --
+
+Solving steady state equations
+Iter Lin  Potential       Int       Vac 
+  1    5  2.350e+00 5.152e+03 3.166e+02
+  2    5  2.267e+00 2.685e+03 1.092e+02
+  3    5  1.761e+00 1.341e+03 1.168e+02
+  4    5  8.068e-01 1.352e+03 5.960e+01
+     9.759e-02 1.352e+02 5.960e+00
+     9.759e-03 1.352e+01 5.960e-01
+     9.759e-04 1.352e+00 5.960e-02
+     9.759e-05 1.352e-01 5.960e-03
+     9.759e-06 1.352e-02 5.960e-04
+     9.759e-07 1.352e-03 5.960e-05
+     9.759e-08 1.352e-04 5.960e-06
+     9.759e-09 1.352e-05 5.960e-07
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --
+Initialization is done.
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:         0s   to    0.0001s   step (s):    0.0001s   temp: 500.0C
+
+Temperature = 500C for tr step 
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  8.079e-01 1.359e+07 1.173e+09 1.072e+04 1.492e+03 5.620e-02 1.426e+01 2.965e+04
+  2    3  1.632e-01 3.868e+02 1.395e+02 1.235e+03 1.489e+03 1.701e-07 1.339e+01 1.263e-05
+  3    3  2.561e-02 3.297e+02 1.319e+02 1.519e+03 1.179e+03 1.363e-07 2.956e+01 7.243e-06
+  4    3  2.374e-03 1.637e+01 2.504e+02 1.034e+03 3.882e+01 1.931e-07 1.532e+02 8.538e-07
+  5    3  8.306e-07 1.158e-01 4.163e-02 1.722e+01 2.688e-01 1.046e-08 4.696e-01 2.320e-11
+  6    3  6.683e-10 7.804e-04 2.888e-05 1.137e-01 1.811e-03 3.280e-11 2.640e-03 4.314e-13
+
+Temperature = 500C for bdf step 
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  5.134e-03 1.826e+03 1.153e+04 9.375e+03 2.439e+03 3.973e-02 3.100e+01 1.815e+02
+  2    3  5.175e-06 5.091e+02 3.845e-02 1.171e+00 9.717e-03 5.645e-08 2.766e+00 4.411e-10
+  3    3  2.063e-08 4.814e+01 6.981e-05 1.941e-02 2.674e-05 3.976e-11 8.223e-04 4.421e-13
+  4    3  8.815e-11 3.586e-01 2.406e-07 1.995e-04 8.206e-08 6.068e-13 3.393e-07 3.691e-13
+
+Total solve time: 1.2s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  8.733e-07 3.178e+02 2.252e+02 1.968e+03 9.173e+02 4.288e-06 6.987e+01 4.531e-02
+  2    3  2.789e-08 1.802e+02 2.282e-04 6.604e+01 1.614e+01 9.880e-08 1.657e+00 2.126e-12
+  3    3  5.842e-11 6.082e+00 7.824e-07 4.704e-01 1.100e-01 9.296e-11 5.400e-03 4.856e-13
+  4    3  3.971e-13 4.212e-02 2.495e-09 3.173e-03 7.410e-04 8.918e-13 3.646e-05 4.208e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :    0.0001s   to 0.0001789s   step    : 7.894e-05s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.368e+04 3.231e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     6.217e+03 1.004e+03
+
+Total solve time: 0.1s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:    0.0001s   to 0.0001789s   step    : 7.894e-05s   temp: 500.0C
+  lin norm 6.0948e-12  vel err 2.5745e-03
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.0001s   to 0.0001789s   step (s): 7.894e-05s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  4.049e-02 1.519e+05 1.334e+04 4.654e+03 8.415e+02 1.982e-03 3.866e+00 1.526e+02
+  2    3  4.202e-05 2.514e-05 2.715e-02 1.268e+00 8.121e+02 3.552e-08 7.918e-01 1.312e-10
+  3    4  1.655e-07 3.910e-08 1.944e-05 1.192e-01 6.032e+02 1.996e-11 2.595e-04 1.469e-12
+  4    6  1.217e-08 2.615e-06 8.977e-06 2.165e-01 1.646e+01 7.131e-13 1.105e-06 4.012e-13
+  5    6  1.783e-14 9.098e-13 9.612e-11 1.426e-05 1.132e-01 6.788e-13 3.658e-11 4.466e-13
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  1.810e-03 6.154e+02 9.513e+03 4.787e+02 1.349e+03 1.440e-03 2.057e+00 6.732e+01
+  2    4  1.352e-06 1.594e-06 3.725e-03 2.312e-01 4.661e-03 1.064e-09 2.527e-02 4.827e-11
+
+Total solve time: 0.95s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.293e-07 1.074e+02 5.825e+01 5.071e+02 5.142e+02 1.385e-06 5.639e-01 4.322e-02
+  2    4  9.635e-10 1.650e-06 2.141e-05 1.891e-02 8.910e+00 2.479e-09 5.639e-02 5.545e-13
+  3    4  3.847e-16 1.923e-12 2.252e-09 7.271e-04 6.070e-02 7.099e-13 3.978e-09 5.065e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction : 0.0001789s   to 0.0002676s   step    : 8.864e-05s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     9.907e+03 3.527e+03
+  2    4     2.835e+00 2.349e-09
+  3    4     1.942e-02 4.603e-13
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     4.691e+03 8.873e+02
+
+Total solve time: 0.1s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics: 0.0001789s   to 0.0002676s   step    : 8.864e-05s   temp: 500.0C
+  lin norm 3.2180e-13  vel err 3.5830e-03
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion: 0.0001789s   to 0.0002676s   step (s): 8.864e-05s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  1.438e-02 7.871e+02 1.515e+04 6.591e+02 5.041e+02 9.183e-03 2.380e+00 5.466e+01
+  2    4  3.760e-06 2.886e-06 4.832e-03 3.218e-01 4.618e+02 1.138e-09 4.767e-02 4.972e-11
+  3    4  7.017e-09 6.633e-09 4.966e-06 9.139e-03 2.201e+02 8.009e-13 6.710e-06 5.465e-13
+  4    4  1.191e-09 8.019e-07 2.157e-06 6.087e-02 6.028e+00 6.787e-13 7.031e-08 4.501e-13
+  5    4  3.559e-16 8.640e-13 7.234e-11 2.002e-08 4.147e-02 6.735e-13 1.346e-12 4.406e-13
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  1.648e-03 5.513e+02 1.056e+04 3.270e+02 8.237e+02 6.494e-03 1.377e+00 3.121e+01
+  2    4  1.113e-06 9.116e-07 1.439e-03 3.963e-02 6.135e-04 2.437e-10 1.190e-02 3.513e-11
+
+Total solve time: 0.8s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  2.767e-08 1.075e+02 1.413e+01 1.230e+02 3.115e+02 2.855e-08 5.745e-02 2.244e-02
+  2    4  3.895e-11 7.267e-08 1.530e-06 4.374e-03 5.448e+00 1.117e-10 2.518e-03 5.574e-13
+  3    4  4.161e-16 9.704e-13 6.890e-11 3.726e-05 3.711e-02 7.389e-13 3.839e-11 4.561e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction : 0.0002676s   to 0.0003883s   step    : 0.0001208s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     9.699e+03 2.777e+05
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     4.827e+03 9.224e+02
+
+Total solve time: 0.06s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics: 0.0002676s   to 0.0003883s   step    : 0.0001208s   temp: 500.0C
+  lin norm 3.6178e-13  vel err 1.9314e-03
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion: 0.0002676s   to 0.0003883s   step (s): 0.0001208s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  2.780e-03 8.092e+02 2.008e+04 5.034e+02 4.383e+01 4.325e-03 2.081e+00 3.222e+01
+  2    4  3.038e-06 2.901e-06 6.362e-03 6.897e-02 2.119e-03 7.557e-10 3.582e-02 1.026e-10
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  1.981e-03 5.872e+02 1.382e+04 3.122e+02 2.365e+01 3.059e-03 1.191e+00 1.981e+01
+  2    4  1.524e-06 8.033e-07 4.172e-03 3.272e-02 1.099e-03 1.450e-10 7.930e-03 5.153e-11
+
+Total solve time: 0.69s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  2.452e-08 1.999e+02 1.195e+01 3.933e+01 1.858e+01 2.122e-07 5.125e-02 9.764e-03
+  2    4  4.283e-12 7.982e-09 4.943e-07 1.022e-06 1.151e-10 1.348e-11 2.718e-04 4.735e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction : 0.0003883s   to 0.0005874s   step    :  0.000199s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.283e+04 1.592e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     5.747e+03 7.663e+02
+
+Total solve time: 0.07s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics: 0.0003883s   to 0.0005874s   step    :  0.000199s   temp: 500.0C
+  lin norm 1.2247e-11  vel err 1.9989e-03
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion: 0.0003883s   to 0.0005874s   step (s):  0.000199s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  3.861e-03 9.589e+02 3.139e+04 5.783e+02 4.288e+01 8.221e-03 2.146e+00 2.413e+01
+  2    4  5.964e-06 4.703e-06 4.053e-02 7.727e-02 4.311e-03 6.246e-10 3.573e-02 1.615e-10
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  2.759e-03 5.191e+02 2.114e+04 3.564e+02 2.784e+01 5.814e-03 1.207e+00 1.537e+01
+  2    4  2.993e-06 2.975e-06 2.071e-02 2.445e-02 2.212e-03 1.760e-10 9.457e-03 8.102e-11
+
+Total solve time: 0.68s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  2.797e-08 2.411e+02 1.281e+01 2.782e+01 1.280e+01 1.159e-07 5.386e-02 2.509e-03
+  2    4  2.075e-12 6.421e-09 1.411e-06 1.456e-06 3.872e-10 1.978e-12 5.635e-05 5.304e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction : 0.0005874s   to 0.0009052s   step    : 0.0003178s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.418e+04 1.539e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     6.152e+03 7.965e+02
+
+Total solve time: 0.07s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics: 0.0005874s   to 0.0009052s   step    : 0.0003178s   temp: 500.0C
+  lin norm 5.4841e-13  vel err 1.1756e-03
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion: 0.0005874s   to 0.0009052s   step (s): 0.0003178s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  5.204e-03 7.497e+02 4.569e+04 6.886e+02 5.578e+01 1.396e-02 2.059e+00 2.159e+01
+  2    4  1.044e-05 3.237e-05 1.468e-01 8.091e-02 9.456e-03 7.853e-10 3.660e-02 3.323e-10
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  3.732e-03 5.344e+02 3.003e+04 4.607e+02 3.885e+01 9.871e-03 1.129e+00 1.399e+01
+  2    4  5.240e-06 1.608e-05 6.346e-02 3.329e-02 4.864e-03 2.563e-10 9.855e-03 1.669e-10
+
+Total solve time: 0.7s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  7.356e-08 3.798e+02 3.049e+01 2.163e+01 7.460e+00 1.752e-07 5.344e-02 2.285e-03
+  2    4  2.565e-12 2.299e-08 3.289e-06 1.396e-06 7.469e-10 1.539e-12 5.389e-05 5.423e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction : 0.0009052s   to  0.001367s   step    : 0.0004622s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.260e+04 1.478e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     5.460e+03 7.892e+02
+
+Total solve time: 0.07s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics: 0.0009052s   to  0.001367s   step    : 0.0004622s   temp: 500.0C
+  lin norm 3.5186e-13  vel err 1.1715e-03
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion: 0.0009052s   to  0.001367s   step (s): 0.0004622s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  1.678e-02 1.004e+03 5.814e+04 8.553e+02 5.046e+02 1.567e-02 1.697e+00 1.971e+01
+  2    4  1.544e-05 9.158e-05 2.983e-01 1.340e-01 4.944e+02 1.090e-09 3.357e-02 2.675e-09
+  3    4  9.797e-08 2.738e-08 1.561e-03 8.506e-04 2.225e+02 7.154e-13 3.356e-06 3.865e-11
+  4    4  1.292e-09 1.505e-06 1.944e-04 6.683e-02 2.870e+00 5.855e-13 1.820e-07 2.057e-12
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  4.621e-03 3.635e+02 3.760e+04 5.700e+02 8.141e+02 1.108e-02 9.018e-01 1.326e+01
+  2    4  7.501e-06 3.510e-05 1.169e-01 4.865e-02 9.462e-03 3.917e-10 9.978e-03 3.286e-10
+
+Total solve time: 0.8s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.949e-07 1.025e+02 7.546e+01 1.196e+01 3.083e+02 3.928e-07 4.844e-02 3.092e-03
+  2    4  5.871e-12 1.623e-08 1.331e-05 8.658e-04 5.378e+00 1.001e-12 1.787e-05 5.507e-13
+  3    4  4.516e-16 9.244e-13 1.412e-10 9.020e-06 3.663e-02 6.417e-13 8.904e-12 4.330e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :  0.001367s   to  0.002013s   step    : 0.0006451s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.003e+04 1.434e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     4.424e+03 8.046e+02
+
+Total solve time: 0.07s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:  0.001367s   to  0.002013s   step    : 0.0006451s   temp: 500.0C
+  lin norm 7.9751e-13  vel err 3.8067e-04
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:  0.001367s   to  0.002013s   step (s): 0.0006451s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  7.727e-03 5.954e+02 6.929e+04 9.664e+02 9.835e+01 4.087e-03 1.253e+00 2.105e+01
+  2    3  1.999e-05 2.719e+02 4.479e-01 1.474e-01 3.427e-02 1.504e-09 3.012e-02 1.262e-09
+  3    3  1.498e-07 1.198e+01 2.940e-03 6.045e-04 8.225e-05 8.024e-13 2.709e-06 9.750e-13
+  4    3  1.214e-09 8.387e-02 1.355e-05 9.089e-06 2.284e-07 7.195e-13 2.367e-09 4.575e-13
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  5.568e-03 3.362e+02 4.442e+04 6.107e+02 6.907e+01 2.897e-03 6.522e-01 1.416e+01
+  2    3  1.001e-05 4.130e-05 1.658e-01 5.588e-02 1.792e-02 5.317e-10 8.243e-03 6.329e-10
+
+Total solve time: 0.74s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  3.060e-07 1.327e+02 1.063e+02 2.059e+01 4.899e+00 8.492e-07 4.321e-02 6.430e-03
+  2    3  1.649e-11 6.253e-08 4.387e-05 2.253e-05 1.647e-08 1.384e-12 1.658e-05 5.923e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :  0.002013s   to  0.003173s   step    :   0.00116s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.082e+04 2.016e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     4.271e+03 1.070e+03
+
+Total solve time: 0.06s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:  0.002013s   to  0.003173s   step    :   0.00116s   temp: 500.0C
+  lin norm 3.7607e-13  vel err 1.2876e-04
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:  0.002013s   to  0.003173s   step (s):   0.00116s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  1.173e-02 2.068e+04 1.048e+05 1.168e+03 1.554e+02 2.394e-03 1.087e+00 2.756e+01
+  2    4  4.154e-05 2.845e-04 1.170e+00 2.580e-01 1.172e-01 4.022e-09 4.267e-02 4.705e-09
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  8.512e-03 3.749e+02 6.499e+04 6.521e+02 1.077e+02 1.751e-03 5.395e-01 1.851e+01
+  2    4  2.074e-05 7.846e-05 3.975e-01 8.058e-02 6.463e-02 1.267e-09 8.538e-03 2.325e-09
+
+Total solve time: 0.69s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  6.463e-07 2.275e+02 1.882e+02 6.102e+01 7.104e+00 5.424e-06 5.801e-02 3.954e-02
+  2    4  9.136e-11 7.810e-07 2.838e-04 1.886e-04 1.615e-07 8.883e-12 8.783e-05 2.295e-12
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :  0.003173s   to  0.005026s   step    :  0.001854s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     8.157e+03 2.301e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     3.262e+03 1.151e+03
+
+Total solve time: 0.07s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:  0.003173s   to  0.005026s   step    :  0.001854s   temp: 500.0C
+  lin norm 6.1674e-13  vel err 2.7561e-04
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:  0.003173s   to  0.005026s   step (s):  0.001854s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  2.409e-02 6.192e+02 1.343e+05 9.386e+02 4.548e+02 3.663e-03 8.002e-01 2.787e+01
+  2    3  6.419e-05 2.266e+02 1.986e+00 2.351e-01 4.018e+02 6.369e-09 2.280e-02 2.187e-08
+  3    3  8.447e-07 5.186e+00 1.680e-02 3.002e-03 1.887e+02 7.853e-13 3.633e-06 5.237e-11
+  4    3  1.467e-08 3.552e-02 1.764e-04 2.409e-02 4.443e+00 6.111e-13 2.161e-07 1.612e-11
+  5    3  6.234e-13 2.394e-04 2.892e-08 3.055e-04 2.152e-02 5.852e-13 4.708e-12 3.856e-13
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  1.136e-02 1.167e+04 8.163e+04 4.627e+02 6.797e+02 2.638e-03 4.223e-01 1.861e+01
+  2    4  3.165e-05 9.341e-05 7.354e-01 6.603e-02 2.849e-01 2.148e-09 3.995e-03 4.788e-09
+
+Total solve time: 0.83s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  6.690e-07 3.142e+02 1.378e+02 6.199e+01 2.527e+02 5.378e-06 3.458e-02 3.545e-02
+  2    3  1.483e-10 6.277e+01 1.026e-03 4.492e-03 4.408e+00 2.400e-11 8.105e-05 7.281e-12
+  3    3  3.688e-14 5.257e-01 5.127e-08 1.409e-03 3.002e-02 6.666e-13 6.716e-10 3.980e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :  0.005026s   to   0.00757s   step    :  0.002544s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     4.968e+03 2.034e+03
+  2    4     9.539e+02 1.511e-10
+  3    4     7.416e+02 3.718e-13
+  4    4     2.180e+01 3.907e-13
+  5    4     1.503e-01 3.374e-13
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     8.867e+06 1.051e+03
+
+Total solve time: 0.09s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:  0.005026s   to   0.00757s   step    :  0.002544s   temp: 500.0C
+  lin norm 8.7877e-13  vel err 4.9937e-05
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:  0.005026s   to   0.00757s   step (s):  0.002544s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  2.555e-02 1.075e+03 1.435e+05 5.458e+02 5.413e+02 2.248e-03 6.099e-01 2.599e+01
+  2    4  7.384e-05 2.704e-04 2.751e+00 1.324e-01 4.890e+02 8.819e-09 6.688e-03 2.926e-08
+  3    4  1.065e-06 2.654e-07 9.237e-03 2.364e-03 1.830e+02 8.317e-13 1.578e-06 4.665e-11
+  4    4  1.780e-08 2.655e-06 1.084e-04 7.130e-03 2.246e+00 7.086e-13 8.941e-08 1.474e-11
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  1.263e-02 3.361e+02 8.681e+04 2.838e+02 8.270e+02 1.636e-03 3.549e-01 1.735e+01
+  2    4  3.306e-05 8.323e-05 1.141e+00 4.163e-02 1.690e+00 3.568e-09 1.468e-03 1.077e-08
+
+Total solve time: 0.81s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  7.557e-06 3.055e+02 5.680e+01 2.321e+01 3.089e+02 1.668e-04 1.310e-02 6.166e-01
+  2    4  9.476e-11 5.440e-07 2.518e-04 3.610e-03 5.385e+00 2.125e-11 1.379e-05 4.383e-12
+  3    4  1.610e-15 1.369e-12 7.516e-09 1.232e-03 3.668e-02 7.132e-13 1.096e-10 4.471e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :   0.00757s   to   0.01102s   step    :  0.003449s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     3.225e+03 1.866e+03
+  2    4     9.595e+02 1.836e-12
+  3    4     8.677e+02 3.425e-13
+  4    4     5.709e+01 3.304e-13
+  5    4     4.088e-01 3.439e-13
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.659e+07 1.026e+03
+
+Total solve time: 0.09s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:   0.00757s   to   0.01102s   step    :  0.003449s   temp: 500.0C
+  lin norm 3.4200e-11  vel err 2.6514e-05
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:   0.00757s   to   0.01102s   step (s):  0.003449s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.796e-02 4.166e+02 1.502e+05 3.779e+02 3.537e+02 1.396e-02 5.606e-01 5.772e+01
+  2    3  5.256e-05 2.912e-04 4.453e+00 1.026e-01 2.859e+02 1.522e-08 3.108e-03 3.458e-08
+  3    4  7.734e-07 6.628e-07 5.140e-03 3.411e-03 1.230e+02 9.266e-13 8.813e-07 4.749e-11
+  4    4  1.346e-08 7.138e-08 2.045e-04 1.927e-03 1.890e+00 5.451e-13 3.164e-08 4.084e-13
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.179e-02 2.496e+02 9.029e+04 2.090e+02 5.027e+02 2.094e-02 3.430e-01 8.871e+01
+  2    3  4.402e-05 1.041e-04 1.880e+00 5.365e-02 4.457e+00 6.495e-09 8.022e-04 1.715e-08
+  3    3  5.381e-07 1.315e-06 1.249e-03 1.267e-02 2.196e-01 8.439e-13 7.938e-07 1.677e-11
+
+Total solve time: 0.82s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  3.212e-05 8.436e+01 4.013e+01 1.082e+01 1.802e+02 2.040e-03 7.235e-03 1.216e+01
+  2    4  3.141e-10 5.557e-07 1.712e-04 5.024e-03 3.186e+00 1.730e-11 3.594e-06 4.337e-12
+  3    4  1.263e-14 1.233e-09 5.149e-07 1.938e-03 2.171e-02 7.714e-13 3.091e-10 4.716e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :   0.01102s   to   0.01642s   step    :  0.005402s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     2.352e+03 2.250e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.002e+03 1.253e+03
+
+Total solve time: 0.07s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:   0.01102s   to   0.01642s   step    :  0.005402s   temp: 500.0C
+  lin norm 1.0476e-11  vel err 1.8961e-05
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:   0.01102s   to   0.01642s   step (s):  0.005402s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  2.790e-02 6.572e+02 1.793e+05 3.414e+02 4.600e+02 1.302e-02 6.492e-01 5.973e+01
+  2    3  1.935e-04 6.008e-04 1.116e+01 1.373e-01 2.854e+02 4.288e-08 2.948e-03 7.182e-08
+  3    4  5.753e-06 1.886e-06 1.275e-02 3.164e-03 1.021e+02 1.990e-12 1.243e-06 1.270e-10
+  4    4  1.862e-07 6.644e-07 4.339e-04 2.812e-03 1.539e+00 7.550e-13 1.943e-07 6.709e-13
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.466e-02 3.022e+02 1.045e+05 1.911e+02 6.993e+02 1.650e-02 4.023e-01 8.391e+01
+  2    3  6.355e-05 2.271e-04 4.586e+00 5.763e-02 2.021e+00 1.820e-08 7.731e-04 3.966e-08
+  3    3  9.932e-07 4.840e-06 3.925e-03 9.930e-03 4.413e-02 1.231e-12 1.480e-06 4.865e-11
+
+Total solve time: 0.74s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  2.025e-05 3.670e+02 5.572e+01 9.319e+00 2.542e+02 1.887e-03 7.209e-03 1.294e+01
+  2    3  1.951e-10 6.413e+01 3.534e-04 4.945e-03 4.480e+00 2.968e-11 3.369e-06 1.229e-11
+  3    3  6.493e-13 5.399e-01 2.681e-06 2.209e-03 3.053e-02 7.316e-13 2.463e-09 4.712e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :   0.01642s   to   0.02377s   step    :  0.007346s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.604e+03 2.341e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     6.321e+02 1.282e+03
+
+Total solve time: 0.07s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:   0.01642s   to   0.02377s   step    :  0.007346s   temp: 500.0C
+  lin norm 2.8313e-12  vel err 1.8109e-05
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:   0.01642s   to   0.02377s   step (s):  0.007346s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  4.235e-02 4.214e+02 1.771e+05 2.832e+02 4.896e+02 4.762e-03 6.768e-01 3.128e+01
+  2    3  1.122e-03 8.010e-04 1.774e+01 1.571e-01 2.853e+02 7.818e-08 2.042e-03 1.189e-07
+  3    4  1.335e-05 6.979e-06 3.718e-02 5.382e-03 9.736e+01 3.492e-12 2.741e-06 2.315e-10
+  4    4  5.829e-07 1.163e-05 3.014e-03 1.505e-02 4.388e+00 2.038e-12 2.910e-06 2.905e-12
+  5    4  8.162e-13 2.144e-12 5.851e-10 1.032e-05 6.670e-03 6.154e-13 3.388e-11 3.574e-13
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.587e-02 2.485e+02 1.031e+05 1.664e+02 7.093e+02 7.543e-03 4.283e-01 4.269e+01
+  2    3  6.732e-05 3.104e-04 7.267e+00 5.452e-02 7.915e+00 3.362e-08 6.054e-04 6.447e-08
+  3    3  1.282e-06 2.538e-06 1.134e-02 2.377e-03 3.757e-01 1.136e-12 6.809e-07 8.870e-11
+
+Total solve time: 0.85s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  4.390e-05 1.121e+01 6.179e+01 5.476e+00 2.535e+02 7.951e-04 5.325e-03 4.589e+00
+  2    4  1.011e-09 7.572e-08 4.101e-05 2.688e-03 4.448e+00 2.595e-11 1.313e-06 5.037e-12
+  3    4  7.960e-14 2.987e-09 7.070e-07 3.171e-04 3.031e-02 6.874e-13 4.495e-10 4.708e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :   0.02377s   to   0.03468s   step    :   0.01091s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.381e+03 2.637e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     4.723e+02 1.406e+03
+
+Total solve time: 0.06s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:   0.02377s   to   0.03468s   step    :   0.01091s   temp: 500.0C
+  lin norm 6.0222e-12  vel err 1.3708e-05
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:   0.02377s   to   0.03468s   step (s):   0.01091s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  5.188e-02 6.126e+02 1.900e+05 2.809e+02 6.520e+02 8.133e-03 7.975e-01 3.931e+01
+  2    3  2.550e-03 1.617e-03 3.600e+01 2.005e-01 4.938e+02 1.962e-07 2.289e-03 2.993e-07
+  3    4  3.981e-06 1.357e-05 1.168e-01 5.903e-03 1.770e+02 7.784e-12 2.936e-06 7.285e-10
+  4    4  5.869e-07 4.125e-05 7.689e-03 3.512e-02 2.111e+01 1.146e-11 6.653e-06 1.332e-11
+  5    4  5.958e-13 2.792e-11 5.419e-09 2.290e-04 1.361e-02 8.071e-13 1.373e-10 4.246e-13
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.229e-02 3.621e+02 1.085e+05 1.676e+02 9.739e+02 4.445e-03 5.054e-01 2.332e+01
+  2    3  1.034e-04 1.246e+02 1.442e+01 7.984e-02 1.552e+00 9.063e-08 6.996e-04 1.463e-07
+  3    3  2.411e-06 1.856e+00 3.337e-02 8.731e-04 1.808e-02 1.749e-12 3.035e-07 2.607e-10
+
+Total solve time: 0.86s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  8.932e-05 5.422e+01 9.889e+01 4.933e+00 3.586e+02 5.320e-04 5.941e-03 2.572e+00
+  2    3  4.900e-09 8.500e-05 3.260e-04 6.428e-03 6.281e+00 5.345e-11 1.101e-06 2.047e-11
+  3    3  9.448e-13 5.728e-07 3.411e-06 1.605e-03 4.279e-02 7.446e-13 2.398e-09 4.826e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :   0.03468s   to   0.04956s   step    :   0.01488s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.359e+03 2.593e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     4.715e+02 1.414e+03
+
+Total solve time: 0.06s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:   0.03468s   to   0.04956s   step    :   0.01488s   temp: 500.0C
+  lin norm 1.4456e-11  vel err 1.2511e-05
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:   0.03468s   to   0.04956s   step (s):   0.01488s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  2.210e-02 5.211e+02 1.809e+05 2.656e+02 3.756e+02 2.497e-02 8.673e-01 1.189e+02
+  2    4  3.088e-04 2.525e-03 5.493e+01 2.410e-01 6.282e+00 4.341e-07 2.155e-03 5.985e-07
+  3    3  1.173e-05 1.130e-05 2.272e-01 7.148e-03 1.818e-01 1.172e-11 1.971e-06 1.852e-09
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.801e-02 3.202e+02 1.033e+05 1.628e+02 2.643e+02 2.395e-02 5.527e-01 1.471e+02
+  2    4  1.727e-04 1.400e-03 2.197e+01 2.088e-01 4.874e+00 2.046e-07 6.712e-04 2.922e-07
+  3    3  4.763e-06 8.260e-05 5.506e-02 3.725e-02 1.624e-01 1.380e-11 9.958e-06 6.422e-10
+
+Total solve time: 0.69s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  4.551e-05 1.301e+01 1.352e+02 3.969e+00 1.903e+01 1.862e-03 5.378e-03 1.665e+01
+  2    3  1.008e-09 4.617e-06 5.440e-04 7.092e-04 3.189e-03 4.139e-11 6.498e-07 3.704e-11
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :   0.04956s   to   0.07932s   step    :   0.02976s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.269e+03 4.241e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     4.558e+02 2.099e+03
+
+Total solve time: 0.06s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:   0.04956s   to   0.07932s   step    :   0.02976s   temp: 500.0C
+  lin norm 1.3213e-11  vel err 7.4730e-06
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:   0.04956s   to   0.07932s   step (s):   0.02976s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  8.288e-02 2.213e+05 2.477e+05 3.761e+02 8.479e+02 2.009e-02 1.356e+00 1.011e+02
+  2    4  8.259e-03 1.080e-02 2.448e+02 6.763e-01 4.100e+02 3.013e-06 6.963e-03 3.795e-06
+  3    3  1.031e-04 3.303e-04 1.562e+00 4.337e-02 1.054e+02 1.740e-10 5.605e-05 3.398e-08
+  4    3  7.704e-06 2.859e-06 8.808e-03 1.874e-03 1.993e+00 8.048e-12 2.484e-06 2.307e-09
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  3.764e-02 4.658e+02 1.290e+05 2.265e+02 1.056e+03 2.956e-02 8.299e-01 1.736e+02
+  2    4  4.793e-04 4.259e-03 9.143e+01 2.297e-01 1.411e+02 1.365e-06 2.056e-03 1.829e-06
+  3    3  2.759e-05 3.736e-04 3.620e-01 7.058e-02 2.245e+01 1.140e-10 4.207e-05 6.437e-09
+  4    3  1.783e-06 2.240e-04 2.411e-02 4.516e-02 5.448e+00 6.693e-11 2.721e-05 2.047e-10
+  5    3  1.191e-07 1.342e-04 1.470e-02 2.704e-02 1.221e+00 4.002e-11 1.638e-05 1.170e-10
+
+Total solve time: 0.84s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  3.125e-04 1.005e+02 4.800e+02 7.764e+00 3.700e+02 3.927e-03 1.438e-02 3.913e+01
+  2    4  7.455e-08 2.476e-05 8.608e-03 3.541e-03 6.256e+00 3.760e-10 3.944e-06 3.326e-10
+  3    4  5.212e-11 8.131e-07 8.642e-05 2.336e-04 4.261e-02 7.620e-13 8.741e-08 1.261e-12
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :   0.07932s   to    0.1197s   step    :   0.04034s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.721e+03 3.803e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     7.691e+02 1.983e+03
+
+Total solve time: 0.07s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:   0.07932s   to    0.1197s   step    :   0.04034s   temp: 500.0C
+  lin norm 1.1410e-11  vel err 9.9834e-06
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:   0.07932s   to    0.1197s   step (s):   0.04034s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  7.863e-02 7.913e+02 1.992e+05 3.617e+02 9.895e+02 1.965e-02 1.362e+00 9.376e+01
+  2    4  6.955e-03 1.627e-02 3.214e+02 6.300e-01 6.280e+02 6.125e-06 6.123e-03 8.743e-06
+  3    3  5.733e-05 1.521e-04 2.215e+00 1.729e-02 1.283e+02 1.807e-10 1.701e-05 8.003e-08
+  4    3  4.114e-06 2.859e-05 4.112e-02 6.008e-03 1.190e+00 3.006e-11 3.568e-06 1.007e-09
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  3.106e-02 4.425e+02 1.058e+05 2.272e+02 1.328e+03 2.865e-02 8.363e-01 1.474e+02
+  2    4  8.665e-04 7.003e-03 1.229e+02 2.836e-01 9.127e+00 2.717e-06 1.986e-03 3.369e-06
+  3    3  5.486e-05 6.886e-04 5.071e-01 1.005e-01 4.921e-01 2.166e-10 6.050e-05 2.057e-08
+
+Total solve time: 0.7s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.329e-04 3.514e+01 5.478e+02 5.176e+00 4.808e+02 5.957e-03 1.245e-02 4.463e+01
+  2    3  9.767e-09 6.172e-05 1.562e-02 9.925e-03 8.282e+00 3.940e-10 4.936e-06 7.371e-10
+  3    3  1.621e-11 8.904e-07 1.314e-04 2.425e-03 5.641e-02 1.742e-12 2.028e-07 1.896e-12
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :    0.1197s   to    0.1713s   step    :   0.05164s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.775e+03 3.420e+03
+  2    3     9.588e+02 3.165e-10
+  3    3     7.873e+02 3.602e-13
+  4    3     2.857e+01 3.522e-13
+  5    3     1.984e-01 3.370e-13
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     3.752e+07 1.845e+03
+
+Total solve time: 0.09s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:    0.1197s   to    0.1713s   step    :   0.05164s   temp: 500.0C
+  lin norm 1.1274e-11  vel err 9.4231e-06
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.1197s   to    0.1261s   step (g):  0.006436s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  9.402e-02 8.486e+01 2.045e+04 4.905e+01 7.140e+02 2.769e-03 1.750e-01 1.243e+01
+  2    3  2.043e-02 1.976e-04 8.592e-01 4.349e-01 5.599e+02 2.087e-08 5.259e-05 1.198e-07
+  3    3  1.405e-05 3.151e-05 2.116e-03 5.476e-02 1.457e+02 3.349e-12 5.776e-06 4.960e-09
+  4    3  5.566e-07 1.494e-04 1.529e-02 2.514e-01 1.311e+01 1.209e-11 2.250e-05 2.179e-10
+  5    3  2.420e-12 3.646e-09 3.099e-07 3.755e-04 1.019e-02 7.998e-13 1.028e-08 3.802e-13
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  5.594e-03 5.541e+01 1.394e+04 3.394e+01 1.159e+03 1.969e-03 1.212e-01 8.919e+00
+  2    3  2.176e-05 2.025e-05 4.019e-01 4.960e-03 5.990e-02 1.024e-08 6.491e-06 1.197e-08
+
+Total solve time: 0.75s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  2.877e-07 3.814e+00 2.224e+00 4.430e-01 4.393e+02 9.156e-07 9.887e-05 5.324e-03
+  2    3  1.672e-10 1.470e-07 2.222e-05 4.573e-03 7.660e+00 7.779e-13 3.276e-08 2.256e-12
+  3    4  1.687e-10 2.114e-07 9.476e-06 1.481e-03 5.217e-02 7.212e-13 1.907e-09 3.566e-12
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.1261s   to    0.1345s   step (g):  0.008435s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.003e-02 1.019e+02 2.503e+04 6.142e+01 1.330e+02 3.631e-03 2.195e-01 1.669e+01
+  2    3  6.538e-05 8.788e-05 1.730e+00 1.594e-02 3.251e-01 4.512e-08 2.666e-05 5.136e-08
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  6.817e-03 6.944e+01 1.691e+04 4.259e+01 9.548e+01 2.467e-03 1.513e-01 1.217e+01
+  2    3  2.829e-05 4.419e-05 8.225e-01 8.097e-03 2.426e-01 2.203e-08 1.251e-05 2.457e-08
+
+Total solve time: 0.62s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.524e-05 4.065e+00 3.689e+00 8.190e-02 5.171e-01 8.471e-05 7.256e-05 1.494e-01
+  2    3  4.642e-10 3.424e-09 2.373e-07 4.104e-07 2.551e-05 8.179e-13 1.332e-09 4.893e-13
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.1345s   to    0.1594s   step (g):   0.02488s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  6.594e-02 2.987e+02 6.652e+04 1.690e+02 6.043e+02 1.406e-02 5.992e-01 6.047e+01
+  2    4  8.909e-03 2.228e-03 3.864e+01 1.494e-01 4.336e+02 1.077e-06 5.576e-04 1.484e-06
+  3    3  6.986e-06 4.197e-05 1.579e-01 2.211e-02 1.562e+02 2.712e-11 2.258e-06 8.573e-09
+  4    3  1.820e-06 9.661e-05 1.658e-02 4.014e-02 5.819e+01 4.320e-11 6.181e-06 7.129e-10
+  5    3  4.406e-11 6.344e-09 2.556e-07 7.683e-05 1.326e-02 7.408e-13 2.378e-10 6.503e-13
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.072e-02 1.948e+02 4.158e+04 1.142e+02 8.533e+02 1.693e-02 3.955e-01 5.833e+01
+  2    4  9.695e-05 8.355e-04 1.687e+01 5.168e-02 1.648e+00 5.033e-07 2.384e-04 6.480e-07
+  3    3  2.666e-06 1.536e-05 4.936e-02 4.151e-03 2.930e-02 6.512e-12 9.495e-07 2.145e-09
+
+Total solve time: 0.87s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  5.485e-05 2.464e+00 7.295e+01 4.848e-01 3.138e+02 1.146e-03 1.319e-03 2.886e+00
+  2    4  4.005e-09 5.770e-07 1.016e-04 2.879e-03 5.427e+00 2.289e-12 9.066e-08 4.480e-11
+  3    4  6.304e-13 7.419e-10 8.167e-08 6.128e-04 3.697e-02 8.043e-13 2.479e-10 4.636e-13
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.1594s   to    0.1713s   step (r):   0.01188s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  7.349e-03 1.264e+02 2.587e+04 7.488e+01 1.565e+02 1.510e-02 2.545e-01 4.802e+01
+  2    4  3.799e-05 1.531e-04 3.234e+00 2.217e-02 7.987e-01 1.047e-07 4.585e-05 9.367e-07
+  3    3  4.974e-07 2.028e-06 7.066e-03 1.498e-03 1.514e-02 8.816e-13 1.395e-07 6.806e-10
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  6.100e-03 8.746e+01 1.735e+04 5.210e+01 1.094e+02 1.236e-02 1.745e-01 3.912e+01
+  2    3  2.821e-05 8.144e-05 1.518e+00 1.039e-02 5.364e-01 5.078e-08 2.153e-05 4.851e-08
+
+Total solve time: 0.72s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  7.495e-06 4.269e+00 6.651e+00 5.224e-02 1.480e+00 1.140e-04 1.031e-04 3.327e-01
+  2    3  5.474e-11 6.293e-08 3.200e-06 5.680e-06 1.660e-05 8.253e-13 6.960e-10 2.529e-11
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :    0.1713s   to    0.2048s   step    :   0.03346s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.588e+03 1.467e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.988e+03 9.184e+02
+
+Total solve time: 0.06s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:    0.1713s   to    0.2048s   step    :   0.03346s   temp: 500.0C
+  lin norm 1.9779e-11  vel err 1.6556e-05
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.1713s   to    0.2034s   step (g):   0.03211s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  7.831e-02 3.414e+02 6.183e+04 1.896e+02 8.547e+02 1.586e-02 6.282e-01 7.578e+01
+  2    4  1.544e-02 2.218e-03 5.385e+01 1.067e-01 6.629e+02 1.890e-06 7.611e-04 3.286e-06
+  3    3  5.095e-06 3.190e-04 1.944e-01 7.904e-02 1.500e+02 1.957e-10 1.412e-05 1.755e-08
+  4    3  1.781e-07 8.952e-05 1.610e-02 2.366e-02 1.867e+00 6.267e-11 4.515e-06 1.388e-10
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  8.369e-03 2.225e+02 3.836e+04 1.285e+02 1.277e+03 2.499e-02 4.108e-01 9.360e+01
+  2    4  7.466e-05 1.004e-03 2.299e+01 4.688e-02 7.958e-01 8.737e-07 3.202e-04 1.113e-06
+  3    3  2.082e-06 1.541e-05 5.761e-02 6.235e-03 1.806e-02 4.381e-12 1.235e-06 4.182e-09
+
+Total solve time: 0.78s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.404e-04 2.085e+01 1.011e+02 5.366e-01 4.990e+02 1.488e-03 1.688e-03 5.282e+00
+  2    4  5.267e-08 7.629e-07 1.311e-04 2.735e-03 8.286e+00 6.252e-12 9.004e-08 3.086e-11
+  3    4  4.217e-11 1.228e-08 2.910e-07 5.020e-04 5.644e-02 5.954e-13 4.749e-10 3.409e-13
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.2034s   to    0.2048s   step (r):  0.001355s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  2.795e-02 1.370e+01 2.137e+03 7.589e+00 5.802e+02 9.005e-04 2.369e-02 3.494e+00
+  2    4  1.116e-04 1.271e-06 2.831e-03 5.539e-02 4.575e+02 1.271e-10 7.527e-07 1.641e-09
+  3    4  4.122e-06 6.025e-08 7.210e-06 2.797e-03 3.638e+01 8.050e-13 3.759e-08 8.013e-12
+  4    4  1.537e-07 3.304e-09 3.513e-07 2.011e-04 2.701e-01 7.043e-13 2.102e-09 5.592e-13
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  3.909e-04 8.377e+00 1.503e+03 5.340e+00 9.465e+02 6.434e-04 1.670e-02 2.498e+00
+  2    4  1.924e-07 3.277e-08 1.463e-03 3.346e-04 6.909e-04 6.339e-11 2.188e-08 6.688e-11
+
+Total solve time: 0.67s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.131e-08 2.014e+00 7.159e-03 2.930e-01 3.596e+02 8.672e-08 4.361e-07 2.511e-04
+  2    3  2.720e-12 4.105e-09 2.420e-07 5.763e-04 6.266e+00 8.385e-13 1.242e-09 5.314e-13
+  3    3  4.396e-15 1.535e-11 1.062e-09 8.715e-05 4.268e-02 7.176e-13 2.486e-13 4.327e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :    0.2048s   to    0.2066s   step    :  0.001876s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.328e+03 6.384e+01
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     7.163e+03 4.488e+01
+
+Total solve time: 0.06s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:    0.2048s   to    0.2066s   step    :  0.001876s   temp: 500.0C
+  lin norm 8.1914e-12  vel err 1.6470e-04
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.2048s   to    0.2066s   step (s):  0.001876s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  6.610e-04 1.629e+01 2.926e+03 1.041e+01 2.048e+01 2.690e-03 3.256e-02 4.650e+00
+  2    4  4.661e-07 1.944e-07 7.693e-03 1.508e-04 2.527e-03 3.346e-10 1.166e-07 3.119e-10
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    4  4.692e-04 1.144e+01 2.054e+03 7.351e+00 1.443e+01 1.907e-03 2.292e-02 3.332e+00
+  2    4  2.360e-07 9.908e-08 3.813e-03 7.215e-05 1.276e-03 1.666e-10 5.709e-08 1.567e-10
+
+Total solve time: 0.68s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  5.379e-09 3.539e-01 1.767e-02 3.462e-02 8.363e-01 1.761e-07 4.519e-07 5.573e-04
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :    0.2066s   to    0.2104s   step    :  0.003751s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     2.145e+02 1.269e+02
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.138e+02 8.869e+01
+
+Total solve time: 0.07s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:    0.2066s   to    0.2104s   step    :  0.003751s   temp: 500.0C
+  lin norm 6.4500e-13  vel err 3.9028e-06
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.2066s   to    0.2104s   step (s):  0.003751s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.423e-03 3.349e+01 5.764e+03 2.069e+01 4.044e+01 2.437e-03 6.439e-02 9.729e+00
+  2    3  2.285e-06 3.416e-06 6.089e-02 1.266e-03 1.059e-02 2.647e-09 8.822e-07 2.690e-09
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.016e-03 2.285e+01 4.020e+03 1.457e+01 2.850e+01 1.766e-03 4.514e-02 7.072e+00
+  2    3  1.175e-06 2.014e-06 2.989e-02 7.823e-04 5.409e-03 1.312e-09 4.315e-07 1.371e-09
+
+Total solve time: 0.6s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  4.507e-08 3.502e+00 1.391e-01 9.978e-03 4.137e-01 1.409e-06 2.117e-06 4.377e-03
+  2    3  3.323e-14 2.314e-10 1.390e-08 6.970e-08 1.322e-09 8.258e-13 2.144e-11 5.166e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :    0.2104s   to    0.2179s   step    :  0.007503s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.651e+02 2.529e+02
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.254e+02 1.749e+02
+
+Total solve time: 0.07s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:    0.2104s   to    0.2179s   step    :  0.007503s   temp: 500.0C
+  lin norm 8.9169e-13  vel err 4.2344e-06
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.2104s   to    0.2179s   step (s):  0.007503s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  2.993e-03 6.420e+01 1.118e+04 4.078e+01 7.960e+01 5.182e-03 1.259e-01 2.068e+01
+  2    3  1.077e-05 2.217e-05 4.736e-01 4.281e-03 4.625e-02 2.070e-08 6.765e-06 2.303e-08
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  2.167e-03 4.470e+01 7.694e+03 2.858e+01 5.606e+01 3.814e-03 8.755e-02 1.543e+01
+  2    3  5.730e-06 1.308e-05 2.286e-01 2.699e-03 2.419e-02 1.017e-08 3.236e-06 1.234e-08
+
+Total solve time: 0.69s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  3.459e-07 4.000e-01 1.044e+00 6.547e-03 2.653e-01 9.640e-06 1.602e-05 3.149e-02
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :    0.2179s   to    0.2329s   step    :   0.01501s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     2.448e+02 5.025e+02
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.833e+02 3.407e+02
+
+Total solve time: 0.06s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:    0.2179s   to    0.2329s   step    :   0.01501s   temp: 500.0C
+  lin norm 2.1397e-11  vel err 4.2071e-06
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.2179s   to    0.2329s   step (s):   0.01501s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  6.411e-03 1.280e+02 2.107e+04 7.927e+01 1.551e+02 1.134e-02 2.411e-01 4.669e+01
+  2    4  5.117e-05 1.666e-04 3.536e+00 1.964e-02 2.278e-01 1.584e-07 4.897e-05 2.092e-07
+  3    3  1.059e-06 3.363e-06 7.108e-03 1.528e-03 1.882e-03 1.019e-12 1.930e-07 4.637e-10
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  4.767e-03 8.803e+01 1.414e+04 5.514e+01 1.090e+02 8.429e-03 1.649e-01 3.605e+01
+  2    3  2.915e-05 8.406e-05 1.648e+00 1.084e-02 1.195e-01 7.659e-08 2.275e-05 1.454e-07
+
+Total solve time: 0.72s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  2.697e-06 4.405e+00 7.455e+00 4.306e-02 6.406e-01 5.397e-05 1.098e-04 2.116e-01
+  2    3  1.221e-11 6.892e-08 3.130e-06 5.184e-06 2.772e-06 8.017e-13 4.688e-10 1.314e-12
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :    0.2329s   to    0.2629s   step    :   0.03001s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     4.292e+02 9.933e+02
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     2.845e+02 6.493e+02
+
+Total solve time: 0.06s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:    0.2329s   to    0.2629s   step    :   0.03001s   temp: 500.0C
+  lin norm 8.0792e-12  vel err 4.2364e-06
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.2329s   to    0.2629s   step (s):   0.03001s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  3.238e-02 2.533e+02 3.758e+04 1.503e+02 5.068e+02 2.503e-02 4.432e-01 1.064e+02
+  2    4  2.250e-04 2.124e-03 2.408e+01 1.451e-01 3.519e+02 1.164e-06 3.222e-04 3.479e-06
+  3    3  1.032e-05 4.830e-05 7.909e-02 8.614e-03 2.217e+01 5.919e-12 1.552e-06 9.657e-09
+  4    3  5.078e-07 4.823e-06 1.886e-03 1.618e-03 1.604e-01 8.914e-13 1.927e-07 4.199e-11
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.204e-02 1.716e+02 2.411e+04 1.036e+02 6.991e+02 1.980e-02 2.943e-01 8.798e+01
+  2    4  1.785e-04 3.713e-04 1.059e+01 5.263e-02 9.988e-01 5.457e-07 1.558e-04 3.488e-06
+  3    3  6.096e-06 1.081e-04 1.679e-02 2.062e-02 4.731e-02 3.141e-11 5.795e-06 2.719e-09
+
+Total solve time: 0.79s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  2.771e-05 1.086e+00 4.720e+01 4.093e-01 2.547e+02 2.248e-04 6.634e-04 1.301e+00
+  2    3  1.131e-09 2.735e-08 6.585e-05 5.603e-03 4.419e+00 1.540e-12 1.179e-08 1.405e-10
+  3    3  4.507e-12 6.248e-09 4.813e-07 2.373e-03 3.009e-02 5.986e-13 5.390e-11 5.525e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :    0.2629s   to     0.307s   step    :   0.04406s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     6.756e+02 1.368e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     4.721e+02 8.721e+02
+
+Total solve time: 0.07s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:    0.2629s   to     0.307s   step    :   0.04406s   temp: 500.0C
+  lin norm 1.2772e-11  vel err 5.7861e-06
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.2629s   to     0.307s   step (s):   0.04406s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  8.679e-02 3.433e+02 4.537e+04 2.052e+02 7.059e+02 2.449e-02 5.648e-01 1.273e+02
+  2    4  2.629e-02 3.104e-03 5.694e+01 1.769e-01 4.547e+02 3.195e-06 8.101e-04 3.396e-06
+  3    3  5.162e-05 1.014e-03 1.514e-01 1.217e-01 1.562e+02 4.586e-10 3.979e-05 2.684e-08
+  4    3  5.653e-06 1.265e-03 5.125e-02 1.524e-01 1.598e+02 5.468e-10 5.233e-05 1.391e-09
+  5    3  2.378e-10 5.134e-08 2.038e-06 8.204e-05 1.516e-02 8.643e-13 8.810e-09 4.983e-12
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.831e-02 2.254e+02 2.824e+04 1.396e+02 9.938e+02 1.862e-02 3.664e-01 1.035e+02
+  2    4  4.132e-04 6.524e-04 2.390e+01 9.364e-02 2.419e+00 1.463e-06 3.740e-04 8.838e-07
+  3    3  2.078e-05 2.130e-04 4.093e-02 3.145e-02 1.577e-01 4.496e-11 1.366e-05 2.445e-09
+
+Total solve time: 0.86s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.793e-04 6.061e+00 1.058e+02 5.997e-01 4.353e+02 1.070e-03 1.675e-03 5.077e+00
+  2    4  9.947e-08 4.752e-06 1.614e-04 2.463e-03 6.274e+00 7.853e-12 1.078e-07 2.340e-10
+  3    4  1.150e-10 8.593e-09 3.356e-07 5.294e-04 4.273e-02 7.998e-13 7.739e-10 5.085e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :     0.307s   to     0.367s   step    :   0.05999s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     7.414e+02 1.685e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     5.447e+02 1.054e+03
+
+Total solve time: 0.06s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:     0.307s   to     0.367s   step    :   0.05999s   temp: 500.0C
+  lin norm 3.9894e-11  vel err 5.8565e-06
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:     0.307s   to     0.367s   step (s):   0.05999s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  9.528e-02 4.090e+02 4.790e+04 2.535e+02 7.438e+02 3.577e-02 6.368e-01 1.109e+02
+  2    4  2.423e-02 1.449e-03 9.727e+01 4.080e-01 4.494e+02 6.672e-06 1.621e-03 3.555e-06
+  3    3  1.856e-04 9.756e-04 2.861e-01 9.294e-02 1.355e+02 3.962e-10 6.356e-05 1.262e-07
+  4    3  1.106e-05 1.539e-03 7.050e-02 1.739e-01 1.175e+02 3.679e-10 7.796e-05 4.686e-09
+  5    3  1.563e-10 5.855e-08 2.132e-06 6.570e-05 1.095e-02 8.752e-13 3.269e-08 1.098e-11
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  3.515e-02 2.689e+02 2.910e+04 1.716e+02 9.392e+02 5.263e-02 4.049e-01 1.298e+02
+  2    4  1.725e-03 1.980e-03 3.901e+01 6.293e-02 3.689e+03 2.990e-06 5.908e-04 2.003e-06
+  3    3  2.876e-05 2.425e-04 7.421e-02 2.815e-02 1.279e+02 1.318e-10 8.582e-06 7.707e-09
+  4    3  6.274e-07 9.155e-05 3.969e-03 1.926e-02 1.189e+02 6.343e-11 3.155e-06 1.534e-10
+  5    3  3.021e-08 2.359e-05 9.777e-04 8.758e-03 2.910e+01 1.692e-11 8.059e-07 3.132e-11
+
+Total solve time: 0.97s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  3.516e-04 6.009e+00 1.762e+02 9.982e-01 3.410e+02 3.268e-03 2.881e-03 6.268e+00
+  2    4  2.133e-07 3.574e-05 1.048e-03 3.016e-03 5.436e+00 2.991e-11 1.175e-06 3.645e-09
+  3    4  2.931e-10 3.231e-06 1.316e-04 5.615e-04 3.702e-02 1.340e-12 1.408e-07 9.024e-12
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :     0.367s   to    0.4335s   step    :   0.06652s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     7.478e+02 1.624e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     5.746e+02 1.029e+03
+
+Total solve time: 0.06s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:     0.367s   to    0.4335s   step    :   0.06652s   temp: 500.0C
+  lin norm 4.2293e-11  vel err 6.9880e-06
+Interpolating...elapsed time: 0.06
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:     0.367s   to    0.4335s   step (s):   0.06652s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  9.214e-02 3.890e+02 4.023e+04 2.530e+02 9.118e+02 2.519e-02 5.695e-01 1.011e+02
+  2    4  2.052e-02 5.705e-03 8.034e+01 1.669e-01 6.384e+02 7.301e-06 1.221e-03 4.518e-06
+  3    4  8.078e-06 1.023e-03 2.195e+00 1.107e-01 1.479e+02 8.611e-10 2.033e-05 3.134e-08
+  4    4  4.092e-07 3.173e-04 7.427e-02 3.793e-02 1.703e+00 3.375e-10 8.202e-06 6.081e-10
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.006e-02 2.492e+02 2.473e+04 1.725e+02 1.303e+03 2.475e-02 3.621e-01 9.215e+01
+  2    4  1.148e-04 1.682e-03 3.371e+01 5.032e-02 1.404e+00 3.266e-06 5.344e-04 2.153e-06
+  3    3  4.544e-06 2.182e-04 5.522e-02 1.791e-02 1.677e-02 6.797e-11 8.216e-06 7.587e-09
+
+Total solve time: 0.78s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  7.832e-05 5.765e+00 4.261e+02 1.143e+00 5.664e+02 1.772e-03 2.434e-03 3.777e+00
+  2    4  1.268e-08 5.672e-05 6.389e-02 4.489e-03 2.916e+02 2.890e-11 1.368e-06 2.567e-10
+  3    4  1.995e-09 2.685e-07 1.253e-05 1.791e-03 1.972e+02 8.208e-13 8.457e-09 8.176e-13
+  4    4  4.428e-15 1.236e-11 1.659e-10 1.043e-03 4.025e+00 5.715e-13 7.257e-12 3.511e-13
+  5    4  2.251e-15 5.937e-12 9.197e-11 6.958e-04 2.750e-02 5.477e-13 1.135e-11 3.534e-13
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Reaction :    0.4335s   to       0.5s   step    :   0.06652s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     9.475e+02 4.204e+03
+
+Solving the BDF Step
+Iter Lin  SiliconReact ORSoxygen 
+  1    4     1.307e+03 1.043e+03
+
+Total solve time: 0.06s
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Mechanics:    0.4335s   to       0.5s   step    :   0.06652s   temp: 500.0C
+  lin norm 1.5860e-12  vel err 7.5982e-06
+Interpolating...elapsed time: 0.07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Diffusion:    0.4335s   to       0.5s   step (s):   0.06652s   temp: 500.0C
+
+Solving the TR Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  4.721e-02 3.392e+02 3.048e+04 2.312e+02 6.804e+02 4.004e-02 4.607e-01 1.377e+02
+  2    4  3.413e-03 4.287e-03 5.371e+01 1.595e-01 4.431e+02 5.865e-06 8.387e-04 2.148e-06
+  3    3  2.130e-05 7.111e-04 1.085e-01 5.660e-02 3.599e+01 2.561e-10 2.060e-05 1.708e-08
+  4    3  1.531e-06 4.259e-05 1.728e-03 4.364e-03 2.679e-01 2.167e-11 3.144e-06 1.877e-10
+
+Solving the BDF Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  1.207e-02 2.234e+02 1.895e+04 1.581e+02 8.827e+02 3.192e-02 2.951e-01 1.154e+02
+  2    4  2.742e-04 2.359e-03 2.200e+01 1.134e-01 1.254e+00 2.646e-06 3.499e-04 1.428e-06
+  3    3  1.751e-05 2.864e-05 3.239e-02 2.891e-03 1.803e-02 1.074e-11 9.217e-07 9.997e-09
+
+Total solve time: 0.78s
+
+Solving the TR2 Step
+Iter Lin  Potential     Boron   Arsenic       Int       Vac  ICluster        B4       As3 
+  1    3  8.724e-05 1.338e+00 1.018e+02 6.900e-01 3.130e+02 8.106e-04 1.548e-03 8.890e-01
+  2    4  2.971e-08 2.288e-06 5.742e-04 1.407e-03 5.444e+00 2.184e-11 2.380e-07 3.237e-09
+  3    4  2.295e-11 4.374e-08 1.739e-06 4.184e-04 3.708e-02 6.288e-13 1.646e-09 4.039e-13
+
+Elapsed time for diffuse 99.17s
+--------------------------------------------------- Clean implant fields ------
+Int_Implant Vac_Implant
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------ strip -----
+strip Nickel
+------------------------------------------------------------------------------
+MGoals time: 0.011075
+
+Remeshing to match geometry after strip command ...
+------------------------------------------------------------------------------
+Refinement Boxes:
+* Name: (not named), Type: Interface
+* Name: WellVt, Type: Standard
+* Name: ExtImp, Type: Standard
+* Name: ExtXY, Type: Standard
+* Name: ExtIF, Type: Interface
+------------------------------------------------------------------------------
+Generating SnMesh mesh... 
+** Generating 2d grid **
+
+Creating binary tree...done.
+Imprinting binary tree on the boundary...done.
+Optimizing boundary nodes...done.
+
+Number of vertices after binary tree generation : 
+  1784 (tree) + 375 (boundary)
+
+
+=================================  brep2d quality  =====================================
+minAngle: 59.1705  [near (-0.00180004 0.0226203)] at region=NickelSilicide_1
+nVerts = 375  nTris = 382  nRegs = 23
+bmin: 10 0
+bmax: -0.153594 0.05125
+min area: 2.37224e-05  max area: 2.5  total area  : 20.6315 interface area: 0.221775
+total volume: 0.520372
+Conformal? true
+Are all boundaries on bbox? true
+==================================================================================
+** Delaunizing the mesh **
+
+Creating delaunizer input...done.
+Solving edges...done 
+Optimizing elements...done. (2098 vertices)
+Fixing diagonals...done.
+
+The final mesh has: 
+    2094 points.
+    4024 elements.
+       8 regions.
+Max. connectivity = 10 located at (-0.00179993;0.0232227)
+
+SnMesh time: 0.225965
+
+========================  tri-grid quality (Gas excluded)  =======================
+    0  10  20  30  40  50  60  70  80  90 100 110 120 130 140 150 160 170 180
+ %    2   2   6   4  16  15   5   7   3  30  .    1  .   .   .   .         
+---------------------------------------------------------------------------------
+minAngle: 0.0367051  maxAngle: 154.219
+nVerts = 2094  nTris = 4024  nMats = 8
+max connectivity (tris per node): 10
+bmin: 10 0
+bmax: -0.153594 0.05125
+min edgeLength: 9.57982e-06  [near (-0.00227837 0.041245)]
+min volume: 4.62546e-10  max volume: 0.0320313  Total volume: 0.513316
+bbox  volume: 0.520372
+Are all boundaries on bbox? true
+=================================================================================
+Initializing sprocess...time: 0.695895
+Interpolating...elapsed time: 0.82
+----------------------------------------------------------------- struct -----
+struct tdr= "n106"
+------------------------------------------------------------------------------
+Points: 2094
+Nodes: 2628
+Edges: 6629
+Faces: 4024
+Volumes: 0
+
+Writing file n106_fps.tdr...done
+
+------------------------------------------------------------------------------
+Summary:
+Anneal time stepping:
+  reaction/mechanics steps=29 minimum=4.4359e-03s maximum=0.220304s
+  diffusion steps=33 minimum=7.8943e-05s maximum=0.0665242s
+    grid limited=4 minimum=6.4356e-03s maximum=0.0321068s
+    diffusion limited=29 minimum=7.8943e-05s maximum=0.0665242s
+Edge/Face swapping:
+ calls=179 flips=0
+------------------------------------------------------------------------------
+
+Elapsed Time:	00:02:11
+User Time:	00:02:08
+CPU Time:	00:02:06
+
+Detailed CPU time report:
+
+20.62 sec (17.5%) Diffusion step time. (29 calls).
+17.66 sec (15.0%) Interface interpolation (73 calls).
+14.97 sec (12.7%) MakeInterfaces (46 calls).
+10.36 sec (8.8%) Solver(PDE). (374 calls).
+7.42 sec (6.3%) Serial mode assembly. (659 calls).
+7.21 sec (6.1%) solution command (47081 calls).
+3.80 sec (3.2%) Mechanics step (29 calls).
+3.35 sec (2.8%) mater command (1595 calls).
+2.95 sec (2.5%) Store nodal values: Serial. (15866 calls).
+2.57 sec (2.2%) Arr command (29919 calls).
+2.56 sec (2.2%) Bulk Interpolation (39 calls).
+2.32 sec (2.0%) reaction command (58 calls).
+2.23 sec (1.9%) term command (5676 calls).
+2.17 sec (1.8%) FieldServer copy (40 calls).
+1.92 sec (1.6%) Reaction step time. (29 calls).
+1.78 sec (1.5%) Other Program Parts (1 calls).
+1.47 sec (1.2%) Total time spent in Symbolic. (3 calls).
+1.47 sec (1.2%) TS4Geom (100 calls).
+1.27 sec (1.1%) SnMesh meshing (6 calls).
+1.15 sec (1.0%) struct command (1 calls).
+1.08 sec (0.9%) Mechanics preassembly (33 calls).
+0.99 sec (0.8%) sel command (1051 calls).
+0.97 sec (0.8%) mgoals (6 calls).
+0.87 sec (0.7%) init command (1 calls).
+0.78 sec (0.7%) implant command (230 calls).
+0.70 sec (0.6%) ArrBreak command (7079 calls).
+0.67 sec (0.6%) Solver(Mechanics) (33 calls).
+
+
+Detailed elapsed time report:
+
+20.73 sec (17.4%) Diffusion step time. (29 calls).
+17.68 sec (14.8%) Interface interpolation (73 calls).
+15.00 sec (12.6%) MakeInterfaces (46 calls).
+10.37 sec (8.7%) Solver(PDE). (374 calls).
+7.45 sec (6.2%) Serial mode assembly. (659 calls).
+7.27 sec (6.1%) solution command (47081 calls).
+3.85 sec (3.2%) Mechanics step (29 calls).
+3.40 sec (2.8%) mater command (1595 calls).
+2.92 sec (2.4%) Store nodal values: Serial. (15866 calls).
+2.59 sec (2.2%) Arr command (29919 calls).
+2.56 sec (2.1%) Bulk Interpolation (39 calls).
+2.31 sec (1.9%) reaction command (58 calls).
+2.19 sec (1.8%) term command (5676 calls).
+2.18 sec (1.8%) FieldServer copy (40 calls).
+2.13 sec (1.8%) Other Program Parts (1 calls).
+1.99 sec (1.7%) Reaction step time. (29 calls).
+1.71 sec (1.4%) struct command (1 calls).
+1.48 sec (1.2%) TS4Geom (100 calls).
+1.48 sec (1.2%) Total time spent in Symbolic. (3 calls).
+1.28 sec (1.1%) SnMesh meshing (6 calls).
+1.08 sec (0.9%) Mechanics preassembly (33 calls).
+0.97 sec (0.8%) sel command (1051 calls).
+0.97 sec (0.8%) mgoals (6 calls).
+0.91 sec (0.8%) init command (1 calls).
+0.91 sec (0.8%) implant command (230 calls).
+0.68 sec (0.6%) ArrBreak command (7079 calls).
+0.67 sec (0.6%) Solver(Mechanics) (33 calls).
+

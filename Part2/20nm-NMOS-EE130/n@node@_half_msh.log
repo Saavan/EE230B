@@ -1,0 +1,30 @@
+****************************************************************************
+***                            Sentaurus Mesh                            ***
+***                        Version K-2015.06-SP1                         ***
+***                        (1.13, x86_64, Linux)                         ***
+***                                                                      ***
+***                       Copyright (C) 2005-2015                        ***
+***                            Synopsys, Inc.                          ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+Compiled Thu Jul 16 00:36:25 PDT 2015 on: tcadbld1
+Running on: sanquentin.banatao.berkeley.edu
+Hardware type: x86_64
+OS name: Linux
+OS release: 2.6.32-504.8.1.el6.x86_64
+OS version: #1 SMP Tue Jan 27 13:39:10 CST 2015
+Process ID: 30791
+
+Flags used:
+
+
+----------------------  ERROR ----------------------------
+Couldn't locate boundary file n@node@_half_bnd.tdr
+
+------------------------------------------------------------
+

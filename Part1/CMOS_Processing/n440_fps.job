@@ -1,0 +1,58 @@
+
+****************************************************************************
+***                       Sentaurus Workbench gjob                       ***
+***                        Version K-2015.06-SP1                         ***
+***                        (1.16, x86_64, Linux)                         ***
+***                                                                      ***
+***                Copyright (c) 1994-2015 Synopsys, Inc.                ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+gjob is running on host 'n0019.banatao.berkeley.edu' by user 'spatel'
+Binary 'gjob'
+Command line options '-verbose -job 440 -swb_pid 450 -gsub_pid 3849 -gsub_host sanquentin -gsub_port 58405 /home/spatel/swb_project/Part1/CMOS_Processing'
+Current directory '/home/spatel'
+Some relevant environment variables:
+	STROOT=/opt/synopsys/K_2015.06-SP1/bin/..
+	STRELEASE=current
+	STROOT_LIB=/opt/synopsys/K_2015.06-SP1/bin/../tcad/current/lib
+	STDB=/home/spatel/swb_project
+	DATEX=/opt/synopsys/K_2015.06-SP1/bin/../tcad/current/lib/datexcodes.txt
+	DISPLAY=localhost:12.0
+
+Project '/home/spatel/swb_project/Part1/CMOS_Processing'
+Loading global tool database '/opt/synopsys/K_2015.06-SP1/bin/../tcad/current/lib/glib2/tooldb.tcl'
+INITIALIZING PREPROCESSOR:
+Loading project tool database '/home/spatel/swb_project/Part1/CMOS_Processing/gtooldb.tcl'
+Loading project tree '/home/spatel/swb_project/Part1/CMOS_Processing/gtree.dat'
+Loading jobs and dependence graph '"/home/spatel/swb_project/Part1/CMOS_Processing/gexec.cmd"'
+Loading project variables '/home/spatel/swb_project/Part1/CMOS_Processing/gvars.dat'
+--Get files to preprocess...
+--Create file handlers...
+--Read the toolflow...
+--Analyze tool-file dependencies...
+--Read all nodes to preprocess...
+--Group nodes into experiments...
+--Get all variables...
+--Get all parameters...
+PREPROCESSOR SUCCESSFULLY INITIALIZED.
+PREPROCESSING STEP 1:
+Reading file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd
+PREPROCESSING STEP 2:
+Preprocessing file /home/spatel/swb_project/Part1/CMOS_Processing/sprocess_fps.cmd fornode 440
+'@previous@' creates dependences with the node(s) '439'
++++Preprocessing results written to /home/spatel/swb_project/Part1/CMOS_Processing/pp440_fps.cmd
+The node '440' has dependencies to the node(s) '439'
+Start Simulation section
+19:55:03 May 18 2016     job 440 <sprocess> started on host 'n0019.banatao.berkeley.edu': "sprocess -u -b n440_fps.cmd"
+19:55:55 May 18 2016 +++ job 440 <sprocess> done: exit(0)
+End Simulation section
+Start Epilogue section
+19:55:55 May 18 2016 *** job 440 pre/post execution: eval "  gjob::find_extracted_vars "/home/spatel/swb_project/Part1/CMOS_Processing" n440_fps.out 440; catch {os_cp "/home/spatel/swb_project/Part1/CMOS_Processing/n440_mdr.cmd" "/home/spatel/swb_project/Part1/CMOS_Processing/n440_msh.cmd"}; catch {os_cp "/home/spatel/swb_project/Part1/CMOS_Processing/n440_mdr.bnd" "/home/spatel/swb_project/Part1/CMOS_Processing/n440_msh.bnd"}; waiting "/home/spatel/swb_project/Part1/CMOS_Processing" 440 fps "
+End Epilogue section
+Job succeeded
+gjob exits with status 0

@@ -1,0 +1,129 @@
+@InspectParam@
+
+GraphAttributes:
+80
+Y_Scale 1
+Scale lin
+Curve_fill_color {red black}
+Y2_Angle 0
+Y_Format default
+AxesTight 1
+ShowX 1
+Show_Title 0
+ShowY 1
+ShowY2 0
+GridColor black
+Y_Font {helvetica 20 bold}
+ShowLegend 1
+X_Format default
+X_Title {Gate Voltage (V)}
+Legd_Font {helvetica 20 bold}
+LogZero 1e-20
+X_Div 5
+Curve_width {5 5}
+Curve_number 2
+Y2_Precision 6
+X_Color black
+X_Scale 0
+Legd_fg black
+Title_Font {helvetica -12}
+X_Titlefont {helvetica 24 bold}
+X_Titlecolor black
+Y2_Font {helvetica -12}
+Y2_Titlecolor black
+Y2_Title {}
+X_at0 0
+Curve_shape {none none}
+Curve_interX {AUTO AUTO}
+Curve_interY {AUTO AUTO}
+Curve_size {5 5}
+Y_Width 1
+Y2_Color black
+Curve_out_color {red black}
+Y2_Scale 0
+GridMinor 0
+X_Min {}
+Legd_anc se
+X_Max {}
+Title_Text {}
+X_Font {helvetica 20 bold}
+bgcolor white
+Y_Titlefont {helvetica 24 bold}
+X_Precision 6
+Y2_Div 5
+GridLinewidth 1
+Y_Angle 0
+X_Width 1
+Legd_bc black
+Y_Titlecolor black
+CoordFrame 1
+Y2_Format default
+Y_Div 5
+Legd_bg white
+Y2_at0 0
+Y2_Width 1
+sel_color cyan
+Curve_out_width {1 1}
+Curve_color {red black}
+Y_Precision 6
+Curve_style {solid solid}
+Legd_pos plot
+GridMapy y
+Y_at0 0
+Y2_Min {}
+X_Angle 0
+Title_Justify center
+GridShow 0
+Y2_Max {}
+Y_Title {Drain Current (A/um)}
+Y2_Titlefont {helvetica -12}
+Legd_bw 1
+Y_Min {}
+GridDashes {3 5}
+Y_Max {}
+Y_Color black
+
+PrintAttributes:
+31
+File {}
+b_width 1.0
+height 9.0
+b_height 1.0
+Size US_LETTER
+b_w_USL 1.0
+h_A3 380.0
+Min_b_width 0.0
+h_A4 245.0
+b_h_A3 25.0
+b_h_USL 1.0
+SizeType i
+b_h_A4 25.0
+Max_b_width 100.0
+width 6.0
+Eps 0
+SizeTypePrev i
+w_A3 245.0
+w_USL 6.0
+Min_width 0.0
+w_A4 160.0
+h_USL 9.0
+b_w_A3 25.0
+Orientation portrait
+Min_height 0.0
+b_w_A4 25.0
+Min_b_height 0.0
+Max_width 1000.0
+Max_height 1000.0
+Max_b_height 100.0
+Command {lpr @}
+
+@InspectMacro@
+ADD {<c 1> + <c 2>}
+VT {vecvalx(tangent(<c 1>,veczero(diff(<c 1>) - vecmax(diff(<c 1>)))),0.0)}
+VT1 {vecvalx(<c 1>, 1.0e-7)}
+gm {vecmax(diff(<c 1>))}
+Rout {1.0e-3 / vecmin( diff(<c 1>))}
+Ron {1.0e-3 / vecmax( diff(<c 1>) )}
+IDSS {1.0e-6 * vecvaly(tangent( <c 1>, veczero( diff(<c 1>) - vecmin(diff(<c 1>)))),0.0)}
+test1 {<c 1> + <c 2> + ( <s 3> * <c 4>)}
+testt2 {<c 1> + <c 1>}

@@ -1,0 +1,36 @@
+###############################################################################################
+#                                                                                             #
+# -----------------------                                      ------------------------------ #
+# -----------------------           Laser Annealing            ------------------------------ #
+#                                                                                             #
+###############################################################################################
+# ---- Initial condition
+pdbSet Diffuse minT 500.0
+pdbSet Heat Intensity.Model Gaussian
+pdbSet Heat ExtendBottom 1
+pdbSet Heat WaferThickness 500
+
+# ---- light source ----
+pdbSetDouble Heat Fluence 8.65
+pdbSetDouble Heat Pulse 0.11
+
+pdbSetDouble Silicon110 MassDensity 2.33
+pdbSetString Silicon110 Absorptivity "0.5*1.9e-5*(HeatTempK^1.5)+900.0"
+pdbSetString Silicon110 SpecificHeatCapacity 1176.0
+pdbSetString Silicon110 ThermalConductivity  0.4
+
+pdbSetDouble SiliconGermanium MassDensity 3.827
+pdbSetString SiliconGermanium Absorptivity "0.5*1.9e-5*(HeatTempK^1.5)+900.5"
+pdbSetString SiliconGermanium SpecificHeatCapacity 762
+pdbSetString SiliconGermanium ThermalConductivity  0.063
+
+pdbSetDouble TiNitride MassDensity 3.46
+pdbSetString TiNitride Absorptivity 2.1e4
+pdbSetString TiNitride SpecificHeatCapacity 711
+pdbSetString TiNitride ThermalConductivity 0.29
+
+# ---- update heat generation rate ----
+pdbSetBoolean Heat UpdateHeatRate 1
+
+
+

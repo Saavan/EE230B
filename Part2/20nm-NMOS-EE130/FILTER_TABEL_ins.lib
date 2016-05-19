@@ -1,0 +1,141 @@
+#----------------------------------------------------------------------------
+# 
+# Utility scripts for extracted SWB values as a funtion of SWB 
+# input parameters
+#
+# USAGE: 
+# source FILTER_TABEL.tcl
+# CallPlot <CurveName> <Lable> <XList> <YList> \
+#   <1stParameter> <1stParameterList>  <2ndParameter> <2ndtParameterList> ...
+#   <LineColor> <LineSyle>
+# Example:
+# CallPlot "VtgmVsLg" "nMOS" $Lgs $Vtgms "nMOS" $Types red solid
+#----------------------------------------------------------------------------
+
+proc RemoveX { XYs } {
+  set Xs [lindex $XYs 0]
+  set Ys [lindex $XYs 1]
+  set Xz [list]
+  set Yz [list]
+  foreach X $Xs Y $Ys {
+    if { $Y != "x" } {
+      lappend Yz $Y
+      lappend Xz $X
+    }
+  }
+  return [list $Xz $Yz]
+}
+
+proc SortX { XYs } {
+ set Xs [lindex $XYs 0]
+ set Ys [lindex $XYs 1]
+ set TMP [list]
+ foreach X $Xs Y $Ys {
+   lappend TMP [list $X $Y]
+ }
+ set TMPsort  [lsort -real -index 0 $TMP]
+ set Xsort [list]
+ set Ysort [list]
+ foreach TMP $TMPsort {
+   lappend Xsort [lindex $TMP 0]
+   lappend Ysort [lindex $TMP 1]
+ }
+ return [list $Xsort $Ysort]
+}
+
+proc Abs { Ys } {
+  set Y2s  [list]
+  foreach Y $Ys {
+    lappend Y2 [expr abs($Y)]
+  }
+  return $Y2
+}
+
+proc NEXT { } {
+  global CURVES
+  script_break
+  foreach CURVE $CURVES {
+   cv_delete $CURVE
+  }
+  set CURVES [list]
+}
+
+proc FilterTable { ArgList } {
+  set DEBUG 0
+  set L    [llength $ArgList]
+  set XList [lindex $ArgList 0]
+  set YList [lindex $ArgList 1]
+
+  if { $DEBUG == 1 } { 
+    puts $XList 
+    puts $YList
+  }
+
+  set FOREACH "X \$XList Y \$YList "
+  set IFCOND  ""
+  set j 0
+  for { set i 2 } { $i < [expr $L-1] } { set i [expr $i+2] } {
+    set P${j}o    [lindex $ArgList $i]
+    set P${j}List [lindex $ArgList [expr $i+1]]
+    append FOREACH "P${j} \$P${j}List "
+    append IFCOND "&& \$P${j} == \$P${j}o "
+    incr j
+  }
+  set IFCOND [string range $IFCOND 2 end]
+  if { $DEBUG == 1 } { 
+    puts $FOREACH 
+    puts $IFCOND
+  }
+
+  set XFList [list]
+  set YFList [list]
+  set CMD "
+  foreach $FOREACH { 
+    if { $IFCOND } { 
+      lappend XFList \$X
+      lappend YFList \$Y
+    }
+  }
+  "
+ if { $DEBUG == 1 } { puts $CMD }
+ eval $CMD
+ set XYList [list $XFList $YFList]
+ return $XYList
+}
+
+proc CallPlot { args } {
+  global REMOVE
+  global CURVES
+
+  set DEBUG 0
+  set L    [llength $args]
+  set NAME  [lindex $args 0]
+  set LABEL [lindex $args 1]
+  set STYLE [lindex $args end]
+  set COLOR [lindex $args [expr $L-2]]
+  set ARGS4FILTER [lrange $args 2  [expr $L-3]]
+
+  if { $DEBUG == 1 } { 
+    puts $XName
+    puts $COLOR
+    puts $STYLE
+    puts $ARGS4FILTER
+  }
+
+  set XYList [FilterTable $ARGS4FILTER]
+  set XYList [RemoveX $XYList]
+  set XYList [SortX $XYList]
+ 
+  set XList [lindex $XYList 0]
+  set YList [lindex $XYList 1]
+ 
+  if { $DEBUG == 1 } { 
+    puts $XList
+    puts $YList
+  }
+  cv_createFromScript $NAME $XList $YList  y
+  cv_display $NAME y
+  cv_setCurveAttr $NAME "$LABEL" \
+   $COLOR $STYLE 2 circle 5 defcolor 1 defcolor
+  lappend CURVES $NAME
+}
